@@ -36,3 +36,92 @@
 
 /*내용 설명*/
 /* .details.list. */
+
+/*협력업체*/
+#cooperative-firm ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+}
+/*first_office*/
+#cooperative-firm .first_office{
+    width: 25%; 
+    height: 200px;
+    text-align: center;
+    float: left;
+}
+#cooperative-firm .first_office b{
+    color:rgb(19, 19, 54);
+    font-size: 16px;
+    position: relative;
+    top: 28%;
+    margin-left: 4px;
+}
+.first_office img{
+    position: relative;
+    top: 27%;
+    margin: auto;
+    display: block;
+    width : 120px;
+    height : 40px;
+}
+
+
+/*second_office*/
+#cooperative-firm .second_office{
+    width: 25%; 
+    height: 200px;
+    text-align: center;
+    float: left;
+}
+#cooperative-firm .second_office b{
+    color:rgb(19, 19, 54);
+    font-size: 16px;
+    position: relative;
+    top: 50%;
+}
+.second_office img{
+    position: relative;
+    top: 18%;
+    margin: auto;
+    display: block;
+    width : 40px;
+    height : 40px;
+}
+
+/*third_office*/
+#cooperative-firm .third_office{
+    width: 25%; 
+    height: 200px;
+    text-align: center;
+    float: left;
+}
+#cooperative-firm .third_office b{
+    color:rgb(19, 19, 54);
+    font-size: 16px;
+    position: relative;
+    top: 32%;
+}
+.third_office img{
+    position: relative;
+    top: 28%;
+    margin: auto;
+    display: block;
+    width : 160px;
+    height : 40px;
+}
+
+/*forth_office*/
+#cooperative-firm .forth_office{
+    width: 25%; 
+    height: 200px;
+    text-align: center;
+    float: left;
+}
+#cooperative-firm .forth_office b{
+    color:rgb(19, 19, 54);
+    font-size: 16px;
+    position: relative;
+    top: 40%;
+}
