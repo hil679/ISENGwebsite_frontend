@@ -1,0 +1,239 @@
+.representative-product {
+  height: 500px;
+  width: 1300px;
+  overflow: hidden;
+  transition: height .4s;
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+}
+.representative-product .representative-product-background{
+
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+.representative-product .hide {
+  height: 0;
+}
+.representative-product .swiper-container {
+  /* 819px 슬라이드 3개와 그 사이 여백 10px씩 = 2477px */
+  width: calc(350px * 3 + 130px);
+  overflow: hidden;
+  height: 500px;
+  position: relative;
+  top: 180px;
+}
+
+.representative-product .swiper-slide {
+  margin: 0 ;
+}
+
+.representative-product .swiper-slide .subject{
+  position: relative;
+  top:3%;
+  font-size: 1.6em;
+}
+.representative-product .swiper-slide .name{
+  font-size: 1.2em;
+  position: relative;
+  top:4%;
+}
+
+
+.representative-product .swiper-pagination {
+  bottom:10px;
+}
+.representative-product .swiper-pagination .swiper-pagination-bullet {
+  background-color: rgb(80, 87, 95);
+  width: 13px;
+  height: 12px;
+  margin: 5px;
+}
+.representative-product .swiper-pagination .swiper-pagination-bullet:last-child {
+  margin-right: 0;
+}
+.swiper-control .swiper-prev,
+.swiper-control .swiper-next {
+  width: 50px;
+  height: 50px;
+  outline: none;
+  border: 2px solid #333;
+  border-radius: 50%; /*원*/
+  position: absolute;
+  top: 295px;
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .4s;
+}
+
+.representative-product .swiper-prev {
+  left: 0; 
+}
+.representative-product .swiper-next {
+  right: 0;
+}
+.representative-product .swiper-prev:hover,
+.representative-product .swiper-next:hover {
+  background-color: #333;
+  color: #fff;
+}
+.representative-product .material-icons {
+  position: relative;
+  top: 8%;
+  font-size: 2em;
+  text-align: center;
+}
+.swiper-prev .material-icons {
+  text-align: center;
+}
+.swiper-next .material-icons {
+  text-align: center;
+}
+
+.swiper-slide img{
+  width: 300px;
+  height: 200px;
+}
+
+
+
+.navbar2 {
+  z-index: 99;/*클수록 최상위*/
+  padding: 15px;
+  text-align: center;
+  width: 1300px;
+  display: inline-block;
+  border-top: 2px solid #efefef;
+  border-bottom: 2px solid #efefef;
+}
+.navbar__menu2 {
+  display: flex;
+  justify-content : center;
+  list-style: none;
+}
+
+.navbar__menu2 li{
+  position: relative;
+  left: 51px;
+  
+}
+.navbar__menu2 li :first-child{
+  padding-right: 140px;
+}
+
+.navbar__menu2 :hover {
+  color: #8d8c8c;
+  border-radius: 4px;
+}
+
+
+
+#machine-product{
+  margin-bottom: 10px;
+  width: 1300px;
+  display: inline-block;
+}
+#machine-product p{
+  display: inline-block;
+  padding: 10px;
+  position:relative; 
+  margin: 20px;
+}
+#machine-product .text{
+  font-size: 1.2em;
+  display: block;
+  text-align: center;
+}
+#machine-product img {
+  width: 250px;
+  height: 250px;
+}
+
+
+#machine-product p:hover .left_top  {
+  height:100%; 
+  transition:  0.2s; 
+}
+#machine-product p:hover .right_top {
+  transition:  0.2s; 
+  transition-delay : 0.2s;
+  width:100%;
+}
+#machine-product p:hover .right_bottom {
+  transition:  0.2s; 
+  height:100%;
+}
+#machine-product p:hover .left_bottom {
+  width:100%; 
+  transition:  0.2s;
+  transition-delay : 0.2s;
+}
+
+
+#machine-product .left_top{
+  position:absolute; 
+  left:0; top:0; 
+  width:1px; 
+  height:0; 
+  
+  background:rgb(29, 29, 215); 
+}
+#machine-product .left_bottom{
+  position:absolute; 
+  left:0; bottom:0; 
+  width:0px; 
+  height:1px; 
+ 
+
+  background:rgb(29, 29, 215);
+}
+#machine-product .right_bottom{
+  position:absolute;
+  right:0; bottom:0; 
+  width:1px; 
+  height:0; 
+  
+  /* transition-delay : 0.2s; */
+  background:rgb(29, 29, 215);
+}
+#machine-product .right_top{
+  position:absolute; 
+  right:0; top:0; 
+  width:0; 
+  height:1px; 
+  background:rgb(29, 29, 215);
+}
+
+#machine-product .machine {
+  display: block;
+}
+#machine-product .product {
+  display: none;
+}
+#machine-product .machine .second-machine {
+  right: 147px;
+}
+#machine-product .product .third-product {
+  right: 147px;
+}
+#machine-product .product .IGS{
+  right: 147px;
+}
+
+body div{
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.background{
+  position: absolute;
+  height: 350px; 
+  width: 100%;  
+  background-color: aliceblue;
+  opacity: 0.9;
+}

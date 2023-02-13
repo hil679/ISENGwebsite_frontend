@@ -1,0 +1,179 @@
+:root{
+    --text-color: #263343;
+    --background-color: #f0f4f5;
+    --accent-color:#d49466;
+   
+}
+
+body {
+    margin: 0px;
+    padding:0;
+}
+
+a {
+    text-decoration: none;
+    color: #263343;
+}
+
+.navbar {
+    z-index: 99;/*클수록 최상위*/
+    display: flex;
+    top:0%; left:0%;/*nav 위에 여백 없앰*/
+    position: fixed;
+    justify-content: space-between;
+    width : 100%;
+    align-items: center;
+    background:#f0f4f5;
+    opacity: 80%;
+    padding: 10px 24px
+}
+
+.navbar__logo {
+    font-size: 24px;
+    color: white;
+    display: flex;
+    align-items: center;
+    
+}
+.navbar__logo img {
+    padding-left: 180px;
+    padding-right: 10px;
+    
+}
+
+
+.navbar__menu {
+    display: flex;
+    list-style: none;
+    padding-right: 180px;
+}
+
+.navbar__menu li {
+    padding: 12px 25px;
+    text-align: center;
+   
+}
+
+.navbar__menu :hover {
+    color: #8d8c8c;
+    border-radius: 4px;
+    width: 90%;
+}
+
+.navbar__toogleBtn{
+    display: none;
+    position: absolute;
+    right: 32px;
+    top: 28px;
+    
+}
+
+/*contect 내용*/
+#contact_contents{
+    position: relative;
+    top:100px;
+    width: 100%;
+    height: 500px;
+}
+
+
+/* 지도 */
+.map #daumRoughmapContainer1675871615256{
+    position: relative;
+    top:16px;
+    margin: 0;
+    width: 50%;
+    float: left;
+}
+.contact_info{
+    width: 50%;
+    margin: 0;
+    float: left;
+}
+.contact_info .first-line li div{
+    background-color: #000000;
+    width: 50%;
+    height: 250px;
+    margin-right: 0;
+    float: left;
+}
+.contact_info ul div{
+    width: 100%;
+    height: 250px;
+    float:inline-start;
+    margin:0px;
+}
+.contact_info ul{
+    padding: 0;
+}
+.contact_info .second-line li div{
+    background-color: #000000;
+    width: 50%;
+    height: 250px;
+    margin-right: 0px;
+    float: left;
+}
+.email{
+    background-color: rgb(0,0,0)
+    
+}
+
+
+
+.contact_info img{
+    position: relative;
+    top: 22%;
+    margin: auto;
+    display: block;
+    width : 22px;
+    height : 22px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px 24px;
+    }
+    
+    .navbar__logo img {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .navbar__menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        margin :0;
+        /* width: 100%; */
+    }
+
+    .navbar__menu li {
+        width: 100%;
+        text-align: center;  
+    }
+    
+    .navbar__toogleBtn{
+        display: block;
+        position: absolute;
+        width: 10%;
+        height: 10%;
+        
+    }
+
+    .navbar__menu.active
+    {
+        display: flex;
+    }
+    .navbar.active
+    {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px 24px 0px 24px;
+    }
+}
