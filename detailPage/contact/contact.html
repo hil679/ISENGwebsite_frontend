@@ -5,65 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>인성이엔지(주)</title>
-    <link rel="stylesheet" href="../../common.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
     <div>
         <nav class="navbar">
             <div class="navbar__logo">
-                <img src = "../../asset/technology.png" alt = "logo" width="50" height="50" class = img_logo/>
-                <a href="../../index.html">인성이엔지(주)</a>
+                <img src = "technology.png" alt = "logo" width="50" height="50" class = img_logo/>
+                <a href="/">인성이엔지(주)</a>
             </div>
     
             <ul class="navbar__menu">
-                <li><a href="../about/about.html">About</a></li>
-                <li><a href="../industry/industry.html">Industry</a></li>
-                <li><a href="../product/items.html">Product</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <script src="../../main.js" defer></script>
+                <li><a href="../about">About</a></li>
+                <li><a href="../industry">Industry</a></li>
+                <li><a href="../manufacture">Manufacture</a></li>
+                <li><a href="../contact">Contact</a></li>
+                <script src="js/main.js" defer></script>
             </ul>
     
             <a href="#" class="navbar__toogleBtn">
-                <img src = "../../asset/technology.png" alt = "logo" width="26px" height="26px" class = toogle/>
+                <img src = "technology.png" alt = "logo" width="26px" height="26px" class = toogle/>
             </a>
         </nav>
-        <div>
-            <img src="../../asset/회사예시.jpeg">
-        </div>
-        <div id = "contact_bar">
-            <ul style="list-style: none;">
-                <li>
-                    <div class = "office_contect">
-                        <img src="../../asset/tech_white.png" alt="call">
-                        <b>CALLING</b>
-                        <p>
-                            T E L: 031-682-7077<br>
-                            F A X: 031-682-7078<br>
-                        </p>
+        <img src="contact.jpeg" width="100%" height="400px">
+        <div id = "contact_contents">
+            <span class = "map">
+                <!-- * 카카오맵 - 지도퍼가기 -->
+                <!-- 1. 지도 노드 -->
+                <div id="daumRoughmapContainer1675871615256" class="root_daum_roughmap root_daum_roughmap_landing" style="height: 500px;"></div>
+
+                <!--
+                    2. 설치 스크립트
+                    * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                -->
+                <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                <!-- 3. 실행 스크립트 -->
+                <script charset="UTF-8">
+                    new daum.roughmap.Lander({
+                        "timestamp" : "1675871615256",
+                        "key" : "2dot2",
+                        "mapWidth" : "50%",
+                        "mapHeight" : "469"
+                    }).render();
+                </script>
+            </span> 
+            <span class = "contact_info">
+                <ul style="list-style: none;">
+                    <div class = "first-line">
+                        <li>
+                            <div class = "office_contect">
+                                <img src="main/tel.png" alt="call">
+                                <b>CALLING</b>
+                                <p>
+                                    T E L: 031-682-7077<br>
+                                    F A X: 031-682-7078<br>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class = "email">
+                                <b>EMAIL</b>
+                                <img src="main/email.png" alt="email">
+                                <p>
+                                    yesise@ise-k.com
+                                </p>
+                            </div>
+                        </li>
                     </div>
-                </li>
-                <li>
-                    <div class = "email">
-                        <b>EMAIL</b>
-                        <img src="../../asset/tech_white.png" alt="email">
-                        <p>
-                            yesise@ise-k.com
-                        </p>
+                    <div class = "second-line">
+                        <li>
+                            <div class = "location">
+                                <img src="main/location.png" alt="email">
+                                <b>LOCATION</b>
+                                <p>
+                                    우) 17796<br>
+                                    경기도 평택시 청북읍 드림산단3로 13<br>
+                                    인성 이엔지(주)
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class = "logo">
+                                <img src="/main/location.png" alt="email">
+                                <b>인성 이엔지(주)</b>
+                            </div>
+                        </li>
                     </div>
-                </li>
-                <li>
-                    <div class = "logo_location">
-                        <img src="../../asset/tech_white.png" alt="email">
-                        <b>LOCATION</b>
-                        <p>
-                            우) 17796<br>
-                            경기도 평택시 청북읍 드림산단3로 13<br>
-                            인성 이엔지(주)
-                        </p>
-                    </div>
-                </li>
-            </ul>  
-        </div>           
+                </ul> 
+            </span> 
+        </div>         
     </div>
 </body>
 </html>
