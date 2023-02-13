@@ -5,63 +5,286 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>인성이엔지(주)</title>
-    <link rel="stylesheet" href="items.css">
-    <script src="../../main.js" defer></script>
+    <link rel="stylesheet" href="css/items.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/main.js" defer></script>
+    <!--swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="js/slider.js" defer></script>
+    <script src="js/changeMenu.js"></script>
+
+
 </head>
-<body>
+<body> <!--style="overflow-x: hidden"-->
+    <div class = "background">
+    </div>
     <div>
         <nav class="navbar">
             <div class="navbar__logo">
-                <img src = "../../asset/technology.png" alt = "logo" width="50" height="50" class = img_logo/>
-                <a href="../../index.html">인성이엔지(주)</a>
+                <img src = "technology.png" alt = "logo" width="50" height="50" class = img_logo/>
+                <a href="../../">인성이엔지(주)</a>
             </div>
     
             <ul class="navbar__menu">
-                <li><a href="../about/about.html">About</a></li>
-                <li><a href="../industry/industry.html">Industry</a></li>
-                <li><a href="items.html">Product</a></li>
-                <li><a href="../contact/contact.html">Contact</a></li>
+                <li><a href="../about">About</a></li>
+                <li><a href="../industry">Industry</a></li>
+                <li><a href="../manufacture">Manufacture</a></li>
+                <li><a href="../contact">Contact</a></li>
             </ul>
     
             <a href="#" class="navbar__toogleBtn">
-                <img src = "../../asset/technology.png" alt = "logo" width="26px" height="26px" class = toogle/>
+                <img src = "technology.png" alt = "logo" width="26px" height="26px" class = toogle/>
             </a>
         </nav>
+
+        <div class="representative-product">
+            <div class = "representative-product-background">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                        <img src="item/product/SUS316L-B.png"/>
+                        <div class = "subject">Integrated Gas System Block</div>
+                        <div class = "name">SUS316L-B</div>
+                        </div>
+                        <div class="swiper-slide">
+                        <img src="item/product/SUS316L-B.png"  />
+                        <div class = "subject">Integrated Gas System Block</div>
+                        <div class = "name">SUS316L-B</div>
+                        </div>
+                        <div class="swiper-slide">
+                        <img src="item/product/SUS316L-B.png"/>
+                        <div class = "subject">Integrated Gas System Block</div>
+                        <div class = "name">SUS316L-B</div>
+                        </div>
+                        <div class="swiper-slide">
+                        <img src="item/product/SUS316L-B.png"/>
+                        <div class = "subject">Integrated Gas System Block</div>
+                        <div class = "name">SUS316L-B</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="swiper-pagination"></div> <!--동작 고치기-->
+            <div class = "swiper-control">
+                <div class="swiper-prev">
+                    <span class="material-icons">&lt;</span>
+                </div>
+                <div class="swiper-next">
+                    <span class="material-icons">&gt;</span>
+                </div>
+            </div>                
+        </div>
+
         
+        <nav class="navbar2">
+            <ul class="navbar__menu2">
+                <li><a href = "javascript:void(0);" onclick="changeMenu('0');">Machine</a></li>
+                <li><a href = "javascript:void(0);" onclick="changeMenu('1');">Product</a></li> 
+            </ul>
+        </nav>
+    
+
+        <div id = "machine-product">
+            
+            <div class = "machine">
+                <div>
+                    <p>
+                        <img src="item/machine/MYNX650-removebg-preview.png">
+                        <span class = "text">머시닝센터</span>
+                        <span class="left_top"></span>
+                        <span class="right_top"></span>
+                        <span class="right_bottom"></span>
+                        <span class="left_bottom"></span>
+                    </p>
+                
+                    <p>
+                        <img src="item/machine/MYNX650-removebg-preview.png">
+                        <span  class = "text">머시닝센터</span>
+                        <span class="left_top"></span>
+                        <span class="right_top"></span>
+                        <span class="right_bottom"></span>
+                        <span class="left_bottom"></span>
+                    </p>
+                    <p>
+                        <img src="item/machine/MYNX650-removebg-preview.png">
+                        <span class = "text">머시닝센터</span>
+                        <span class="left_top"></span>
+                        <span class="right_top"></span>
+                        <span class="right_bottom"></span>
+                        <span class="left_bottom"></span>
+                    </p>
+                    <p>
+                        <img src="item/machine/MYNX650-removebg-preview.png">
+                        <span class = "text">머시닝센터</span>
+                        <span class="left_top"></span>
+                        <span class="right_top"></span>
+                        <span class="right_bottom"></span>
+                        <span class="left_bottom"></span>
+                    </p>
+                    
+                </div>
+                <div class = "second-machine">
+                    <p>
+                        <img src="item/machine/MYNX650-removebg-preview.png">
+                        <span class = "text">머시닝센터</span>
+                        <span class="left_top"></span>
+                        <span class="right_top"></span>
+                        <span class="right_bottom"></span>
+                        <span class="left_bottom"></span>
+                    </p>
+                    <p>
+                        <img src="item/machine/MYNX650-removebg-preview.png">
+                        <span class = "text">머시닝센터</span>
+                        <span class="left_top"></span>
+                        <span class="right_top"></span>
+                        <span class="right_bottom"></span>
+                        <span class="left_bottom"></span>
+                    </p>
+                    <p onmouseout = "hideLine().js">
+                        <img src="item/machine/MYNX650-removebg-preview.png">
+                        <span class = "text">머시닝센터</span>
+                        <span class="left_top"></span>
+                        <span class="right_top"></span>
+                        <span class="right_bottom"></span>
+                        <span class="left_bottom"></span>
+                    </p>
+                </div>
+            </div>
+
+            <div class = "product">
+                <div class = "IGS">
+                    <!--IGS(Integrated Gas System) Block-->
+                    <p>
+                        <img src="item/machine/MYNX650-removebg-preview.png">
+                        <span class = "text">머시닝센터</span>
+                        <span class="left_top"></span>
+                        <span class="right_top"></span>
+                        <span class="right_bottom"></span>
+                        <span class="left_bottom"></span>
+                    </p>
+                    <p>
+                        <img src="item/machine/MYNX650-removebg-preview.png">
+                        <span class = "text">머시닝센터</span>
+                        <span class="left_top"></span>
+                        <span class="right_top"></span>
+                        <span class="right_bottom"></span>
+                        <span class="left_bottom"></span>
+                    </p>
+                </div>
+                <div>
+                    <!--피스톤 외-->
+                    <p>
+                        <img src="item/machine/MYNX650-removebg-preview.png">
+                        <span class = "text">머시닝센터</span>
+                        <span class="left_top"></span>
+                        <span class="right_top"></span>
+                        <span class="right_bottom"></span>
+                        <span class="left_bottom"></span>
+                    </p>
+                    <p>
+                        <img src="item/machine/MYNX650-removebg-preview.png">
+                        <span class = "text">머시닝센터</span>
+                        <span class="left_top"></span>
+                        <span class="right_top"></span>
+                        <span class="right_bottom"></span>
+                        <span class="left_bottom"></span>
+                    </p>
+                    <p>
+                        <img src="item/machine/MYNX650-removebg-preview.png">
+                        <span class = "text">머시닝센터</span>
+                        <span class="left_top"></span>
+                        <span class="right_top"></span>
+                        <span class="right_bottom"></span>
+                        <span class="left_bottom"></span>
+                    </p>
+                </div>
+                <div class = "third-product">
+                    <!--( STEP MOTOR FLANGE )-->
+                    <p >
+                        <img src="item/machine/MYNX650-removebg-preview.png">
+                        <span class = "text">머시닝센터</span>
+                        <span class="left_top"></span>
+                        <span class="right_top"></span>
+                        <span class="right_bottom"></span>
+                        <span class="left_bottom"></span>
+                    </p>
+                    <!--VALVE－Body -->
+                    <p>
+                        <img src="item/machine/MYNX650-removebg-preview.png">
+                        <span class = "text">머시닝센터</span>
+                        <span class="left_top"></span>
+                        <span class="right_top"></span>
+                        <span class="right_bottom"></span>
+                        <span class="left_bottom"></span>
+                    </p>
+                </div>
+                <div>
+                    <!--Air Sampling Cone -->
+                    <p>
+                        <img src="item/machine/MYNX650-removebg-preview.png">
+                        <span class = "text">머시닝센터</span>
+                        <span class="left_top"></span>
+                        <span class="right_top"></span>
+                        <span class="right_bottom"></span>
+                        <span class="left_bottom"></span>
+                    </p>
+                    <p>
+                        <img src="item/machine/MYNX650-removebg-preview.png">
+                        <span class = "text">머시닝센터</span>
+                        <span class="left_top"></span>
+                        <span class="right_top"></span>
+                        <span class="right_bottom"></span>
+                        <span class="left_bottom"></span>
+                    </p>
+                    <p>
+                        <img src="item/machine/MYNX650-removebg-preview.png">
+                        <span class = "text">머시닝센터</span>
+                        <span class="left_top"></span>
+                        <span class="right_top"></span>
+                        <span class="right_bottom"></span>
+                        <span class="left_bottom"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
         <div id = "contact_bar">
-            <ul style="list-style: none;">
-                <li>
-                    <div class = "office_contect">
-                        <img src="../../asset/tech_white.png" alt="call">
-                        <b>CALLING</b>
-                        <p>
-                            T E L: 031-682-7077<br>
-                            F A X: 031-682-7078<br>
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class = "email" style="opacity: 95%; float: left; ">
-                        <b>EMAIL</b>
-                        <img src="../../asset/tech_white.png" alt="email">
-                        <p>
-                            yesise@ise-k.com
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class = "logo_location" style="opacity: 80%; float: right;">
-                        <img src="../../asset/tech_white.png" alt="email">
-                        <b>LOCATION</b>
-                        <p>
-                            우) 17796<br>
-                            경기도 평택시 청북읍 드림산단3로 13<br>
-                            인성 이엔지(주)
-                        </p>
-                    </div>
-                </li>
-            </ul>  
-        </div>           
-    </div>
+        <ul style="list-style: none;">
+            <li>
+                <div class = "office_contect">
+                    <img src="main/tel.png" alt="call">
+                    <b>CALLING</b>
+                    <p>
+                        T E L: 031-682-7077<br>
+                        F A X: 031-682-7078<br>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class = "email" >
+                    <b>EMAIL</b>
+                    <img src="main/email.png" alt="email">
+                    <p>
+                        yesise@ise-k.com
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class = "logo_location" >
+                    <img src="main/location.png" alt="location">
+                    <b>LOCATION</b>
+                    <p>
+                        우) 17796<br>
+                        경기도 평택시 청북읍 드림산단3로 13<br>
+                        인성 이엔지(주)
+                    </p>
+                </div>
+            </li>
+        </ul>  
+        </div> 
 </body>
 </html>
