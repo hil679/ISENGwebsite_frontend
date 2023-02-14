@@ -1,4 +1,104 @@
 
+.main-slider img{
+    width: 1000px;
+    height: 500px;
+    position: relative;
+    filter: brightness(80%);
+}
+.main-slider {
+    /*width: auto;*/
+    
+    height: 610px;
+    background-color: rgb(251, 249, 249);
+    position: relative;
+    overflow: hidden;
+    transition: height .4s;
+}
+.main-slider .swiper-container {
+    /* 819px 슬라이드 3개와 그 사이 여백 10px씩 = 2477px */
+    width: calc(1000px * 3 + 20px);
+    height: 553px;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: calc((1000px * 3 + 20px) / -2);
+}
+.main-slider .swiper-slide {
+    position: relative;
+    opacity: .5;
+    transition: opacity 1s;
+}
+.main-slider .swiper-slide-active {
+    opacity: 1;
+    position: relative;
+}
+.main-slider .swiper-slide .text{
+    display: none;
+}
+.main-slider .swiper-slide-active .text{
+    border: solid white 5px;
+    color: white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+
+    width: 500px;
+    height: 170px;
+    top:20px;
+    left: 250px;
+    filter: brightness(100%);
+
+}
+.main-slider .swiper-slide-active .text .name{
+    font-size: 4em;
+    position: absolute;
+    font-weight: 900;
+    display: block;
+    text-align: center;
+    top: 30px;
+
+}
+.main-slider .swiper-slide-active .text .else{
+    font-size: 2.5em;
+    position: absolute;
+    text-align: center;
+    font-weight: 500;
+    display: block;
+    top: 90px;
+
+}
+
+.main-slider #firm-inside{
+    filter: brightness(70%);
+}
+.main-slider  .swiper-slide-active #firm-inside .text .else{
+    font-size: 2.5em;
+    position: absolute;
+    text-align: center;
+    font-weight: 500;
+    display: block;
+    top: 98px;
+}
+
+
+.main-slider .swiper-pagination {
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+.main-slider .swiper-pagination .swiper-pagination-bullet {
+    background-color: whitesmoke;
+    border: #99c8bf solid 3px;
+    width: 13px;
+    height: 12px;
+    margin-right: 6px;
+    outline: none;
+}
+.main-slider .swiper-pagination .swiper-pagination-bullet:last-child {
+    margin-right: 0;
+}
+
 
 /* 컨텐츠 */
 #content {
@@ -7,7 +107,7 @@
    
 }
 .contentsBox{
-    padding-top: 50px;
+    padding-top: 20px;
 }
 .contentsBox .title {
     
@@ -26,13 +126,9 @@
 .contentsBox .title p {
     font-size: 1.2rem;
     color: rgba(40,40,40,0.5);
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
-.contentsBox .imgBox img{
-    width: 100%;
-    height: 450px;
-    vertical-align: middle;
-}
+
 
 /*내용 설명*/
 /* .details.list. */
@@ -126,4 +222,7 @@
     font-size: 16px;
     position: relative;
     top: 40%;
+}
+body{
+    background-color: whitesmoke;
 }

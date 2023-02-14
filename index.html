@@ -7,7 +7,12 @@
     <title>인성이엔지(주)</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/common.css">
+    <!--swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="js/main.js" defer></script> <!--태그의 defer 속성은 페이지가 모두 로드된 후에 해당 외부 스크립트가 실행됨-->
+    <script src="js/slider.js" defer></script>
 </head>
 <body>
      <nav class="navbar">
@@ -28,16 +33,54 @@
             <img src = "technology.png" alt = "logo" width="26px" height="26px" class = toogle/>
         </a>
     </nav>
+    
     <div id = "content">
         <div class = "contentsBox">
             <div class = "title">
                 <h3>계단을 밟아야 계단 위에 올라설수 있다</h3><!--변경-->
                 <p>You have to step on the stairs to get on the stairs </p><!--변경-->
             </div>
-             
-            <div class = "imgBox">
-                <img src="/회사예시.jpeg" alt="회사사진">
+
+            <div class="main-slider">
+                <div class = "mainSliderBackground">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img id = "firm-outside" src="main/인성이엔지외부.jpg"/>
+                                <div class = "text">
+                                    <div class = "name">INSUNG ENG</div>
+                                    <div class = "else">Co., Inc.</div><!-- 수정..-->
+                                </div>
+                                
+                            </div>
+                            <div class="swiper-slide">
+                                <img id = "firm-inside" src="main/인성이엔지내부1.jpg"  />
+                                <div class = "text">
+                                    <div class = "name">INTO THE</div>
+                                    <div class = "else">INSUNG ENG</div><!-- 수정..-->
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="main/인성이엔지외부.jpg"/>
+                                <div class = "text">
+                                    <div class = "name">INSUNG ENG</div>
+                                    <div class = "else">Co., Inc.</div><!-- 수정..-->
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="main/인성이엔지외부.jpg"/>
+                                <div class = "text">
+                                    <div class = "name">INSUNG ENG</div>
+                                    <div class = "else">Co., Inc.</div><!-- 수정..-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-pagination"></div>  
             </div>
+
         </div>
         <div class="details">
             <div class="list">
