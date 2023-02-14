@@ -8,7 +8,12 @@
   justify-content: center;
 }
 .representative-product .representative-product-background{
-
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  visibility: hidden;
+}
+.representative-product .representative-machine-background{
   position: absolute;
   display: flex;
   justify-content: center;
@@ -16,7 +21,7 @@
 .representative-product .hide {
   height: 0;
 }
-.representative-product .swiper-container {
+.representative-product .representative-product-background .swiper-container {
   /* 819px 슬라이드 3개와 그 사이 여백 10px씩 = 2477px */
   width: calc(350px * 3 + 130px);
   overflow: hidden;
@@ -24,20 +29,36 @@
   position: relative;
   top: 180px;
 }
-
+.representative-product .representative-machine-background .swiper-container {
+  /* 819px 슬라이드 3개와 그 사이 여백 10px씩 = 2477px */
+  width: calc(350px * 3 + 130px);
+  overflow: hidden;
+  height: 600px;
+  position: relative;
+  top: 130px;
+}
 .representative-product .swiper-slide {
   margin: 0 ;
 }
 
-.representative-product .swiper-slide .subject{
+.representative-product .representative-product-background .swiper-slide .subject{
   position: relative;
   top:3%;
   font-size: 1.6em;
 }
-.representative-product .swiper-slide .name{
+.representative-product .representative-product-background .swiper-slide .name{
   font-size: 1.2em;
   position: relative;
   top:4%;
+}
+.representative-product .representative-machine-background .swiper-slide .subject{
+  position: relative;
+  font-size: 1.6em;
+}
+.representative-product .representative-machine-background .swiper-slide .name{
+  font-size: 1.2em;
+  position: relative;
+  top:1%;
 }
 
 
@@ -93,10 +114,14 @@
 .swiper-next .material-icons {
   text-align: center;
 }
-
-.swiper-slide img{
+.representative-product-background .swiper-slide img{
   width: 300px;
   height: 200px;
+}
+.representative-machine-background .swiper-slide img{
+  width: 290px;
+  height: 260px;
+  position: relative;
 }
 
 
