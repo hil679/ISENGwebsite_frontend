@@ -62,3 +62,22 @@
     width: 260px;
     height: 260px;
 }
+
+
+#industry-machine-contents{
+    width: 100%;
+    height: 300px;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+
+}
+#industry-machine-contents img{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+}
+#industry-semicon-contents{
+    width: 100%;
+    height: 300px;
+    border-bottom: 1px solid red;
+}
