@@ -1,0 +1,64 @@
+.industrylist{
+    text-align: center;
+    width: 100%;
+    position: relative;
+    height: 400px;
+}
+.industrylist .introIndustry{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    border-top: 3px solid rgb(179, 179, 179);
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    top:50%;
+}
+.industrylist p{
+    font-size: 5em;
+    font-weight: 800;
+    text-align: center;
+    position: relative;
+    top:30%;
+    margin: 0px;
+}
+.introIndustry img{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 100px;
+}
+
+.introIndustry div{
+    position: relative;
+    bottom:65px;
+    display: inline-block;
+    text-align:center;
+}
+.introIndustry #industry-machine{
+    width: 260px;
+    height: 260px;
+    margin: 0;
+}
+.introIndustry .text{
+    position: absolute;
+    top: 20%;
+    left: 50%;top: 50%;
+    transform: translate(-50%,-50%);
+    width:260px
+}
+.introIndustry .text b{
+    display: block;
+    margin-bottom: 7px;
+    font-size: 1.5em;
+}
+.introIndustry .text span{
+    font-size: 1.2em;
+}
+.introIndustry #industry-semicon{
+    width: 260px;
+    height: 260px;
+}
+.introIndustry #industry-medicine{
+    width: 260px;
+    height: 260px;
+}
