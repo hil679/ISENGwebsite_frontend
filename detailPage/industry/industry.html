@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/industry.css">
     <script src="js/main.js" defer></script>
 </head>
-<body>
+<body style="overflow-x: hidden">
     <div>
         
         <nav class="navbar">
@@ -58,36 +58,48 @@
             </div>
             <div class = "industry-detail">
                 <div id = "industry-machine-contents">
-                    <img src = "../../technology.png">
+                    <img class = "icon" src = "../../technology.png">
                     <div class = "text">
                         <b>정밀기계 부품 가공</b>
                     </div>
                 </div>
                 <div id = "industry-semicon-contents">
-                    <img src = "../../technology.png">
+                    <img class = "icon" src = "../../technology.png">
                     <div class = "text">
                         <b>반도체 장비 부품 가공</b>
                     </div>
                 </div>
                 <div id = "industry-medicine-contents">
-                    <img src = "../../technology.png">
+                    <img class = "icon" src = "../../technology.png">
                     <div class = "text">
                         <b>제약(약품) 관련 장비 부품 가공</b>
                     </div>
                     <div class = "Air-Sampling-Cone">
-                        <div class = "text-Air-Sampling-Cone">Air Sampling Cone</div>
+                        <b class = "text-Air-Sampling-Cone">Air Sampling Cone</b>
                         <div class = "related-img">
                             <li>
-                                <img src="../../item/product/sus316-1-medicine.png">
-                                <span>SUS 316</span>
+                                <div class = "inner">
+                                    <div class="overlay"></div>
+                                    <img src="../../item/product/sus316-1-medicine.png">
+                                    <b class = "innerText">Air Sampling Cone</b><!--한국어로..?-->
+                                    <span>SUS 316</span>
+                                </div>
                             </li>
                             <li>
-                                <img src="../../item/product/sus316-2-medicine.png">
-                                <span>SUS 316</span>
+                                <div class = "inner">
+                                    <div class = "overlay"></div>
+                                    <img src="../../item/product/sus316-2-medicine.png">
+                                    <b class = "innerText">Air Sampling Cone</b>
+                                    <span>SUS 316</span>
+                                </div>
                             </li>  
                             <li>
-                                <img src="../../item/product/sus316L-medicine.png">
-                                <span>SUS 316L</span>
+                                <div class = "inner">
+                                    <div class = "overlay"></div>
+                                    <img src="../../item/product/sus316L-medicine.png">
+                                    <b class = "innerText">Air Sampling Cone</b>
+                                    <span>SUS 316L</span>
+                                </div>
                             </li>
                         </div>
                     </div>
