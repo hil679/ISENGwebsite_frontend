@@ -1,0 +1,131 @@
+
+  .navbar2 {
+    padding: 7px;
+    text-align: center;
+    width: 1300px;
+    display: inline-block;
+    border-bottom: 2px solid #efefef;
+    margin-top: 81.5px;
+    
+  }
+  .navbar__menu2 {
+    display: flex;
+    justify-content : center;
+    list-style: none;
+    text-align: center;
+  }
+  .navbar__menu2  ul{
+    margin: 0 auto;
+  }
+  .navbar__menu2 li{
+    /* position: relative;
+    left: 51px; */
+    padding-bottom: 3px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  
+  .navbar__menu2 :hover {
+    color: #8d8c8c;
+    border-radius: 4px;
+  }
+  .navbar2-facility-status{
+    border-bottom: 1px solid darkblue;
+  }
+  
+  
+  #machine{
+    margin-bottom: 10px;
+    width: 1300px;
+    height: 500px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  #machine p{
+    display: inline-block;
+    padding: 10px;
+    position:relative; 
+    margin: 20px;
+  }
+  #machine .text{
+    font-size: 1.2em;
+    display: block;
+    text-align: center;
+  }
+  #machine img {
+    width: 250px;
+    height: 250px;
+  }
+  
+  
+  #machine p:hover .left_top  {
+    height:100%; 
+    transition:  0.2s; 
+  }
+  #machine p:hover .right_top {
+    transition:  0.2s; 
+    transition-delay : 0.2s;
+    width:100%;
+  }
+  #machine p:hover .right_bottom {
+    transition:  0.2s; 
+    height:100%;
+  }
+  #machine p:hover .left_bottom {
+    width:100%; 
+    transition:  0.2s;
+    transition-delay : 0.2s;
+  }
+  
+  
+  #machine .left_top{
+    position:absolute; 
+    left:0; top:0; 
+    width:1px; 
+    height:0; 
+    
+    background:rgb(29, 29, 215); 
+  }
+  #machine .left_bottom{
+    position:absolute; 
+    left:0; bottom:0; 
+    width:0px; 
+    height:1px; 
+   
+  
+    background:rgb(29, 29, 215);
+  }
+  #machine .right_bottom{
+    position:absolute;
+    right:0; bottom:0; 
+    width:1px; 
+    height:0; 
+    
+    /* transition-delay : 0.2s; */
+    background:rgb(29, 29, 215);
+  }
+  #machine .right_top{
+    position:absolute; 
+    right:0; top:0; 
+    width:0; 
+    height:1px; 
+    background:rgb(29, 29, 215);
+  }
+  
+  #machine .facility-status {
+    display: block;
+  }
+  #machine .processing-facility {
+    display: none;
+  }
+  #machine .measuring-facility {
+    display: none;
+  }
+ 
+  
+  body div{
+    text-align: center;
+    width: 100%;
+    position: relative;
+  }
+  

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인성이엔지(주)</title>
+    <link rel="stylesheet" href="css/machine.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/main.js" defer></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="js/changeMenu.js"></script>
+
+
+</head>
+<body> <!--style="overflow-x: hidden"-->
+
+    <div>
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <img src = "technology.png" alt = "logo" width="50" height="50" class = img_logo/>
+                <a href="../../">인성이엔지(주)</a>
+            </div>
+    
+            <ul class="navbar__menu">
+                <li><a href="../about">About</a></li>
+                <li><a href="../industry">Industry</a></li>
+                <li><a href="../machine">Machine</a></li>
+                <li><a href="../contact">Contact</a></li>
+            </ul>
+    
+            <a href="#" class="navbar__toogleBtn">
+                <img src = "technology.png" alt = "logo" width="26px" height="26px" class = toogle/>
+            </a>
+        </nav>
+
+        
+        <nav class="navbar2">
+            <ul class="navbar__menu2">
+                <li class = "navbar2-facility-status"><a href = "javascript:void(0);" onclick="machineChangeMenu('0');">설비현황</a></li> 
+                <li class = "navbar2-processing-facility"><a href = "javascript:void(0);" onclick="machineChangeMenu('1');">가공설비</a></li>
+                <li class = "navbar2-measuring-facility"><a href = "javascript:void(0);" onclick="machineChangeMenu('2');">측정설비</a></li> 
+            </ul>
+        </nav>
+    
+
+        <div id = "machine">
+            <div class = "facility-status">
+
+            </div>
+            <div class = "processing-facility">
+                <div>
+                    <p>
+                        <img src="item/machine/MYNX650-removebg-preview.png">
+                        <span class = "text">머시닝센터</span>
+                        <span class="left_top"></span>
+                        <span class="right_top"></span>
+                        <span class="right_bottom"></span>
+                        <span class="left_bottom"></span>
+                    </p>
+                
+                    <p>
+                        <img src="item/machine/MYNX650-removebg-preview.png">
+                        <span  class = "text">머시닝센터</span>
+                        <span class="left_top"></span>
+                        <span class="right_top"></span>
+                        <span class="right_bottom"></span>
+                        <span class="left_bottom"></span>
+                    </p>
+                    <p>
+                        <img src="item/machine/MYNX650-removebg-preview.png">
+                        <span class = "text">머시닝센터</span>
+                        <span class="left_top"></span>
+                        <span class="right_top"></span>
+                        <span class="right_bottom"></span>
+                        <span class="left_bottom"></span>
+                    </p>
+                    <p>
+                        <img src="item/machine/MYNX650-removebg-preview.png">
+                        <span class = "text">머시닝센터</span>
+                        <span class="left_top"></span>
+                        <span class="right_top"></span>
+                        <span class="right_bottom"></span>
+                        <span class="left_bottom"></span>
+                    </p>
+                    
+                </div>
+            </div>
+
+            <div class = "measuring-facility">
+                <div>
+                    <!--측정설비-->
+                    <p>
+                        <img src="item/machine/MYNX650-removebg-preview.png">
+                        <span class = "text">머시닝센터</span>
+                    </p>
+                    <p>
+                        <img src="item/machine/MYNX650-removebg-preview.png">
+                        <span class = "text">머시닝센터</span>
+                    </p>
+                    <p>
+                        <img src="item/machine/MYNX650-removebg-preview.png">
+                        <span class = "text">머시닝센터</span>
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+        <div id = "contact_bar">
+        <ul style="list-style: none;">
+            <li>
+                <div class = "office_contect">
+                    <img src="main/tel.png" alt="call">
+                    <b>CALLING</b>
+                    <p>
+                        T E L: 031-682-7077<br>
+                        F A X: 031-682-7078<br>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class = "email" >
+                    <b>EMAIL</b>
+                    <img src="main/email.png" alt="email">
+                    <p>
+                        yesise@ise-k.com
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class = "logo_location" >
+                    <img src="main/location.png" alt="location">
+                    <b>LOCATION</b>
+                    <p>
+                        우) 17796<br>
+                        경기도 평택시 청북읍 드림산단3로 13<br>
+                        인성 이엔지(주)
+                    </p>
+                </div>
+            </li>
+        </ul>  
+        </div> 
+</body>
+</html>
