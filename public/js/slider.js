@@ -37,7 +37,11 @@ new Swiper('.main-slider .swiper-container', {
   pagination : {
 		el : '.swiper-pagination',
 		clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
-	}
+	},
+  navigation: { // 슬라이드 이전/다음 버튼 사용 여부
+    prevEl: '.main-slider .swiper-prev', // 이전 버튼 선택자
+    nextEl: '.main-slider .swiper-next' // 다음 버튼 선택자
+  }
 })
 
 /**

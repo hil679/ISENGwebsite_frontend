@@ -24,7 +24,7 @@
 .main-slider .swiper-slide {
     position: relative;
     opacity: .5;
-    transition: opacity 1s;
+    /* transition: opacity 1s; */
 }
 .main-slider .swiper-slide-active {
     opacity: 1;
@@ -101,6 +101,25 @@
     margin-right: 0;
 }
 
+.swiper-prev, .swiper-next{
+    display: inline;
+}
+.swiper-prev img, .swiper-next img{
+    width: 200px;
+    height: 400px;
+}
+.swiper-prev{
+    position:absolute;
+    left: -3%;
+    top:13%;
+    z-index: 98;
+}
+.swiper-next{
+    position: absolute;
+    right: -3%;
+    top:13%;
+    z-index: 98;
+}
 
 /* 컨텐츠 */
 #content {
