@@ -3,7 +3,7 @@
     text-align: center;
     width: 100%;
     position: relative;
-    height: 480px;
+    height: 500px;
 }
 .industrylist .introIndustry{
     position: relative;
@@ -12,14 +12,14 @@
     border-top: 3px solid rgb(164, 185, 226);
     border-top-left-radius: 30%;
     border-top-right-radius: 30%;
-    top:42%;
+    top:47%;
 }
 .industrylist p{
     font-size: 5em;
     font-weight: 800;
     text-align: center;
     position: relative;
-    top:27%;
+    top:33%;
     margin: 0px;
 }
 .introIndustry .icon{
