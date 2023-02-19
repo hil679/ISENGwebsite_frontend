@@ -15,7 +15,7 @@ app.get('/',function(req,res){
 app.get('/about',function(req,res){
     res.sendFile(__dirname + '/detailPage/about/about.html');
 });
-app.get('/industry',function(req,res){
+app.get('/industr',function(req,res){
     res.sendFile(__dirname + '/detailPage/industry/industry.html');
 });
 app.get('/manufacture',function(req,res){
