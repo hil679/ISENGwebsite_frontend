@@ -48,12 +48,26 @@
     display: block;
     text-align: center;
   }
-  #machine img {
+  /*machine 이미지*/
+  .cnc6, .cnc8{
+    width: 250px;
+    height: 220px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .machining-center-img, .taping {
     width: 250px;
     height: 250px;
   }
+  .measuring-facility img{
+    width: 250px;
+    height: 250px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
   
-  #machine p:hover{
+  #machine .processing-facility p:hover{
     cursor: pointer;
   }
   #machine p:hover .left_top {
@@ -123,8 +137,20 @@
   }
   #machine .measuring-facility {
     display: none;
+    margin-bottom: 70px;
   }
-
+  .measuring-facility .description{
+    margin-top: 10px;
+    display: block;
+  }
+.threed{
+  position: relative;
+  bottom:30px;
+}
+.non-contact{
+  position: relative;
+  top:19px;
+}
 /*table*/
  #machining-center{
     width: 1100px;
