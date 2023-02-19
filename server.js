@@ -21,6 +21,9 @@ app.get('/industry',function(req,res){
 app.get('/manufacture',function(req,res){
     res.sendFile(__dirname + '/detailPage/product/items.html');
 });
+app.get('/machine',function(req,res){
+    res.sendFile(__dirname + '/detailPage/machine/machine.html');
+});
 app.get('/contact',function(req,res){
     res.sendFile(__dirname + '/detailPage/contact/contact.html');
 });
