@@ -3,30 +3,30 @@
     text-align: center;
     width: 100%;
     position: relative;
-    height: 500px;
+    height: 530px;
 }
 .industrylist .introIndustry{
     position: relative;
-    height: 180px;
+    height: 200px;
     width: 100%;
     border-top: 3px solid rgb(164, 185, 226);
     border-top-left-radius: 30%;
     border-top-right-radius: 30%;
-    top:47%;
+    top:55%;
 }
 .industrylist p{
     font-size: 5em;
     font-weight: 800;
     text-align: center;
     position: relative;
-    top:33%;
+    top:32%;
     margin: 0px;
 }
 .introIndustry .icon{
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    left: 100px;
+    width: 90px;
+    height: 90px;
+    position: relative;
+    bottom: 30px;
 }
 
 .introIndustry div{
@@ -65,12 +65,12 @@
 
 /*industry detail*/
 .industry-detail .icon{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background-color: white;
     position: absolute;
-    left: 100px;
-    top: -20px;
+    left: 95px;
+    top: -28px;
     padding-left: 20px;
     padding-right: 20px;
     
@@ -81,30 +81,30 @@
     background-color: white;
     position: absolute;
     left: 160px;
-    top: -13px;
+    top: -15px;
     text-align: center;
     margin-left: auto; margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
-    font-size: 1.4em;
+    font-size: 1.6em;
     
 }
 #industry-machine-contents{
     position: relative;
-    width: 100%;
+    width: 1438px;
     border-top: 1px solid rgb(164, 185, 226);
     border-image-repeat: repeat;
 }
 #industry-semicon-contents{
     position: relative;
-    width: 100%;
+    width: 1438px;
     border-top: 1px solid rgb(164, 185, 226);
     border-image-repeat: repeat;
 }
 #industry-medicine-contents{
     position: relative;
     top: 10px;
-    width: 100%;
+    width: 1438px;
     height: 410px;
     border-top: 1px solid rgb(164, 185, 226);
     border-bottom: 1px solid rgb(164, 185, 226);
