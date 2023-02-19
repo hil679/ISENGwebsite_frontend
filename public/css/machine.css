@@ -1,4 +1,3 @@
-
   .navbar2 {
     padding: 7px;
     text-align: center;
@@ -27,7 +26,7 @@
     border-radius: 4px;
   }
   .navbar2-facility-status{
-    border-bottom: 1px solid darkblue;
+    border-bottom: 1px solid rgb(43, 43, 162);
   }
   
   
@@ -57,7 +56,7 @@
   #machine p:hover{
     cursor: pointer;
   }
-  #machine p:hover .left_top  {
+  #machine p:hover .left_top {
     height:100%; 
     transition:  0.2s; 
     
@@ -76,15 +75,19 @@
     transition:  0.2s;
     transition-delay : 0.2s;
   }
-  
+.select{
+    border: 1.5px solid rgb(43, 43, 162);
+    pointer-events: none;
+  }
+
+
   
   #machine .left_top{
     position:absolute; 
     left:0; top:0; 
     width:1px; 
     height:0; 
-    
-    background:rgb(29, 29, 215); 
+    background:rgb(43, 43, 162); 
   }
   #machine .left_bottom{
     position:absolute; 
@@ -93,7 +96,7 @@
     height:1px; 
    
   
-    background:rgb(29, 29, 215);
+    background:rgb(43, 43, 162);
   }
   #machine .right_bottom{
     position:absolute;
@@ -102,14 +105,14 @@
     height:0; 
     
     /* transition-delay : 0.2s; */
-    background:rgb(29, 29, 215);
+    background:rgb(43, 43, 162);
   }
   #machine .right_top{
     position:absolute; 
     right:0; top:0; 
     width:0; 
     height:1px; 
-    background:rgb(29, 29, 215);
+    background:rgb(43, 43, 162);
   }
   
   #machine .facility-status {

@@ -49,26 +49,47 @@ function changeMachineSpec(value){
             $('.first-machining-center').css("display","block");
             $('.second-machining-center').css("display","none");
             $('.third-machining-center').css("display","none");
-            $('.forth-machining-center').css("display","none");
+            $('.forth-machining-center').css("display","none"); 
+
+            $('.first-machine-p').addClass('select');
+            $('.second-machine-p').removeClass('select');
+            $('.third-machine-p').removeClass('select');
+            $('.forth-machine-p').removeClass('select');                      
             break;    
-    
         case '1':
             $('.second-machining-center').css("display","block");
             $('.first-machining-center').css("display","none");
             $('.third-machining-center').css("display","none");
-            $('.forth-machining-center').css("display","none");
+            $('.forth-machining-center').css("display","none"); 
+
+            $('.second-machine-p').addClass('select');
+            $('.first-machine-p').removeClass('select');
+            $('.third-machine-p').removeClass('select');
+            $('.forth-machine-p').removeClass('select');    
             break;
         case '2':
             $('.third-machining-center').css("display","block");
             $('.second-machining-center').css("display","none");
             $('.first-machining-center').css("display","none");
             $('.forth-machining-center').css("display","none");
+
+            $('.third-machine-p').addClass('select'); 
+            $('.second-machine-p').removeClass('select');
+            $('.first-machine-p').removeClass('select');
+            $('.forth-machine-p').removeClass('select');   
             break;  
         case '3':
             $('.forth-machining-center').css("display","block");
             $('.second-machining-center').css("display","none");
             $('.third-machining-center').css("display","none");
             $('.first-machining-center').css("display","none");
+
+            $('.forth-machine-p').addClass('select');
+            $('.second-machine-p').removeClass('select');
+            $('.third-machine-p').removeClass('select');
+            $('.first-machine-p').removeClass('select');    
             break;   
     }
+    
 };
+
