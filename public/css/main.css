@@ -105,25 +105,24 @@
     display: inline;
 }
 .swiper-prev img, .swiper-next img{
-    width: 200px;
-    height: 400px;
+    width: 70px;
+    height: 200px;
+}
+.swiper-prev, .swiper-next{
+    position:absolute;
+    top:30%;
+    z-index: 98;
 }
 .swiper-prev{
-    position:absolute;
-    left: -3%;
-    top:13%;
-    z-index: 98;
+    left: 0%;
 }
 .swiper-next{
-    position: absolute;
-    right: -3%;
-    top:13%;
-    z-index: 98;
+    right: 0%;
 }
 
 /* 컨텐츠 */
 #content {
-    min-height: 500px;
+    /* min-height: 500px; */
     padding: 80px 0;
    
 }
@@ -152,9 +151,44 @@
 
 
 /*내용 설명*/
-/* .details.list. */
-
-
+/* .details .list ul, .details .list li{
+    list-style: none;
+    position: relative;
+} */
+/* .first-triangle{
+    transform: rotate(60deg);
+}
+.first-triangle-gradi {
+    position: relative;
+    width: 200px;
+    border-bottom: 700px solid;
+    margin: 0 auto;
+    border-image: linear-gradient(to right, rgb(88, 88, 212), whitesmoke) 2;
+  }
+.transperent-tri-top{
+  width: 0px;
+  height: 0px;
+  border-bottom: 200px solid transparent;
+  border-left: 200px solid whitesmoke;
+  border-right: 0px solid transparent;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 97;
+  left: 589px;
+  top:-1px;
+}
+.transperent-tri-bottom{
+    width: 0px;
+    height: 0px;
+    border-top: 200px solid transparent;
+    border-right: 0px solid transparent;
+    border-left: 200px solid whitesmoke;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 97;
+    left: 589px;
+    bottom:-1px;
+} */
 
 /*협력업체*/
 #cooperative-firm ul{
