@@ -7,7 +7,7 @@
 }
 .main-slider {
     height: 610px;
-    background-color: rgb(251, 249, 249);
+    background-color: whitesmoke;
     position: relative;
     overflow: hidden;
     transition: height .4s;
@@ -91,7 +91,7 @@
 }
 .main-slider .swiper-pagination .swiper-pagination-bullet {
     background-color: whitesmoke;
-    border: #99c8bf solid 3px;
+    border: #0f296f solid 3px;
     width: 13px;
     height: 12px;
     margin-right: 6px;
@@ -151,46 +151,61 @@
 
 
 /*내용 설명*/
-/* .details .list ul, .details .list li{
-    list-style: none;
+.message{
     position: relative;
-} */
-/* .first-triangle{
-    transform: rotate(60deg);
+    text-align: center;
 }
-.first-triangle-gradi {
+.message_title_div{
+    margin-top: 50px;
+}
+.message .message_title{
+    font-size: 2em;
+    border-bottom: 1.5px solid rgb(184, 184, 190);
+    /* border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0; */
+}
+.message_img{
+   width: fit-content;
+   margin: auto;
+   margin-top: 50px;
+}
+.message_img img{
+    width: 400px;
+    height: 400px;
+}
+.message_img p{
+    margin-top: 70px;
+    font-size: 1.4em;
+}
+.message_img span{
+    font-size: 1.8em;
+}
+.satisfied{
+    display: block;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.precision, .custom{
     position: relative;
-    width: 200px;
-    border-bottom: 700px solid;
-    margin: 0 auto;
-    border-image: linear-gradient(to right, rgb(88, 88, 212), whitesmoke) 2;
-  }
-.transperent-tri-top{
-  width: 0px;
-  height: 0px;
-  border-bottom: 200px solid transparent;
-  border-left: 200px solid whitesmoke;
-  border-right: 0px solid transparent;
-  margin: 0 auto;
-  position: absolute;
-  z-index: 97;
-  left: 589px;
-  top:-1px;
+    bottom: 15px;
+    display: inline-block;
 }
-.transperent-tri-bottom{
-    width: 0px;
-    height: 0px;
-    border-top: 200px solid transparent;
-    border-right: 0px solid transparent;
-    border-left: 200px solid whitesmoke;
-    margin: 0 auto;
-    position: absolute;
-    z-index: 97;
-    left: 589px;
-    bottom:-1px;
-} */
-
+.custom{
+    top: 12px;
+}
 /*협력업체*/
+#cooperative-firm{
+    text-align: center;
+}
+.cooperative_firm_title{
+    font-size: 1.5em;
+    border-bottom: 1.5px solid rgb(184, 184, 190);
+}
+.cooperative_firm_div{
+    margin-top: 30px;
+}
 #cooperative-firm ul{
     padding: 0;
     margin: 0;
@@ -200,7 +215,7 @@
 /*first_office*/
 #cooperative-firm .first_office{
     width: 25%; 
-    height: 200px;
+    height: 180px;
     text-align: center;
     float: left;
 }
@@ -208,12 +223,12 @@
     color:rgb(19, 19, 54);
     font-size: 16px;
     position: relative;
-    top: 28%;
+    top: 31%;
     margin-left: 4px;
 }
 .first_office img{
     position: relative;
-    top: 27%;
+    top: 29%;
     margin: auto;
     display: block;
     width : 120px;
@@ -224,7 +239,7 @@
 /*second_office*/
 #cooperative-firm .second_office{
     width: 25%; 
-    height: 200px;
+    height: 180px;
     text-align: center;
     float: left;
 }
@@ -232,11 +247,11 @@
     color:rgb(19, 19, 54);
     font-size: 16px;
     position: relative;
-    top: 50%;
+    top: 53%;
 }
 .second_office img{
     position: relative;
-    top: 18%;
+    top: 17%;
     margin: auto;
     display: block;
     width : 40px;
@@ -246,7 +261,7 @@
 /*third_office*/
 #cooperative-firm .third_office{
     width: 25%; 
-    height: 200px;
+    height: 180px;
     text-align: center;
     float: left;
 }
@@ -268,7 +283,7 @@
 /*forth_office*/
 #cooperative-firm .forth_office{
     width: 25%; 
-    height: 200px;
+    height: 180px;
     text-align: center;
     float: left;
 }
@@ -278,6 +293,6 @@
     position: relative;
     top: 40%;
 }
-body{
+/* body{
     background-color: whitesmoke;
-}
+} */
