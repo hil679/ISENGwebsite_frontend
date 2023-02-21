@@ -6,6 +6,7 @@
     filter: brightness(80%);
 }
 .main-slider {
+    width: 100%;
     height: 610px;
     background-color: whitesmoke;
     position: relative;
@@ -52,15 +53,6 @@
     text-align: center;
     top: 30px;
 }
-/* .main-slider .swiper-slide-active .text .else{
-    font-size: 4em;
-    position: absolute;
-    text-align: center;
-    font-weight: 500;
-    display: block;
-    top: 90px;
-
-} */
 
 .main-slider #firm-inside{
     filter: brightness(65%);
@@ -113,6 +105,9 @@
     top:30%;
     z-index: 98;
 }
+.swiper-prev img, .swiper-next img{
+    cursor: pointer;
+}
 .swiper-prev{
     left: 0%;
 }
@@ -130,7 +125,6 @@
     padding-top: 20px;
 }
 .contentsBox .title {
-    
     text-align: center;
     margin: 0;
     padding: 0;
@@ -172,8 +166,8 @@
    margin-top: 50px;
 }
 .message_img img{
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
 }
 .message_img p{
     margin-top: 70px;
@@ -185,7 +179,7 @@
 .satisfied{
     display: block;
     margin: auto;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 .precision, .custom{
     position: relative;
@@ -196,35 +190,37 @@
     top: 12px;
 }
 /*협력업체*/
-#cooperative-firm{
+#customers-firm{
     text-align: center;
 }
-.cooperative_firm_title{
+.customers_firm_title{
     font-size: 1.5em;
     border-bottom: 1.5px solid rgb(184, 184, 190);
 }
-.cooperative_firm_div{
+.customers_firm_div{
     margin-top: 30px;
 }
-#cooperative-firm ul{
+#customers-firm ul{
     padding: 0;
     margin: 0;
     list-style: none;
     
 }
 /*first_office*/
-#cooperative-firm .first_office{
+#customers-firm .first_office, #customers-firm .second_office,
+#customers-firm .third_office, #customers-firm .forth_office{
     width: 25%; 
     height: 180px;
     text-align: center;
     float: left;
 }
-#cooperative-firm .first_office b{
+#customers-firm .first_office b{
     color:rgb(19, 19, 54);
-    font-size: 16px;
+    font-size: 15px;
     position: relative;
     top: 31%;
-    margin-left: 4px;
+    margin: auto;
+    /* margin-left: 4px; */
 }
 .first_office img{
     position: relative;
@@ -237,17 +233,14 @@
 
 
 /*second_office*/
-#cooperative-firm .second_office{
-    width: 25%; 
-    height: 180px;
-    text-align: center;
-    float: left;
-}
-#cooperative-firm .second_office b{
+
+#customers-firm .second_office b{
     color:rgb(19, 19, 54);
-    font-size: 16px;
+    font-size: 15px;
+    display: block;
     position: relative;
     top: 53%;
+    left: 5px;
 }
 .second_office img{
     position: relative;
@@ -259,40 +252,162 @@
 }
 
 /*third_office*/
-#cooperative-firm .third_office{
-    width: 25%; 
-    height: 180px;
-    text-align: center;
-    float: left;
-}
-#cooperative-firm .third_office b{
+
+#customers-firm .third_office b{
     color:rgb(19, 19, 54);
-    font-size: 16px;
+    font-size: 15px;
     position: relative;
     top: 32%;
+    margin: auto;
 }
 .third_office img{
     position: relative;
     top: 28%;
     margin: auto;
     display: block;
-    width : 160px;
+    width : 160px;/*160*/
     height : 40px;
 }
 
 /*forth_office*/
-#cooperative-firm .forth_office{
-    width: 25%; 
-    height: 180px;
-    text-align: center;
-    float: left;
-}
-#cooperative-firm .forth_office b{
+
+#customers-firm .forth_office b{
     color:rgb(19, 19, 54);
-    font-size: 16px;
+    font-size: 15px;
     position: relative;
     top: 40%;
+    margin: auto;
 }
 /* body{
     background-color: whitesmoke;
 } */
+
+@media screen and (max-width: 1000px){
+    .swiper-prev img, .swiper-next img{
+        position: relative;
+        top:30px;
+        height: 150px;
+        background-color: rgba(239, 239, 239, 0.6);
+
+    }
+}
+
+@media screen and (max-width: 780px){
+    .main-slider{
+        height: 550px;
+    }
+    .main-slider .swiper-slide-active img{
+        width: 100%;
+        height: 400px;
+        position: relative;
+        filter: brightness(80%);
+    }
+    .main-slider img, .swiper-slide-next{
+        width: 0%;
+    }
+    .main-slider .swiper-container {
+        /* 819px 슬라이드 3개와 그 사이 여백 10px씩 = 2477px */
+        width: 100%;
+        height: 450px;
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        margin-left: calc((100%) / -2);
+    }
+    .swiper-prev img, .swiper-next img{
+        position: relative;
+        top:60px;
+        width: 40px;
+        height: 70px;
+        background-color: white;
+
+    }
+    .main-slider .swiper-slide-active .text{
+        border: solid white 5px;
+        color: white;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        height: 100px;
+        top:17%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .main-slider .swiper-slide-active .text .name{
+        font-size: 2.5em;
+        position: absolute;
+        font-weight: 900;
+        display: block;
+        text-align: center;
+        top: 30px;
+    }
+    .main-slider .swiper-slide-active .firm-inside-name{
+        font-size: 2.5em;
+        position: absolute;
+        font-weight: 900;
+        display: block;
+        text-align: center;
+        top: 40px;
+    }
+    .main-slider .swiper-slide-active .firm-inside-else{
+        font-size: 1.5em;
+        position: absolute;
+        text-align: center;
+        font-weight: 500;
+        display: block;
+        top: 15px;
+    }
+    .message_img img{
+        width: 250px;
+        height: 250px;
+    }
+    .message_img span{
+        font-size: 1.4em;
+    }
+    .first_office img{
+        top:28%;
+        width: 70px;
+        height: 35px;
+    }
+    .second_office img{
+        top:20%;
+        width: 35px;
+        height: 35px;
+    }
+    .third_office img{
+        width: 92px;
+        height: 29px;
+    }
+    #customers-firm .third_office b{
+        top:34%;
+    }
+    #customers-firm .first_office b, #customers-firm .second_office b,
+    #customers-firm .third_office b, #customers-firm .forth_office b{
+        font-size: 0.65em;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 450px){
+    .message_img img{
+        width: 180px;
+        height: 180px;
+    }
+    .message_img span{
+        font-size: 1.4em;
+    }
+    .message_img p{
+        font-size: 1em;
+    }
+   .contentsBox .title h3{
+    font-size: 2em;
+    margin: 10px;
+   }
+   .contentsBox .title p{
+    font-size: 1em;
+    margin: 10px;
+   }
+   .message_img span{
+    font-size: 1.3em;
+}
+}
