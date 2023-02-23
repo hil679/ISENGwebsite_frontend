@@ -1,4 +1,7 @@
 /*industrylist top*/
+span{
+    pointer-events: none;
+}
 .industrylist{
     text-align: center;
     width: 100%;
