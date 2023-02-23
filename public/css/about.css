@@ -1,14 +1,16 @@
 
-#factory img{
-    width: 100%;
+.factory-img{
+    margin-top: 95.5px;
     margin-bottom: 50px;
-    height: 470px;
     opacity: 0.85; 
     filter: brightness(45%);
+    position: relative;
+    /* background-color: black; */
 }
-.factory-text{
+#factory .factory-text{
+    text-align: center;
     position: absolute;
-    top: 40%;
+    top: 45%;
 	left: 50%;
 	transform: translate( -50%, -50% );
     font-size: 5.5em;
@@ -50,7 +52,7 @@
     line-height: 80px;
     margin-left: 165px;
 }
-#greetings .certificate, .greetings{
+#greetings .certificate{
     display: inline-block;
     margin: auto;
     vertical-align: middle;
@@ -67,8 +69,10 @@
     font-size: 1.2em;
 }
 .greetings{
+    display: inline-block;
     margin: 50px 0px;
-    position: relative;
+    position: relative; 
+    top: 45px;  
 }
 
 
@@ -152,4 +156,77 @@ dt{
 dt, dd{
     margin: 0;
     font-size: 1.4em;
+}
+@media screen and (max-width: 1380px) {
+    #greetings .certificate img{
+        top: 45px;
+    }
+    .greet-title::before{
+        width: 100%;
+    }
+    .greet-title{
+        width: 100%;
+    }    
+    .greet-title span{
+        margin-left: 0;
+    }
+    .greetings{
+        top:75px;
+    }
+    #history{
+       margin-top: 70px;
+    }
+}
+@media screen and (max-width: 1306px) {
+    #greetings .certificate img{
+        top: 45px;
+        margin-bottom: 30px;
+    }
+    .greet-title::before{
+        width: 100%;
+    }
+    .greet-title{
+        width: 100%;
+    }    
+    .greet-title span{
+        margin-left: 0;
+    }
+    .greetings{
+        top:0;
+    }
+    /* .greetings p {
+        padding: 0px, 20px;
+    } */
+    #history{
+        position: relative;
+        top:0px;
+    }
+    
+}
+@media screen and (max-width: 450px){
+    .factory-img{
+        height: 300px;
+    }
+    #factory .factory-text{
+        top: 40%;
+        font-size: 3em;
+    }
+    #history ul{
+        margin-left:50px;
+    }
+    #history li dt::before{
+        width: 10px;
+        height: 10px;
+        margin-left: -7px;
+    }
+    dt, dd{
+        font-size: 1.1em;
+    }
+    dd{
+        left: 150px;
+    }
+    dt{ 
+        width: 150px;
+    }
+
 }
