@@ -1,22 +1,54 @@
+
+#factory img{
+    width: 100%;
+    margin-bottom: 50px;
+    height: 470px;
+    opacity: 0.85; 
+    filter: brightness(45%);
+}
+.factory-text{
+    position: absolute;
+    top: 40%;
+	left: 50%;
+	transform: translate( -50%, -50% );
+    font-size: 5.5em;
+    color: whitesmoke;
+    
+    /* padding: 15px; */
+}
+
 #greetings{
-    margin-top: 150px;
     position: relative;
     text-align: center;
 }
 .greet-contents{
    text-align: center;
 }
+.greet-title::before{
+    content: '';
+    width: 80%;
+    height: 80px;
+    background-color: rgb(22, 58, 130);
+    filter: brightness(90%);  
+    z-index:-1;
+    float: right;
+    position:absolute;
+    right: 0%;
+    margin: 0;
+}
 .greet-title{
     width: 80%;
     float: right;
-    background-color: aliceblue;
-    height: 75px;
+    margin: 0;
     font-size: 1.6em;
-    filter: brightness(95%);
+    letter-spacing: 6px;
+    
 }
 .greet-title span{
-    line-height: 75px;
-    vertical-align: middle;
+    filter: brightness(100%);
+    color: white;
+    line-height: 80px;
+    margin-left: 165px;
 }
 #greetings .certificate, .greetings{
     display: inline-block;
@@ -49,21 +81,30 @@
 #history .history-box{
     height: 100%; 
 }
-.history-title{
-    width: 100%;
-    background-color: aliceblue;
-    height: 65px;
-    font-size: 1.6em;
-    filter: brightness(95%);
-}
 .history-title span{
-    line-height: 65px;
+    color: white;
+    line-height: 80px;
     vertical-align: middle;
 }
+.history-title::before{
+    content: '';
+    width: 100%;
+    height: 80px;
+    background-color: rgb(22, 58, 130);
+    filter: brightness(90%);  
+    left:0;top:0;bottom:0;right:0; 
+    z-index:-1;
+    position:absolute;
+}
+.history-title{
+    font-size: 1.6em;
+    letter-spacing: 6px;
+}
+
 #history ul{
     list-style: none;
     height: 100%;
-    width: 4px;
+    width: 3px;
 
     background-color: rgb(80, 101, 120, 0.5);
     margin-left: 25%;
@@ -84,14 +125,12 @@
     display: block;
     width: 15px;
     height: 15px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 50%;
-    border: 2px solid rgb(79, 79, 191);
+    border: 4px solid rgb(22, 58, 130);
     opacity: 1;
     position: absolute;
-    margin-left: -7px;
-    
-    
+    margin-left: -9px;
 }
 .secondIn201206{
     top:30px;
