@@ -12,7 +12,7 @@ app.listen(8000, function(){
 app.get('/',function(req,res){
     res.sendFile(__dirname + '/index.html');
 });
-app.get('/about',function(req,res){
+app.get('/abou',function(req,res){
     res.sendFile(__dirname + '/detailPage/about/about.html');
 });
 app.get('/industr',function(req,res){
