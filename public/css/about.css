@@ -207,13 +207,31 @@ dt, dd{
     .factory-img{
         margin-top: 81px;
     }
-}
-
-@media screen and (max-width: 840px){
     .sec-p-fir-br{
         display: none;
     }
+    #history ul{
+        margin-left:70px;
+    }
+    #history li dt::before{
+        width: 13px;
+        height: 13px;
+        margin-left: -8px;
+    }
+    #history li{
+        width: 400px;
+    }
+    dt, dd{
+        font-size: 1.3em;
+    }
+    dd{
+        left: 160px;
+    }
+    dt{ 
+        width: 160px;
+    }
 }
+
 @media screen and (max-width: 450px){
     .factory-img{
         height: 300px;
