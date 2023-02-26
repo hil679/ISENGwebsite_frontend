@@ -7,12 +7,18 @@
     <title>인성이엔지(주)</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/common.css">
+    <!--swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="js/main.js" defer></script> <!--태그의 defer 속성은 페이지가 모두 로드된 후에 해당 외부 스크립트가 실행됨-->
+    <script src="js/slider.js" defer></script>
 </head>
 <body>
      <nav class="navbar">
         <div class="navbar__logo">
-            <img src = "technology.png" alt = "logo" class = img_logo/>
+            <img src = "/main/ISElogo.png" alt = "logo" width="50" height="50" class = img_logo/>
+
             <!-- INSUNG ENG Co., Inc. -->
             <a href="/">인성이엔지(주)</a> <!--간단한 비전, 어떤 사업/설비/상품(our buisness item)-->  
         </div>
@@ -25,54 +31,99 @@
         </ul>
 
         <a href="#" class="navbar__toogleBtn">
-            <img src = "technology.png" alt = "logo" width="26px" height="26px" class = toogle/>
+            <img src = "/main/toggle.png" alt = "logo" width="26px" height="26px" class = toogle/>
         </a>
     </nav>
+    
     <div id = "content">
         <div class = "contentsBox">
             <div class = "title">
                 <h3>계단을 밟아야 계단 위에 올라설수 있다</h3><!--변경-->
                 <p>You have to step on the stairs to get on the stairs </p><!--변경-->
             </div>
-             
-            <div class = "imgBox">
-                <img src="/회사예시.jpeg" alt="회사사진">
-            </div>
-        </div>
-        <div class="details">
-            <div class="list">
-                <ul>
-                    <li>
-                        <span class="icon"><img src="/technology.png" alt=""></span>
-                        <div class="inner">
-                            <strong>제목1</strong>
-                            <p>
-                                내용1
-                            </p>
+
+            <div class="main-slider">
+                <div class = "mainSliderBackground">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img id = "firm-outside" src="main/인성이엔지외부.jpg"/>
+                                <div class = "text">
+                                    <div class = "name">인성이엔지(주)</div>
+                                    <!-- <div class = "else">Co., Inc.</div>수정.. -->
+                                </div>
+                                
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="main/인성이엔지내부1.png"  />
+                                <div class = "text">
+                                    <div class = "firm-inside-else">INTO</div>
+                                    <div class = "firm-inside-name">INSUNG</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="main/인성이엔지외부.jpg"/>
+                                <div class = "text">
+                                    <div class = "name">인성이엔지(주)</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="main/인성이엔지외부.jpg"/>
+                                <div class = "text">
+                                    <div class = "name">인성이엔지(주)</div>
+                                </div>
+                            </div>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
+                
+                <div class="swiper-pagination"></div>  
+                <div class="swiper-prev">
+                    <span class="material-icons"><img src = "/main/prev.png"/></span>
+                </div>
+                <div class="swiper-next">
+                    <span class="material-icons"><img src = "/main/next.png"/></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="message">
+            <div class = "message_title_div">
+                <span class = "message_title">MESSAGE</span>
+            </div>
+            <div class="message_img">
+                <span class = "satisfied">고객의 만족도</span>
+                <span class = "precision">정밀부품</span>
+                <img src = "/main/message.png"/>
+                <span class = "custom">맞춤제작<br>서비스</span>
+                <p>
+                    <b>인성이엔지(주)</b>은 고객의 지원과 헌신에 중점을 둔 맞춤형, 양질의 서비스를 제공하고 있습니다.<br><br>
+                    마감일은 물론 가공 표준 및 요구 사항을 충족함으로써 각 고객은 신뢰할 수 있는 서비스를 제공 받습니다.<br>
+                </p>
             </div>
         </div>
     </div>
-    <div id = "cooperative-firm">
+    <div id = "customers-firm">
+        <div class = "customers_firm_div">
+            <span class = "customers_firm_title">CUSTOMERS</span>
+        </div>
         <ul style="list-style: none;">
             <li>
                 <div class = "first_office">
                     <img src="/cooperativeFirm/CKD.png" alt="CKD(주)_일본">
-                    <b>CKD(주)_일본</b>
+                    <b>CKD(주)</b>
                 </div>
             </li>
             <li>
                 <div class = "second_office">
-                    <b>IHARA(주)_일본</b>
+                    <b>IHARA(주)</b>
                     <img src="/cooperativeFirm/IHARA.jpg" alt="IHARA(주)_일본">
                 </div>
             </li>
             <li>
                 <div class = "third_office">
                     <img src="/cooperativeFirm/MIKI_PULLEY.png" alt="MIKI_PULLEY(주)_일본">
-                    <b>MIKI PULLEY(주)_일본</b>
+                    <b>MIKI PULLEY(주)</b>
                 </div>
             </li>
             <li>
