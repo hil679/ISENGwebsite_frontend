@@ -70,9 +70,10 @@ a {
 }
 
 /*컨텍트 박스*/
-/* #contact_bar{
-    position: relative;
-} */
+#contact_bar{
+    width: 100%;
+    right: 0;
+}
 #contact_bar ul{
     padding: 0;
     margin: 0;
