@@ -1,11 +1,11 @@
   .navbar2 {
     padding: 7px;
     text-align: center;
-    /* width: 100%; */
-    width: 1300px;
+    width: 95%;
+    /* width: 1300px; */
     display: inline-block;
     border-bottom: 2px solid #efefef;
-    margin-top: 81.5px;
+    margin-top: 95.5px;
     
   }
   .navbar__menu2 {
@@ -32,39 +32,84 @@
   
   #machine{
     margin-bottom: 10px;
-    width: 1300px;
+    width: 100%;
     height: fit-content;
     margin-top: 20px;
     display: inline-block;
   }
-  #machine p{
+  /*p tag in machine*/
+  #machine .measuring-facility p,  #machine .processing-facility p{
     display: inline-block;
-    padding: 10px;
-    position:relative; 
-    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    width: 20%;
+    
+    margin-left: 2%;
+    margin-right: 2%;
   }
-  #machine .text{
-    font-size: 1.2em;
-    display: block;
+  #machine .processing-facility p{
+    height: 270px;
+  }
+  #machine .measuring-facility p{
+    height: 300px;
+  }
+ 
+  #machine .processing-facility .text{
+    font-size: 1.1em;
+    position: absolute;
+    bottom: 4%;
+    transform: translate(-50%,50%);
     text-align: center;
   }
+  #machine .measuring-facility .text{
+    font-size: 1.1em;
+    position: absolute;
+    bottom: 20%;
+    transform: translate(-50%,50%);
+    text-align: center;
+  }
+  
+  .measuring-facility .description{
+    margin-top: 10px;
+    position: absolute;
+    top: 87%;
+    display: block;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+  }
+
+ 
   /*machine 이미지*/
   .cnc6, .cnc8{
-    width: 250px;
-    height: 220px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    width: 100%;
+    height: 100%;
   }
   .machining-center-img, .taping {
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height: 90%;
   }
+ .processing-facility img{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: contain;
+    /* margin-top: 15px;
+    margin-bottom: 15px; */
+    padding: 15px
+ }
   .measuring-facility img{
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height: 70%;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
+    margin: 0px, 10px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
   }
   
   #machine .processing-facility p:hover{
@@ -89,7 +134,7 @@
     transition:  0.2s;
     transition-delay : 0.2s;
   }
-.select{
+  .select{
     border: 1.5px solid rgb(43, 43, 162);
     pointer-events: none;
   }
@@ -134,34 +179,26 @@
   }
   #machine .processing-facility {
     display: none;
+
+    
   }
   #machine .measuring-facility {
     display: none;
     margin-bottom: 70px;
   }
-  .measuring-facility .description{
-    margin-top: 10px;
-    display: block;
-  }
-.threed{
-  position: relative;
-  bottom:30px;
-}
-.non-contact{
-  position: relative;
-  top:19px;
-}
+  
+
 /*table*/
  #machining-center{
-    width: 1100px;
     height: fit-content;
-    margin: auto;
     margin-top: 30px;
+    margin: auto;
+    width: 93%;
  }
  #machining-center div{
     display: none;
  }
-table, td, th {/*??????????????????????????????????????????????????????????????????????????????*/
+table, td, th {/*?????????*/
     border : 1px solid black;
     text-align: center;
     border-collapse : collapse;
@@ -177,10 +214,12 @@ th{
 
 td{
     height: 40px;
-    width: 275px;
+    width: 300px;
 }
 
-  
+  .division-line-small-window{
+    display: none;
+  }
   body div{
     text-align: center;
     width: 100%;
@@ -188,3 +227,94 @@ td{
   }
   
 
+
+@media screen and (max-width: 1100px) {
+  .division-line-small-window{
+    display: block;
+  }
+  #machine .processing-facility p{
+    width: 30%;
+    margin: 30px;
+  }
+  #machine .measuring-facility p{
+    width: 25%;
+    margin: 30px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  #machine .measuring-facility p{
+    width: 25%;
+    height: 235px;
+    margin: 10px;
+  }
+  #machine .measuring-facility .text{
+    font-size: 0.9em;
+  }
+  
+  .measuring-facility .description{
+    top: 89%;
+    font-size: 0.85em;
+  }
+} 
+
+@media screen and (max-width: 700px) {
+  .navbar__menu2 li{
+    padding-bottom: 3px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  td{
+      height: 30px;
+      width: 275px;
+      font-size: 0.8em;
+  }
+  #machine .processing-facility p{
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+  }
+  #machine .measuring-facility p{
+    width: 270px;
+    height: 300px;
+    display: block;
+    margin:auto;
+  }
+  #machine .measuring-facility .text{
+    font-size: 1.1em;
+  }
+  
+  .measuring-facility .description{ 
+    font-size: 1em;
+    padding-top: 10px;
+    padding-bottom: 50px;
+  }
+  .measuring-facility .description.description1{
+    bottom: 0%;
+  }
+  .measuring-facility .description.description2{
+    bottom: 0%;
+  }
+  
+} 
+
+@media screen and (max-width: 450px) {
+  .navbar__menu2 li{
+    padding-bottom: 3px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  td{
+      height: 30px;
+      font-size: 0.7em;
+  }
+  #machine .processing-facility .text{
+    font-size: 0.9em;
+    bottom: 4%;
+  }
+  #machine .processing-facility p{
+    width: 160px;
+    height: 170px;
+    margin: 10px;
+  }
+} 
