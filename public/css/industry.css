@@ -38,11 +38,6 @@ span{
     display: inline-block;
     text-align:center;
 }
-.introIndustry #industry-machine{
-    width: 260px;
-    height: 200px;
-    margin: 0;
-}
 .introIndustry .text{
     position: absolute;
     left: 50%;top: 50%;
@@ -57,11 +52,12 @@ span{
 .introIndustry .text span{
     font-size: 1.2em;
 }
-.introIndustry #industry-semicon{
+.introIndustry #industry-machine{
     width: 260px;
     height: 200px;
+    margin: 0;
 }
-.introIndustry #industry-medicine{
+.introIndustry #industry-semicon, .introIndustry #industry-medicine{
     width: 260px;
     height: 200px;
 }
@@ -94,20 +90,21 @@ span{
 }
 #industry-machine-contents{
     position: relative;
-    width: 1438px;
+    /* width: 1438px; */
+    width: 100%;
     border-top: 1px solid rgb(164, 185, 226);
     border-image-repeat: repeat;
 }
 #industry-semicon-contents{
     position: relative;
-    width: 1438px;
+    width: 100%;
     border-top: 1px solid rgb(164, 185, 226);
     border-image-repeat: repeat;
 }
 #industry-medicine-contents{
     position: relative;
     top: 10px;
-    width: 1438px;
+    width: 100%;
     height: 410px;
     border-top: 1px solid rgb(164, 185, 226);
     border-bottom: 1px solid rgb(164, 185, 226);
@@ -118,7 +115,8 @@ span{
 .other-machine-part{
     position: relative;
     height: 400px;
-    width: 1300px;
+    width: 90%;
+    margin-left: 100px;
     text-align: center;
 }
 .other-machine-part div{
@@ -128,53 +126,50 @@ span{
 .other-machine-part .value-body{
     position: absolute;
     top:20%;
-    left: 8.6%;
+    /* left: 8.6%; */
 }
 .other-machine-part .step-motor-flange{
     position: absolute;
     top:20%;
-    left: 56%;
+    left: 50%;
 }
 .other-machine-part .text-value-body{
     position: absolute;
-    top:13%;
-    left: 13.9%;
+    top:-10%;
+    left: 70px;
     transform: translate(-50%,-50%);
     font-weight: 800;
     font-size: 1.6em;
     padding: 8px;
-    /* border: 6px rgb(164, 185, 226)  solid; */
 }
 .other-machine-part .text-step-motor-flange
 {
     position: absolute;
-    top:13%;
-    left: 66%;
-    width: 280px;
-    /*left: 50%;/*중앙*/
+    top:-10%;
+    left: 130px;
+    width: 95%;
     transform: translate(-50%,-50%);
     font-weight: 800;
     font-size: 1.6em;
     padding: 8px;
-    /* border: 6px rgb(164, 185, 226)  solid; */
 }
 .value-body-img{
-    width: 250px;
-    height: 250px;
+    width: 70%;
+    height: 100%;
     position: absolute;
     top: 1%;
     left: 18%;
     padding: 0; 
 }
 .step-motor-flange-img{
-    width: 260px;
+    width: 60%;
     height: 250px;
     position: absolute;
-    left: 17.5%;
+    left: 21%;
     padding: 0; 
 }
 .motor{
-    width: 230px;
+    width: 60%;
     height: 230px;
     position: absolute;
     left: 23%;
@@ -184,6 +179,7 @@ span{
 }
 .other-machine-part li{
     list-style: none;
+    width: 30%;
 }
 .other-machine-part span{
     position: absolute;
@@ -215,23 +211,19 @@ span{
 .piston{
     position: relative;
     height: 400px;
+    width: 90%;
+    margin-left: 100px;
 }
 .piston .related-img {
     list-style: none;
-    position: absolute;
-    /* left: 720px; */
-    left: 50%;
-    top: 51%;
-    transform: translate(-50%,-50%);
-    width: 1300px;
+    width: 100%;
     height: 420px;
-    text-align: center;
 }
 
 .piston .text-piston{
     position: absolute;
     top:13%;
-    left: 11.4%;
+    left: 50px;
     /*left: 50%;/*중앙*/
     transform: translate(-50%,-50%);
     font-weight: 800;
@@ -241,14 +233,15 @@ span{
 }
 #industry-machine-contents .related-img li, #industry-semicon-contents .related-img li{
     width: fit-content;
-    margin: 0px;
+    margin-right: 20px;
     position: relative;
     top:90px;
+    width: 30%;
     display: inline-block;
 }
 
 .second-piston{
-    width: 300px;
+    width: 75%;
     height: 250px;
     position: absolute;
     top: 0%;
@@ -256,7 +249,7 @@ span{
     padding: 0; 
 }
 .related-img li .first-piston, .third-piston{
-    width: 400px;
+    width: 100%;
     height: 250px;
     position: absolute;
     top: 0%;
@@ -278,25 +271,25 @@ span{
 .IGS {
     position: relative;
     height: 400px;
+    width: 90%;
+    margin-left: 100px;
 }
 .IGS .related-img {
     list-style: none;
-    position: absolute;
-    left: 35.8%;top: 51%;
-    transform: translate(-50%,-50%);
-    width: 900px;
+    /* position: absolute;
+    left: 35.6%;top: 50%;
+    transform: translate(-50%,-50%); */
     height: 420px;
-    text-align: center;
 }
 .first-ISG, .second-ISG{
-    width: 400px;
+    width: 90%;
     height: 250px;
 }
 .IGSwhole{
     position: absolute;
     left: 50%;top: 43%;
     transform: translate(-50%,-50%);
-    width: 250px;
+    width: 55%;
     height: 190px;
     visibility: hidden;
 }
@@ -306,7 +299,8 @@ li:hover .IGSwhole{
 .IGS .text-IGS{
     position: absolute;
     top:13%;
-    left: 19.3%;
+    left: 170px;
+    /* left: 19.3%; */
     /*left: 50%;/*중앙*/
     transform: translate(-50%,-50%);
     font-weight: 800;
@@ -328,44 +322,82 @@ li:hover .IGSwhole{
 
 #industry-semicon-contents .related-img li{
     width: fit-content;
-    margin: 0px;
+    margin-right: 20px;
     position: relative;
     top:90px;
+    width: 30%;
     display: inline-block;
 }
 
 /*Air-Sampling-Cone contents*/
-
+.Air-Sampling-Cone {
+    position: relative;
+    height: 420px;
+    width: 90%;
+    margin-left: 100px;
+}
 .Air-Sampling-Cone .related-img {
     list-style: none;
-    position: absolute;
+    /* position: absolute;
     left: 50%;top: 51%;
-    transform: translate(-50%,-50%);
-    width: 1300px;
+    transform: translate(-50%,-50%); */
+    width: 100%;
     height: 420px;
-    text-align: center;
 }
 
 .Air-Sampling-Cone .text-Air-Sampling-Cone{
     position: absolute;
     top:13%;
-    left: 15.4%;
+    /* left: 15.4%; */
+    left: 110px;
     /*left: 50%;/*중앙*/
     transform: translate(-50%,-50%);
     font-weight: 800;
     font-size: 1.6em;
     padding: 8px;
+    text-align: center;
     /* border: 6px rgb(164, 185, 226)  solid; */
 }
 #industry-medicine-contents .related-img li{
-    width: fit-content;
-    margin: 0px;
+    width: 30%;
+    margin-right: 20px;
     position: relative;
     top:90px;
     display: inline-block;
 }
+
+#industry-medicine-contents li:hover div img{  
+    visibility: hidden;
+}
+#industry-medicine-contents li:hover div span{
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%,-50%);
+    font-size: 1.3em;
+    color: aliceblue;
+}
+
+#industry-medicine-contents .related-img li img{
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding: 0;  
+}
+
+/*공통부분*/
+.related-img li span{
+    position: absolute;
+    left: 50%;
+    bottom: -20%;
+    transform: translate(-50%,-50%);
+    font-size: 1.3em;
+}
+
 li .inner{ 
-    width: 400px;
+    width: 100%;
     height: 250px;
     position: relative;
     border-top: 1px rgb(224, 224, 224) solid;
@@ -396,37 +428,76 @@ li:hover .overlay{
 }
 li:hover .inner .innerText{
     display: block;
+    width: 100%;
     position: absolute;
     color: aliceblue;
+    margin:0;
     top:40%;
     left: 50%;
     transform: translate(-50%,-50%);
+    text-align: center;
     font-size: x-large;
 }
-#industry-medicine-contents li:hover div img{  
-    visibility: hidden;
-}
-#industry-medicine-contents li:hover div span{
-    position: absolute;
-    left: 50%;
-    bottom: 20%;
-    transform: translate(-50%,-50%);
-    font-size: 1.3em;
-    color: aliceblue;
-}
 
-#industry-medicine-contents .related-img li img{
-    width: 400px;
-    height: 250px;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    padding: 0;  
+@media screen and (max-width: 1000px) {
+    .introIndustry #industry-machine, .introIndustry #industry-semicon, .introIndustry #industry-medicine{
+        width: 25%;
+        height: 35%;
+        bottom:23%;
+    }
+    .introIndustry .icon{
+        width: 35%;
+        height: 110%;
+    }
+    .introIndustry .text b{
+        font-size: 1.2em;
+        margin-top: 7%;
+    }
+    .introIndustry .text span{
+        font-size: 1em;
+    }
+
+
+    .piston .text-piston, .other-machine-part .text-step-motor-flange, .other-machine-part .text-value-body,
+    .IGS .text-IGS, .Air-Sampling-Cone .text-Air-Sampling-Cone{
+        font-size: 1.3em;
+    }
 }
-.related-img li span{
-    position: absolute;
-    left: 50%;
-    bottom: -20%;
-    transform: translate(-50%,-50%);
-    font-size: 1.3em;
+@media screen and (max-width: 800px) {
+    .introIndustry #industry-machine, .introIndustry #industry-semicon, .introIndustry #industry-medicine{
+        width: 25%;
+        height: 33%;
+        bottom:20%;
+    }
+    .introIndustry .icon{
+        width: 40%;
+        height: 100%;
+    }
+    .introIndustry .text b{
+        font-size: 1.1em;
+        margin-top: 4%;
+    }
+    .introIndustry .text span{
+        font-size: 0.9em;
+    }
+
+    
+    .piston .text-piston, .other-machine-part .text-step-motor-flange, .other-machine-part .text-value-body,
+    .text-IGS, .text-Air-Sampling-Cone{
+        font-size: 1.2em;
+    }
+
+    
+}
+@media screen and (max-width: 450px) {
+    .industrylist p{
+        font-size: 4em;
+    }
+
+    .introIndustry .text b{
+        font-size: 0.9em;/*약품/제약 골라서 지워보기*/
+    }
+    .introIndustry .text span{
+        font-size: 0.8em;
+    }
 }
