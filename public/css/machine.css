@@ -252,6 +252,9 @@ td{
   #machine .measuring-facility .text{
     font-size: 0.9em;
   }
+  #machine .processing-facility .text{
+    font-size: 0.9em;
+  }
   
   .measuring-facility .description{
     top: 89%;
@@ -302,8 +305,8 @@ td{
 @media screen and (max-width: 450px) {
   .navbar__menu2 li{
     padding-bottom: 3px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   td{
       height: 30px;
@@ -312,6 +315,7 @@ td{
   #machine .processing-facility .text{
     font-size: 0.9em;
     bottom: 4%;
+    padding-bottom: 15px;
   }
   #machine .processing-facility p{
     width: 160px;
