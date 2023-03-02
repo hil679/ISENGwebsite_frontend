@@ -1,21 +1,40 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 :root{
     --text-color: #263343;
     --background-color: #f0f4f5;
     --accent-color:#d49466;
-   
-   
+
 }
 
 body {
     margin: 0px;
     padding:0;
+    -webkit-tap-highlight-color : transparent;
+    -moz-tap-highlight-color : transparent;
+    -ms-tap-highlight-color : transparent;
+    -o-tap-highlight-color : transparent;
+    /* forbidden copy
+     -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none; */
 }
+
 
 a {
     text-decoration: none;
     color: #263343;
 }
 
+/*font*/
+.navbar__logo {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight:800;
+}
+
+
+/*navbar*/
 .navbar {
     z-index: 99;/*클수록 최상위*/
     display: flex;
@@ -26,20 +45,22 @@ a {
     align-items: center;
     background:#f0f4f5;
     opacity: 80%;
-    padding: 10px 24px
+    padding: 10px 24px;
+    
 }
 
 .navbar__logo {
-    font-size: 24px;
-    color: white;
-    display: flex;
-    align-items: center;
-    
+    font-size: 30px;
+
+}
+.navbar__logo a{
+    height: 68.5px;
+    line-height: 68.5px;
 }
 .navbar__logo img {
-    width : 60px;
-    height : 50px; 
-    margin-right: 10px;
+    width : 70px;
+    height : 60px; 
+    margin-right: 15px;
 }
 
 
@@ -64,133 +85,29 @@ a {
 .navbar__toogleBtn{
     display: none;
     position: absolute;
-    right: 40px;
-    top: 25px;
-    
+    right: 80px;
+    top: 25px; 
+    width: 10%;
+        height: 10%; 
 }
 
-/*컨텍트 박스*/
-#contact_bar{
+.copyright{
+    text-align: center;
+    display: inline-block;
+    position: relative;
     width: 100%;
-    right: 0;
-}
-#contact_bar ul{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-/*Calling*/
-#contact_bar .office_contect{
-    width: 33.33%; 
-    height: 200px;
-    text-align: center;
-    background-color: black;
-    opacity: 80%; 
-    float: left;
-}
-#contact_bar .office_contect b{
-    color:rgb(224, 224, 245);
-    font-size: 16px;
-    position: relative;
-    top: 30%;
-}
-#contact_bar .office_contect p{
-    color:aliceblue;
-    text-align: center;
-    position: relative;
-    top: 30%;
-
-}
-.office_contect img{
-    position: relative;
-    top: 25%;
-    margin: auto;
-    display: block;
-    width : 22px;
-    height : 22px;
-}
-/* .office_contect img{
-    position: relative;
-    top: 30%;
-    left: -5%;
-    width : 25px;
-    height : 25px;
-} */
-
-
-/*email*/
-#contact_bar .email{
-    width: 33.34%; 
-    height: 200px;
-    text-align: center;
-    background-color: black;
-    opacity: 91%; 
-    float: left;
-}
-#contact_bar .email p{
-    color:aliceblue;
-    text-align: center;
-    position: relative;
-    top: 32%;
-
-}
-#contact_bar .email b{
-    color:rgb(224, 224, 245);
-    font-size: 16px;
-    position: relative;
-    top: 45%;
-}
-.email img{
-    position: relative;
-    top: 18%;
-    margin: auto;
-    display: block;
-    width : 22px;
-    height : 22px;
+    height: 75px;
+    /* background-color: black;
+    color: aliceblue; */
+    line-height: 75px;
+    font-size: 0.8em;
 }
 
-/*location*/
-#contact_bar .logo_location{
-    width: 33.33%; 
-    height: 200px;
-    text-align: center;
-    background-color: black;
-    opacity: 80%; 
-    float: left;
-}
-#contact_bar .logo_location b{
-    color:rgb(224, 224, 245);
-    font-size: 16px;
-    position: relative;
-    top: 27%;
-}
-#contact_bar .logo_location p{
-    color:aliceblue;
-    text-align: center;
-    position: relative;
-    top: 27%;
-}
-.logo_location img{
-    position: relative;
-    top: 22%;
-    margin: auto;
-    display: block;
-    width : 22px;
-    height : 22px;
-}
-
-
-
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1000px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
         padding: 16px 24px;
-    }
-    
-    .navbar__logo img {
-        margin-right: 10px;
-
     }
     .navbar__menu {
         display: none;
@@ -202,14 +119,20 @@ a {
 
     .navbar__menu li {
         width: 100%;
+        display: block;
         text-align: center;  
+        /* border-bottom: 1px solid whitesmoke; */
     }
+    /* .navbar__menu li:last-child{
+        border-bottom: 0px;
+    } */
     
     .navbar__toogleBtn{
         display: block;
-        position: absolute;
-        width: 10%;
-        height: 10%;
+        /* display: block;*/
+        /* position: absolute; */
+        width: 26px;
+        height: 26px; 
         
     }
 
@@ -222,5 +145,6 @@ a {
         flex-direction: column;
         align-items: flex-start;
         padding: 16px 24px 0px 24px;
+        opacity: 100%;
     }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,7 @@
     <title>인성이엔지(주)</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="http://localhost:8000/css/contact_footer.css">
     <!--swiper-->
     <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
@@ -17,16 +18,16 @@
 <body>
      <nav class="navbar">
         <div class="navbar__logo">
-            <img src = "/main/ISElogo.png" alt = "logo" width="50" height="50" class = img_logo/>
-
-            <!-- INSUNG ENG Co., Inc. -->
-            <a href="/">인성이엔지(주)</a> <!--간단한 비전, 어떤 사업/설비/상품(our buisness item)-->  
+            <a href="/">
+                <img src = "/main/ISElogo.png" alt = "logo"  class = img_logo/>
+                <span>인성이엔지(주)</span>
+            </a> 
         </div>
         
         <ul class="navbar__menu">
             <li><a href="/about">About</a></li> <!--비전, 연혁, com-->
-            <li><a href="/industry">Industry</a></li>
-            <li><a href="/manufacture">Manufacture</a></li>
+            <li><a href="/industry">Product</a></li>
+            <li><a href="../../machine">Machine</a></li>
             <li><a href="/contact">Contact</a></li> <!--위치, 주소 이메일, 전화번호, 펙스번호-->
         </ul>
 
@@ -38,8 +39,8 @@
     <div id = "content">
         <div class = "contentsBox">
             <div class = "title">
-                <h3>계단을 밟아야 계단 위에 올라설수 있다</h3><!--변경-->
-                <p>You have to step on the stairs to get on the stairs </p><!--변경-->
+                <h3>변하지 않으면 미래는 없다</h3>
+                <p>No change, No future</p>
             </div>
 
             <div class="main-slider">
@@ -55,22 +56,28 @@
                                 
                             </div>
                             <div class="swiper-slide">
-                                <img src="main/인성이엔지내부1.png"  />
+                                <a href="/about">
+                                    <img src="main/인성이엔지내부1.png" />
+                                </a>
                                 <div class = "text">
-                                    <div class = "firm-inside-else">INTO</div>
+                                    <div class = "firm-inside-else">about</div>
                                     <div class = "firm-inside-name">INSUNG</div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="main/인성이엔지외부.jpg"/>
-                                <div class = "text">
-                                    <div class = "name">인성이엔지(주)</div>
+                                <a href="/industry">
+                                    <img src="main/product.png"/>
+                                </a>
+                                <div class = "text-industry">
+                                    <div class = "name-industry">제품 소개</div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="main/인성이엔지외부.jpg"/>
-                                <div class = "text">
-                                    <div class = "name">인성이엔지(주)</div>
+                                <a href="/machine">
+                                    <img src="main/machine.png"/>
+                                </a>
+                                <div class = "text-machine">
+                                    <div class = "name-machine">기계장치/측정기</div>
                                 </div>
                             </div>
                         </div>
@@ -110,25 +117,22 @@
         <ul style="list-style: none;">
             <li>
                 <div class = "first_office">
-                    <img src="/cooperativeFirm/CKD.png" alt="CKD(주)_일본">
-                    <b>CKD(주)</b>
+                    <img src="/cooperativeFirm/CKD.png" alt="CKD(주)">
                 </div>
             </li>
             <li>
                 <div class = "second_office">
-                    <b>IHARA(주)</b>
-                    <img src="/cooperativeFirm/IHARA.jpg" alt="IHARA(주)_일본">
+                    <img src="/cooperativeFirm/IHARA.png" alt="IHARA(주)">
                 </div>
             </li>
             <li>
                 <div class = "third_office">
-                    <img src="/cooperativeFirm/MIKI_PULLEY.png" alt="MIKI_PULLEY(주)_일본">
-                    <b>MIKI PULLEY(주)</b>
+                    <img src="/cooperativeFirm/MIKI_PULLEY.png" alt="MIKI_PULLEY(주)">
                 </div>
             </li>
             <li>
                 <div class = "forth_office">
-                    <b>BIOSYSTECH(주)</b>
+                    <img src="/cooperativeFirm/BST.png" alt="MIKI_PULLEY(주)">
                 </div>
             </li>
         </ul>  
@@ -160,13 +164,17 @@
                     <b>LOCATION</b>
                     <p>
                         우) 17796<br>
-                        경기도 평택시 청북읍 드림산단3로 13<br>
-                        인성 이엔지(주)
+                        경기도 평택시 청북읍<br class = "location-hidden"> 드림산단3로 13<br>
+                        <!-- <br class = "location-hidden"> 
+                        인성 이엔지(주) -->
                     </p>
                 </div>
             </li>
         </ul>  
     </div>
+    <div class = "copyright">
+        <span>Copyright ⓒ 인성이엔지(주) All Rights Reserved.</span>
+    </div> 
 </body>
 </html>
 

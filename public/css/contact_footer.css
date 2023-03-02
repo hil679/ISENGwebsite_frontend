@@ -1,0 +1,125 @@
+/*컨텍트 박스*/
+#contact_bar{
+    width: 100%;
+    height: 200px;
+    right: 0;
+}
+#contact_bar ul{
+    height: 200px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+/*Calling*/
+#contact_bar .office_contect{
+    width: 33.33%; 
+    height: 200px;
+    text-align: center;
+    background-color: black;
+    opacity: 80%; 
+    float: left;
+}
+#contact_bar .office_contect b{
+    color:rgb(224, 224, 245);
+    font-size: 16px;
+    position: relative;
+    top: 30%;
+}
+#contact_bar .office_contect p{
+    color:aliceblue;
+    text-align: center;
+    position: relative;
+    top: 30%;
+
+}
+.office_contect img{
+    position: relative;
+    top: 25%;
+    margin: auto;
+    display: block;
+    width : 22px;
+    height : 22px;
+}
+
+
+/*email*/
+#contact_bar .email{
+    width: 33.34%; 
+    height: 200px;
+    text-align: center;
+    background-color: black;
+    opacity: 91%; 
+    float: left;
+}
+#contact_bar .email p{
+    color:aliceblue;
+    text-align: center;
+    position: relative;
+    top: 32%;
+
+}
+#contact_bar .email b{
+    color:rgb(224, 224, 245);
+    font-size: 16px;
+    position: relative;
+    top: 45%;
+}
+.email img{
+    position: relative;
+    top: 18%;
+    margin: auto;
+    display: block;
+    width : 22px;
+    height : 22px;
+}
+
+/*location*/
+#contact_bar .logo_location{
+    width: 33.33%; 
+    height: 200px;
+    text-align: center;
+    background-color: black;
+    opacity: 80%; 
+    float: left;
+}
+#contact_bar .logo_location b{
+    color:rgb(224, 224, 245);
+    font-size: 16px;
+    position: relative;
+    top: 27%;
+}
+#contact_bar .logo_location p{
+    color:aliceblue;
+    text-align: center;
+    position: relative;
+    top: 27%;
+}
+.logo_location img{
+    position: relative;
+    top: 22%;
+    margin: auto;
+    display: block;
+    width : 22px;
+    height : 22px;
+}
+
+.location-hidden{
+    display: none;
+}
+
+
+    
+@media screen and (max-width: 800px){
+    #contact_bar .logo_location p, #contact_bar .email p, #contact_bar .office_contect p{
+        font-size: 0.9em;
+    }
+    .location-hidden{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #contact_bar .logo_location p, #contact_bar .email p, #contact_bar .office_contect p{
+        font-size: 0.8em;
+    }
+}
