@@ -8,7 +8,7 @@
     width: 1000px;
     height: 500px;
     position: relative;
-    filter: brightness(80%);
+    /* filter: brightness(80%); */
 }
 .main-slider {
     width: 100%;
@@ -36,28 +36,27 @@
     opacity: 1;
     position: relative;
 }
-.main-slider .swiper-slide .text{
+/* .main-slider .swiper-slide .text{
     display: none;
 }
 
-.main-slider .swiper-slide-active .text, .text-machine, .text-industry{
+.main-slider .swiper-slide-active .text,.text-about, .text-machine, .text-industry{
     color: white;
     position: absolute;
 }
 
-.main-slider .swiper-slide-active .text, .text-machine{
+.main-slider .swiper-slide-active .text-machine{ text
     border: solid white 5px;
-    display: flex;
+    display: absolute;
     justify-content: center;
-    width: 500px;
-    height: 130px;
-    top:20px;
-    left: 250px;
+    width: 340px;
+    height: 120px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.main-slider .swiper-slide-active .text-machine{
-    top:55%;
-}
-.main-slider .swiper-slide-active .text-industry{
+
+.main-slider .swiper-slide-active .text-industry, .text-about{
     width: 300px;
     height: 100px;
     top:20%;
@@ -65,17 +64,22 @@
     transform: translate(-50%, -50%);
 }
 
-.main-slider .swiper-slide-active .text .name, .name-industry, .name-machine{
+.main-slider .swiper-slide-active .name, .name-industry{
     font-size: 4em;
     position: absolute;
-    font-weight: 900;
+    font-weight: 700;
     display: block;
     text-align: center;
     height: 130px;
     line-height: 130px;
 }
 .name-machine{
-    letter-spacing:0.03em;
+    font-size: 4em;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    height: 120px;
+    line-height: 120px;
 }
 
 .main-slider #firm-inside{
@@ -96,7 +100,7 @@
     font-weight: 500;
     display: block;
     top: 0px;
-}
+} */
 
 
 .main-slider .swiper-pagination {
@@ -136,6 +140,9 @@
 }
 .swiper-next{
     right: 0%;
+}
+.swiper-prev:hover, .swiper-next:hover{
+    background-color: rgba(230, 239, 247, 0.8);
 }
 
 /* 컨텐츠 */
@@ -360,7 +367,7 @@
     .swiper-prev img, .swiper-next img{
         width: 40px;
         height: 70px;
-        background-color: white;
+        background-color: rgba(239, 239, 239, 0.6);
 
     }
 
@@ -408,18 +415,21 @@
         font-size: 1.4em;
     }
     .first_office img{
-        top:27%;
         width: 70px;
         height: 35px;
     }
     .second_office img{
-        top:20%;
         width: 35px;
         height: 35px;
     }
     .third_office img{
-        width: 92px;
-        height: 29px;
+        width: 35px;
+        height: 35px;
+    }
+    .forth_office img{
+        top:29%;
+        width: 54px;
+        height: 35px;
     }
     #customers-firm .third_office b{
         top:34%;
