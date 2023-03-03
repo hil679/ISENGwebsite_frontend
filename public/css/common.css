@@ -23,6 +23,7 @@ body {
 
 
 a {
+    display: block;
     text-decoration: none;
     color: #263343;
 }
@@ -51,16 +52,25 @@ a {
 
 .navbar__logo {
     font-size: 30px;
+    width: 290px;
 
 }
 .navbar__logo a{
-    height: 68.5px;
-    line-height: 68.5px;
+    position: relative;
 }
 .navbar__logo img {
     width : 70px;
     height : 60px; 
     margin-right: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translate(-50%, -50%);
+}
+.navbar__logo span{
+    display: inline-block;
+    position: relative;
+    left: 95px;
 }
 
 
@@ -68,6 +78,7 @@ a {
     display: flex;
     list-style: none;
     padding-right: 180px;
+    
 }
 
 .navbar__menu li {
