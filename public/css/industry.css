@@ -23,7 +23,7 @@ span{
 }
 .industrylist p{
     font-size: 5em;
-    font-weight: 800;
+    font-family: SUIT-ExtraBold;/*Heavy*/
     text-align: center;
     position: relative;
     top:32%;
@@ -52,9 +52,11 @@ span{
     display: block;
     margin-bottom: 7px;
     font-size: 1.6em;
+    font-family: SUIT-Bold;
 }
 .introIndustry .text span{
     font-size: 1.2em;
+    font-family: SUIT-Regular;
 }
 .introIndustry #industry-machine{
     width: 260px;
@@ -84,14 +86,14 @@ span{
     background-color: white;
     position: absolute;
     left: 160px;
-    top: -15px;
+    top: -18px;
     text-align: center;
     margin-left: auto; margin-right: auto;
     padding-left: 10px;
     padding-right: 10px;
     display: block;
     font-size: 1.6em;
-    
+    font-family: SUIT-Bold;
 }
 #industry-machine-contents{
     position: relative;
@@ -149,8 +151,9 @@ span{
     left: 50%;
     transform: translate(-50%,-50%);
     font-weight: 800;
-    font-size: 1.6em;
+    font-size: 1.4em;
     padding: 8px;
+    font-family: SUIT-ExtraBold;
 }
 .other-machine-part .text-step-motor-flange
 {
@@ -160,8 +163,9 @@ span{
     width: 100%;
     transform: translate(-50%,-50%);
     font-weight: 800;
-    font-size: 1.6em;
+    font-size: 1.4em;
     padding: 8px;
+    font-family: SUIT-ExtraBold;
 }
 .value-body-img{
     width:60%;
@@ -198,6 +202,7 @@ span{
     bottom: -20%;
     transform: translate(-50%,-50%);
     font-size: 1.3em;
+    font-family: SUIT-Medium;
 }
 .other-machine-part li:hover .overlay{
     position: absolute;
@@ -238,7 +243,8 @@ span{
     /*left: 50%;/*중앙*/
     transform: translate(-50%,-50%);
     font-weight: 800;
-    font-size: 1.6em;
+    font-size: 1.5em;
+    font-family: SUIT-ExtraBold;
     /* padding: 8px; */
     /* border: 6px rgb(164, 185, 226)  solid; */
 }
@@ -322,7 +328,8 @@ li:hover .IGSwhole{
     left: 50%;
     transform: translate(-50%,-50%);
     font-weight: 800;
-    font-size: 1.6em;
+    font-size: 1.5em;
+    font-family: SUIT-ExtraBold;
 }
 .IGS li:hover .first-ISG, .IGS li:hover .second-ISG{
     visibility: hidden;
@@ -359,7 +366,8 @@ li:hover .IGSwhole{
     left: 50%;
     transform: translate(-50%,-50%);
     font-weight: 800;
-    font-size: 1.6em;
+    font-size: 1.5em;
+    font-family: SUIT-ExtraBold;
     /* padding: 8px; */
     text-align: center;
 }
@@ -400,6 +408,8 @@ li:hover .IGSwhole{
     bottom: -20%;
     transform: translate(-50%,-50%);
     font-size: 1.3em;
+    font-family: SUIT-Medium;
+    width: 100%;
 }
 
 li .inner{ 
@@ -412,12 +422,10 @@ li .inner{
     border-right: 1px rgb(224, 224, 224) solid;
     border-bottom: 1px rgb(151, 180, 240) solid;
 }
-.inner span{
-    width: 100%;
-    text-align: center;
-}
+
 .inner .innerText{
     display: none;
+    font-family: SUIT-ExtraBold;
 }
 .overlay {
     width: 100%;
@@ -553,7 +561,7 @@ li:hover .inner .innerText{
     
 
     .related-img li .air-name-long{
-        bottom: -40%;
+        bottom: -30%;
     }
     .related-img li span, .other-machine-part span{
         font-size: 1.1em;
@@ -574,6 +582,7 @@ li:hover .inner .innerText{
     .related-img li span, .other-machine-part span{
         font-size: 0.9em;
     }
+    
 }
 @media screen and (max-width: 550px) {
     .industrylist p{
@@ -640,6 +649,11 @@ li:hover .inner .innerText{
         width: 60%;
         top: -2px;
         font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 486px) {
+    .related-img li .air-name-long{
+        bottom: -40%;
     }
 }
 @media screen and (max-width: 450px) {

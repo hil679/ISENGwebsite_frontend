@@ -1,3 +1,6 @@
+@import url('font.css');
+
+
 .contact-img{
     opacity: 0.85; 
     filter: brightness(40%);
@@ -15,21 +18,23 @@
 }
 .contact-text{
     position: absolute;
-    top: 45%;
-    font-size: 5.5em;
+    top: 20%;
+    font-size: 5.2em;
     width: 100%;
     display: flex;
     flex-direction: column;
     color: whitesmoke;
     margin-bottom: 50px;
+    font-family: SUIT-ExtraBold;
 }
 #contact-mainimg p{
     position: absolute;
     text-align: center;
     font-size: 1.5em;
-    top: 35%;
+    top: 15%;
     width: 100%;
     color: whitesmoke;
+    font-family: SUIT-Regular;
 }
 
 #division-explaination{
@@ -46,6 +51,7 @@
     right: 38%;
     padding-bottom:5px;
     border-bottom: #8d8c8c solid 3px;
+    font-family: SUIT-Regular;
 }
 
 /*contect 내용*/
@@ -61,6 +67,7 @@
     margin: 0;
     float: left;
     position: relative;
+    font-family: 'SUIT-Regular';
 }
 
 .map #daumRoughmapContainer1675871615256{
@@ -99,6 +106,7 @@
     font-size: 16px;
     position: relative;
     top: 30%;
+    font-family: SUIT-Bold;
 }
 .contact_info .office_contect p{
     color:aliceblue;
@@ -106,6 +114,9 @@
     position: relative;
     top: 30%;
 
+}
+.office_contect p span{
+    letter-spacing: 0.1em;
 }
 .office_contect img{
     position: relative;
@@ -129,6 +140,7 @@
     font-size: 16px;
     position: relative;
     top: 45%;
+    font-family: SUIT-Bold;
 }
 .email img{
     position: relative;
@@ -156,6 +168,7 @@
     font-size: 16px;
     position: relative;
     top: 27%;
+    font-family: SUIT-Bold;
 }
 .contact_info .location p{
     color:aliceblue;
@@ -179,6 +192,7 @@
     text-align: center;
     position: relative;
     top: 42%;
+    font-family: SUIT-Bold;
 }
 .logo img{
     position: relative;
@@ -208,7 +222,7 @@
     display: none;
 }
 
-body div{
+body div #inclusion-contact{
   text-align: center;
   position: relative;
 }
@@ -216,6 +230,12 @@ body div{
 
 
 @media screen and (max-width: 850px) {
+    .contact-text{
+        top: 15%;
+    }
+    #contact-mainimg p{
+        top:10%;
+    }
     .contact_info{
         width: 100%;
     }
@@ -226,10 +246,10 @@ body div{
 }
 @media screen and (max-width: 740px){
     .contact-text{
-        top: 35%;
+        top: 13%;
     }
     #contact-mainimg p{
-        top:25%;
+        top:8%;
     }
     .location-hidden{
         display: block;

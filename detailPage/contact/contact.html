@@ -5,107 +5,112 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>인성이엔지(주)</title>
-    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/contact.css">
+    
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <div>
         <nav class="navbar">
             <div class="navbar__logo">
-                <img src = "../../main/ISElogo.png" alt = "logo" width="50" height="50" class = img_logo/>
-                <a href="/">인성이엔지(주)</a>
+                <a href="/">
+                    <img src = "/main/ISElogo.png" alt = "logo"  class = img_logo/>
+                    <span>인성이엔지(주)</span>
+                </a> 
             </div>
-    
+            
             <ul class="navbar__menu">
-                <li><a href="../about">About</a></li>
-                <li><a href="../industry">Product</a></li>
-                <li><a href="../machine">Machine</a></li>
-                <li><a href="../contact">Contact</a></li>
-                <script src="js/main.js" defer></script>
+                <li><a href="/about">About</a></li> <!--비전, 연혁, com-->
+                <li><a href="/industry">Product</a></li>
+                <li><a href="/machine">Machine</a></li>
+                <li><a href="/contact">Contact</a></li> <!--위치, 주소 이메일, 전화번호, 펙스번호-->
             </ul>
     
             <a href="#" class="navbar__toogleBtn">
-                <img src = "../../main/toggle.png" alt = "logo" width="26px" height="26px" class = toogle/>
+                <img src = "/main/toggle.png" alt = "logo" width="26px" height="26px" class = toogle/>
             </a>
         </nav>
-        <div id = "contact-mainimg">
-            <img class = "contact-img" src="../../first.jpg" width="100%" height="500px">
-            <b class = "contact-text">HOW TO CONTACT</b>
-            <p>사람을 별처럼 생각하는 인성이엔지입니다.</p>
-        </div>
-        
-        <div id = "contact_contents">
-            <div id = "division-explaination">
-                <span>찾아오시는 길</span>
+        <div id="inclusion-contact">
+            <div id = "contact-mainimg">
+                <img class = "contact-img" src="../../first.jpg" width="100%" height="500px">
+                <b class = "contact-text">HOW TO CONTACT</b>
+                <p>사람을 별처럼 생각하는 인성이엔지입니다.</p>
             </div>
-            <span class = "map">
-                <!-- * 카카오맵 - 지도퍼가기 -->
-                <!-- 1. 지도 노드 -->
-                <div id="daumRoughmapContainer1675871615256" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+        
+            <div id = "contact_contents">
+                <div id = "division-explaination">
+                    <span>찾아오시는 길</span>
+                </div>
+                <span class = "map">
+                    <!-- * 카카오맵 - 지도퍼가기 -->
+                    <!-- 1. 지도 노드 -->
+                    <div id="daumRoughmapContainer1675871615256" class="root_daum_roughmap root_daum_roughmap_landing"></div>
 
-                <!--
-                    2. 설치 스크립트
-                    * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
-                -->
-                <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                    <!--
+                        2. 설치 스크립트
+                        * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                    -->
+                    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 
-                <!-- 3. 실행 스크립트 -->
-                <script charset="UTF-8">
-                    new daum.roughmap.Lander({
-                        "timestamp" : "1675871615256",
-                        "key" : "2dot2",
-                        "mapWidth" : "50%",
-                        "mapHeight" : "469"
-                    }).render();
-                </script>
-            </span> 
-            <span class = "contact_info">
-                <ul style="list-style: none;">
-                    <div class = "first-line">
-                        <li>
-                            <div class = "office_contect">
-                                <img src="main/tel.png" alt="call">
-                                <b>CALLING</b>
-                                <p>
-                                    T E L: 031-682-7077<br>
-                                    F A X: 031-682-7078<br>
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class = "location">
-                                <img src="main/location.png" alt="location">
-                                <b>LOCATION</b>
-                                <p>
-                                    우) 17796<br>
-                                    경기도 평택시 청북읍<br class = "location-hidden"> 드림산단3로 13<br>
-                                </p>
-                            </div>
-                        </li>
-                        
-                    </div>
-                    <div class = "second-line">
-                        <li>
-                            <div class = "email">
-                                <b>EMAIL</b>
-                                <img src="main/email.png" alt="email">
-                                <p>
-                                    yesise@ise-k.com
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class = "logo">
-                                <img src="/main/ISElogo.png" alt="logo">
-                                <b>인성 이엔지(주)</b>
-                            </div>
-                        </li>
-                    </div>
-                </ul> 
-            </span> 
-        </div>
-        <div class = "copyright">
-            <span>Copyright ⓒ 인성이엔지(주) All Rights Reserved.</span>
+                    <!-- 3. 실행 스크립트 -->
+                    <script charset="UTF-8">
+                        new daum.roughmap.Lander({
+                            "timestamp" : "1675871615256",
+                            "key" : "2dot2",
+                            "mapWidth" : "50%",
+                            "mapHeight" : "469"
+                        }).render();
+                    </script>
+                </span> 
+                <span class = "contact_info">
+                    <ul style="list-style: none;">
+                        <div class = "first-line">
+                            <li>
+                                <div class = "office_contect">
+                                    <img src="main/tel.png" alt="call">
+                                    <b>CALLING</b>
+                                    <p>
+                                        <span>TEL</span>: 031-682-7077<br>
+                                        <span>FAX</span>: 031-682-7078<br>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class = "location">
+                                    <img src="main/location.png" alt="location">
+                                    <b>LOCATION</b>
+                                    <p>
+                                        우) 17796<br>
+                                        경기도 평택시 청북읍<br class = "location-hidden"> 드림산단3로 13<br>
+                                    </p>
+                                </div>
+                            </li>
+                            
+                        </div>
+                        <div class = "second-line">
+                            <li>
+                                <div class = "email">
+                                    <b>EMAIL</b>
+                                    <img src="main/email.png" alt="email">
+                                    <p>
+                                        yesise@ise-k.com
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class = "logo">
+                                    <img src="/main/ISElogo.png" alt="logo">
+                                    <b>인성 이엔지(주)</b>
+                                </div>
+                            </li>
+                        </div>
+                    </ul> 
+                </span> 
+            </div>
+            <div class = "copyright">
+                <span>Copyright &copy; 인성이엔지(주) All Rights Reserved.</span>
+            </div>
         </div>          
     </div>
 </body>

@@ -1,8 +1,11 @@
+@import url("font.css");
+
 /*컨텍트 박스*/
 #contact_bar{
     width: 100%;
     height: 200px;
     right: 0;
+    font-family: 'SUIT-Medium';
 }
 #contact_bar ul{
     height: 200px;
@@ -10,6 +13,9 @@
     margin: 0;
     list-style: none;
 }
+/* #contact_bar b{
+    font-family: 'SUIT-Bold';
+} */
 /*Calling*/
 #contact_bar .office_contect{
     width: 33.33%; 
@@ -24,6 +30,7 @@
     font-size: 16px;
     position: relative;
     top: 30%;
+    font-family: SUIT-Bold;
 }
 #contact_bar .office_contect p{
     color:aliceblue;
@@ -31,6 +38,9 @@
     position: relative;
     top: 30%;
 
+}
+.office_contect p span{
+    letter-spacing: 0.1em;
 }
 .office_contect img{
     position: relative;
@@ -63,6 +73,7 @@
     font-size: 16px;
     position: relative;
     top: 45%;
+    font-family: SUIT-Bold;
 }
 .email img{
     position: relative;
@@ -87,6 +98,7 @@
     font-size: 16px;
     position: relative;
     top: 27%;
+    font-family: SUIT-Bold;
 }
 #contact_bar .logo_location p{
     color:aliceblue;

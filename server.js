@@ -10,7 +10,7 @@ app.listen(8000, function(){
   console.log('Listening at 8000');
 });
 app.get('/',function(req,res){
-    res.sendFile(__dirname + '/index.html');
+    res.sendFile(__dirname + '/index2.html');
 });
 app.get('/about',function(req,res){
     res.sendFile(__dirname + '/detailPage/about/about.html');

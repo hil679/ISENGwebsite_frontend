@@ -6,6 +6,7 @@
     display: inline-block;
     border-bottom: 2px solid #efefef;
     margin-top: 95.5px;
+    font-family: SUIT-Regular;
     
   }
   .navbar__menu2 {
@@ -49,7 +50,7 @@
     margin-right: 2%;
   }
   #machine .processing-facility p{
-    height: 270px;
+    height: 290px;
   }
   #machine .measuring-facility p{
     height: 300px;
@@ -61,6 +62,7 @@
     bottom: 4%;
     transform: translate(-50%,50%);
     text-align: center;
+    font-family: SUIT-SemiBold;
   }
   #machine .measuring-facility .text{
     font-size: 1.1em;
@@ -68,6 +70,7 @@
     bottom: 20%;
     transform: translate(-50%,50%);
     text-align: center;
+    font-family: SUIT-SemiBold;
   }
   
   .measuring-facility .description{
@@ -78,6 +81,11 @@
     left: 50%;
     width: 100%;
     transform: translate(-50%,-50%);
+    font-family: SUIT-Regular;
+  }
+  .measuring-facility .description.description2{
+    position: relative;
+    margin-top: 20px;
   }
 
  
@@ -92,7 +100,7 @@
   }
  .processing-facility img{
   position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%,-50%);
     object-fit: contain;
@@ -195,6 +203,7 @@
     margin-top: 30px;
     margin: auto;
     width: 93%;
+    
  }
  #machining-center div{
     display: none;
@@ -204,6 +213,7 @@ table, td, th {/*?????????*/
     text-align: center;
     border-collapse : collapse;
     margin: 40px;
+    font-family: SUIT-Regular;
   };
 table{
     margin: auto;
@@ -211,6 +221,7 @@ table{
 th{
     height: 40px;
     background-color: aliceblue;
+    font-family: SUIT-Bold;
 }
 
 td{
@@ -221,7 +232,7 @@ td{
   .division-line-small-window{
     display: none;
   }
-  body div{
+  body div #inclusion-machine{
     text-align: center;
     width: 100%;
     position: relative;
@@ -246,7 +257,7 @@ td{
 @media screen and (max-width: 900px){
   #machine .measuring-facility p{
     width: 25%;
-    height: 235px;
+    height: 300px;
     margin: 10px;
   }
   #machine .measuring-facility .text{
@@ -259,6 +270,11 @@ td{
   .measuring-facility .description{
     top: 89%;
     font-size: 0.85em;
+  }
+  
+  .measuring-facility .description.description2, .description.description1{
+    bottom: 0%;
+    margin-top: 10px;
   }
 } 
 
@@ -297,7 +313,10 @@ td{
     bottom: 0%;
   }
   .measuring-facility .description.description2{
+    /* position: relative;
+    margin-top: 20px; */
     bottom: 0%;
+    margin-top: 30px;
   }
   
 } 

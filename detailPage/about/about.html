@@ -6,33 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>인성이엔지(주)</title>
     
-    <link rel="stylesheet" href="http://localhost:8000/css/common.css">
-    <link rel="stylesheet" href="http://localhost:8000/css/about.css">
-    <link rel="stylesheet" href="http://localhost:8000/css/contact_footer.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/contact_footer.css">
     <script src="http://localhost:8000/js/main.js" defer></script>
 </head>
 <body>
     <div>
         <nav class="navbar">
             <div class="navbar__logo">
-                <img src = "/main/ISElogo.png" alt = "logo" width="50" height="50" class = img_logo/>
-                <a href="../../">인성이엔지(주)</a>
+                <a href="/">
+                    <img src = "/main/ISElogo.png" alt = "logo"  class = img_logo/>
+                    <span>인성이엔지&#40;주&#41;</span>
+                </a> 
             </div>
-    
+            
             <ul class="navbar__menu">
-                <li><a href="../../about">About</a></li>
-                <li><a href="../../industry">Product</a></li>
-                <li><a href="../../machine">Machine</a></li>
-                <li><a href="../../contact">Contact</a></li>
+                <li><a href="/about">About</a></li> <!--비전, 연혁, com-->
+                <li><a href="/industry">Product</a></li>
+                <li><a href="/machine">Machine</a></li>
+                <li><a href="/contact">Contact</a></li> <!--위치, 주소 이메일, 전화번호, 펙스번호-->
             </ul>
     
             <a href="#" class="navbar__toogleBtn">
-                <img src = "../../main/toggle.png" alt = "logo" width="26px" height="26px" class = toogle/>
+                <img src = "/main/toggle.png" alt = "logo" width="26px" height="26px" class = toogle/>
             </a>
         </nav>
         <div id="factory">
-            <img class = "factory-img" src="../../main/인성이엔지내부1.png" width="100%" height="410px"/>
-            <b class = "factory-text">INTO INSUNG</b>
+            <img class = "factory-img" src="../../about/about-img.png" width="100%" height="410px"/>
+            <b class = "factory-text">회 사 소 개</b>
         </div>
         <div id = "greetings">
             <div class = "greet-box">
@@ -75,30 +77,14 @@
                     <span>연혁</span>
                 </div>
                 <ul>
-                    <!-- <li>
-                        <dt>2007년 11월</dt>
-                        <dd>인성이엔지 설립</dd>
-                    </li>
-                    <li>
-                        <dt>2012년 6월</dt>
-                        <dd>ISO9001 인증</dd>
-                        <dd class = "secondIn201206">밴처 기업 등록</dd>
-                    </li>
-                    <li>
-                        <dt>2012년 11월</dt>
-                        <dd>공장 이전 (충남 천안시)</dd>
-                    </li>
-                    <li>
-                        <dt>2015년 2월</dt>
-                        <dd>LAB 시작</dd>
-                    </li> -->
+                   
                     <li>
                         <dt>2020년 5월</dt>
                         <dd>인성이엔지(주) 설립 (충남 천안시)</dd>
                     </li>
                     <li>
                         <dt>2020년 6월</dt>
-                        <dd>ISO 9001 획득</dd><!--컨펌-->
+                        <dd>ISO 9001 획득</dd>
                     </li>
                     <li>
                         <dt>2021년 7월</dt>
@@ -115,8 +101,8 @@
                         <img src="/main/tel.png" alt="call">
                         <b>CALLING</b>
                         <p>
-                            T E L: 031-682-7077<br>
-                            F A X: 031-682-7078<br>
+                            <span>TEL</span>: 031-682-7077<br>
+                            <span>FAX</span>: 031-682-7078<br>
                         </p>
                     </div>
                 </li>
@@ -144,7 +130,7 @@
             </ul>  
         </div> 
         <div class = "copyright">
-            <span>Copyright ⓒ 인성이엔지(주) All Rights Reserved.</span>
+            <span>Copyright &copy; 인성이엔지(주) All Rights Reserved.</span>
         </div>           
     </div>
 </body>

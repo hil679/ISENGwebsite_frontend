@@ -1,11 +1,20 @@
+/*font*/
+@import url('font.css');
+#greetings, #history{
+    font-family: SUIT-Regular;
+}
+
+
+
 #factory {
     position: relative;
 }
 .factory-img{
     margin-top: 95.5px;
     margin-bottom: 50px;
-    opacity: 0.85; 
-    filter: brightness(45%);
+    height: 600px;
+    /* opacity: 0.85; 
+    filter: brightness(45%); */
     position: relative;
 }
 #factory .factory-text{
@@ -14,10 +23,14 @@
     top: 50%;
 	left: 50%;
 	transform: translate( -50%, -50% );
-    font-size: 5.5em;
+    font-size: 4em;
     color: whitesmoke;
-    
-    /* padding: 15px; */
+    width: 350px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 5px solid whitesmoke;
+    border-bottom: 5px solid whitesmoke;
+    font-family: SUIT-Bold;
 }
 
 #greetings{
@@ -44,6 +57,7 @@
     float: right;
     margin: 0;
     font-size: 1.6em;
+    font-family: SUIT-SemiBold;
     letter-spacing: 6px;
     
 }
@@ -68,6 +82,9 @@
 }
 .greetings p{
     font-size: 1.2em;
+}
+.greetings p b{
+    font-family: SUIT-Bold;
 }
 .greetings{
     display: inline-block;
@@ -106,6 +123,7 @@
 .history-title{
     font-size: 1.6em;
     letter-spacing: 6px;
+    font-family: SUIT-SemiBold;
 }
 
 #history ul{
@@ -143,7 +161,7 @@ dd{
     display: block;
     position: absolute;
     top:0px;
-    left: 200px;
+    left: 190px;
 }
 dt #text{
     margin-left: 10px;
@@ -207,6 +225,13 @@ dt, dd{
 @media screen and (max-width: 840px){
     .factory-img{
         margin-top: 81px;
+        height: 420px;
+    }
+    #factory .factory-text{
+        font-size: 3em;
+        width: 300px;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
     .sec-p-fir-br{
         display: none;
@@ -234,12 +259,19 @@ dt, dd{
 }
 
 @media screen and (max-width: 450px){
-    .factory-img{
-        height: 250px;
-    }
+    
     #factory .factory-text{
-        font-size: 3em;
+        font-size: 2.4em;
+        width: 230px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top: 3px solid whitesmoke;
+        border-bottom: 3px solid whitesmoke;
     }
+    .factory-img{
+        height: 220px;
+    }
+    
     #greetings .certificate img{
         width: 300px;
         height: 400px;
@@ -265,10 +297,10 @@ dt, dd{
         font-size: 1.1em;
     }
     dd{
-        left: 150px;
+        left: 130px;
     }
     dt{ 
-        width: 150px;
+        width: 130px;
     }
 
 }

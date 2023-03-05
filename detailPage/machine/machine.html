@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>인성이엔지(주)</title>
     <link rel="stylesheet" href="css/machine.css">
-    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="http://localhost:8000/css/common.css">
     <link rel="stylesheet" href="http://localhost:8000/css/contact_footer.css">
     <script src="js/main.js" defer></script>
 
@@ -19,481 +19,484 @@
     <div>
         <nav class="navbar">
             <div class="navbar__logo">
-                <img src = "../../main/ISElogo.png" alt = "logo" width="50" height="50" class = img_logo/>
-                <a href="../../">인성이엔지(주)</a>
+                <a href="/">
+                    <img src = "/main/ISElogo.png" alt = "logo"  class = img_logo/>
+                    <span>인성이엔지(주)</span>
+                </a> 
             </div>
-    
+            
             <ul class="navbar__menu">
-                <li><a href="../about">About</a></li>
-                <li><a href="../industry">Product</a></li>
-                <li><a href="../machine">Machine</a></li>
-                <li><a href="../contact">Contact</a></li>
+                <li><a href="/about">About</a></li> <!--비전, 연혁, com-->
+                <li><a href="/industry">Product</a></li>
+                <li><a href="/machine">Machine</a></li>
+                <li><a href="/contact">Contact</a></li> <!--위치, 주소 이메일, 전화번호, 펙스번호-->
             </ul>
     
             <a href="#" class="navbar__toogleBtn">
-                <img src = "../../main/toggle.png" alt = "logo" width="26px" height="26px" class = toogle/>
+                <img src = "/main/toggle.png" alt = "logo" width="26px" height="26px" class = toogle/>
             </a>
         </nav>
 
+        <div id = "inclusion-machine">
+            <nav class="navbar2">
+                <ul class="navbar__menu2">
+                    <li class = "navbar2-facility-status"><a href = "javascript:void(0);" onclick="machineChangeMenu('0');">설비현황</a></li> 
+                    <li class = "navbar2-processing-facility"><a href = "javascript:void(0);" onclick="machineChangeMenu('1');">가공설비</a></li>
+                    <li class = "navbar2-measuring-facility"><a href = "javascript:void(0);" onclick="machineChangeMenu('2');">측정설비</a></li> 
+                </ul>
+            </nav>
         
-        <nav class="navbar2">
-            <ul class="navbar__menu2">
-                <li class = "navbar2-facility-status"><a href = "javascript:void(0);" onclick="machineChangeMenu('0');">설비현황</a></li> 
-                <li class = "navbar2-processing-facility"><a href = "javascript:void(0);" onclick="machineChangeMenu('1');">가공설비</a></li>
-                <li class = "navbar2-measuring-facility"><a href = "javascript:void(0);" onclick="machineChangeMenu('2');">측정설비</a></li> 
-            </ul>
-        </nav>
-    
 
-        <div id = "machine">
-            <div class = "facility-status">
-                <div>
-                    <table>
-                        <tr>
-                            <th>설비</th>
-                            <th>모델명</th>
-                            <th>제조사</th>
-                            <th colspan="2">수량</th>
-                        </tr>
-                        <tr>
-                            <td rowspan="9">머시닝센터</td>
+            <div id = "machine">
+                <div class = "facility-status">
+                    <div>
+                        <table>
                             <tr>
-                                <td>DNM 750L</td>
-                                <td>DN솔루션즈</td>
-                                <td>1</td>
-                                <td rowspan="8">20</td>
+                                <th>설비</th>
+                                <th>모델명</th>
+                                <th>제조사</th>
+                                <th colspan="2">수량</th>
                             </tr>
                             <tr>
-                                <td>MYNX 650</td>
-                                <td>DN솔루션즈</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>MYNX 6500||</td>
-                                <td>DN솔루션즈</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>VM 510</td>
-                                <td>DN솔루션즈</td>
-                                <td>1</td>
+                                <td rowspan="9">머시닝센터</td>
+                                <tr>
+                                    <td>DNM 750L</td>
+                                    <td>DN솔루션즈</td>
+                                    <td>1</td>
+                                    <td rowspan="8">20</td>
+                                </tr>
+                                <tr>
+                                    <td>MYNX 650</td>
+                                    <td>DN솔루션즈</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>MYNX 6500||</td>
+                                    <td>DN솔루션즈</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>VM 510</td>
+                                    <td>DN솔루션즈</td>
+                                    <td>1</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>DNM 500</td>
+                                    <td>DN솔루션즈</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>T4000L</td>
+                                    <td>DN솔루션즈</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>DT 400</td>
+                                    <td>DN솔루션즈</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Fanuc a-D21LiA</td>
+                                    <td></td>
+                                    <td>2</td>
+                                </tr>
                                 
                             </tr>
                             <tr>
-                                <td>DNM 500</td>
-                                <td>DN솔루션즈</td>
-                                <td>1</td>
+                                <td rowspan="6">CNC선반</td>
+                                <tr>
+                                    <td>CUTEX-160A</td>
+                                    <td>화천기계</td>
+                                    <td>2</td>
+                                    <td rowspan="5">16</td>
+                                </tr>
+                                <tr>
+                                    <td>Lynx 220</td>
+                                    <td>DN솔루션즈</td>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <td>Lynx 2100</td>
+                                    <td>DN솔루션즈</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>HI-TECH 200A</td>
+                                    <td>화천기계</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>PUMA GT2100M</td>
+                                    <td>DN솔루션즈</td>
+                                    <td>1</td>
+                                </tr>
+                                
                             </tr>
-                            <tr>
-                                <td>T4000L</td>
-                                <td>DN솔루션즈</td>
-                                <td>12</td>
-                            </tr>
-                            <tr>
-                                <td>DT 400</td>
-                                <td>DN솔루션즈</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>Fanuc a-D21LiA</td>
-                                <td></td>
-                                <td>2</td>
-                            </tr>
-                            
-                        </tr>
-                        <tr>
-                            <td rowspan="6">CNC선반</td>
-                            <tr>
-                                <td>CUTEX-160A</td>
-                                <td>화천기계</td>
-                                <td>2</td>
-                                <td rowspan="5">16</td>
-                            </tr>
-                            <tr>
-                                <td>Lynx 220</td>
-                                <td>DN솔루션즈</td>
-                                <td>11</td>
-                            </tr>
-                            <tr>
-                                <td>Lynx 2100</td>
-                                <td>DN솔루션즈</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>HI-TECH 200A</td>
-                                <td>화천기계</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>PUMA GT2100M</td>
-                                <td>DN솔루션즈</td>
-                                <td>1</td>
-                            </tr>
-                            
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <div class = "processing-facility">
-                <!-- <div> -->
-                    <p class="first-machine-p" onclick="changeMachineSpec('0')">
-                        <img class = "machining-center-img" src="item/machine/MYNX650.png">
-                        <span class = "text">머시닝센터</span>
-                        <span class="left_top"></span>
-                        <span class="right_top"></span>
-                        <span class="right_bottom"></span>
-                        <span class="left_bottom"></span>
-                    </p>
-                    
-                    <p class="second-machine-p" onclick="changeMachineSpec('1')">
-                        <img class = "taping" src="item/machine/탭핑센터.png">
-                        <span  class = "text">탭핑센터</span>
-                        <span class="left_top"></span>
-                        <span class="right_top"></span>
-                        <span class="right_bottom"></span>
-                        <span class="left_bottom"></span>
-                    </p>
-                    <div class = "division-line-small-window"></div>
-                   
-                    <p class="third-machine-p" onclick="changeMachineSpec('2')">
-                        <img class = "cnc8" src="item/machine/CNC8.png"><!--사진 화질 별로.. 원래거랑 비교해서 물어보기-->
-                        <span class = "text">CNC 선반 8”</span>
-                        <span class="left_top"></span>
-                        <span class="right_top"></span>
-                        <span class="right_bottom"></span>
-                        <span class="left_bottom"></span>
-                    </p>
-                    
-                    <p class="forth-machine-p" onclick="changeMachineSpec('3')">
-                        <img class = "cnc6" src="item/machine/CNC6.png">
-                        <span class = "text">CNC 선반 6”</span>
-                        <span class="left_top"></span>
-                        <span class="right_top"></span>
-                        <span class="right_bottom"></span>
-                        <span class="left_bottom"></span>
-                    </p>
-                    <div id = "machining-center">
-                        <div class = "first-machining-center">
-                            <table>
-                                <th colspan="4">머시닝센터 7.5호기</th>
-                                <tr>
-                                    <td colspan="3">ITEM</td>
-                                    <td>SPEC.</td>
-                                </tr>
-                                <tr>
-                                    <td rowspan="4">이송량</td>
-                                    <tr>
-                                        <td>X축 이송거리</td>
-                                        <td>mm</td>
-                                        <td>2,160</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Y축 이송거리</td>
-                                        <td>mm</td>
-                                        <td>760</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Z축 이동거리</td>
-                                        <td>mm</td>
-                                        <td>650</td>
-                                    </tr>
-                                </tr>
-                                <tr>
-                                    <td>주축</td>
-                                    <td>최고 회전속도</td>
-                                    <td>rpm</td>
-                                    <td>12,000</td>
-                                </tr>
-                                <tr>
-                                    <td>ATC</td>
-                                    <td>공구 보유 수량</td>
-                                    <td>개</td>
-                                    <td>30</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">제조회사</td>
-                                    <td colspan="2">두산공작기계</td>
-                                </tr>
-                            </table>
-                            <table>
-                                <th colspan="4">머시닝센터 6.5호기</th>
-                                <tr>
-                                    <td colspan="3">ITEM</td>
-                                    <td>SPEC.</td>
-                                </tr>
-                                <tr>
-                                    <td rowspan="4">이송량</td>
-                                    <tr>
-                                        <td>X축 이송거리</td>
-                                        <td>mm</td>
-                                        <td>1,300</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Y축 이송거리</td>
-                                        <td>mm</td>
-                                        <td>650</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Z축 이동거리</td>
-                                        <td>mm</td>
-                                        <td>625</td>
-                                    </tr>
-                                </tr>
-                                <tr>
-                                    <td>주축</td>
-                                    <td>최고 회전속도</td>
-                                    <td>rpm</td>
-                                    <td>12,000</td>
-                                </tr>
-                                <tr>
-                                    <td>ATC</td>
-                                    <td>공구 보유 수량</td>
-                                    <td>개</td>
-                                    <td>24</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">제조회사</td>
-                                    <td colspan="2">두산공작기계</td>
-                                </tr>
-                            </table>
-                            <table>
-                                <th colspan="4">머시닝센터 5호기</th>
-                                <tr>
-                                    <td colspan="3">ITEM</td>
-                                    <td>SPEC.</td>
-                                </tr>
-                                <tr>
-                                    <td rowspan="4">이송량</td>
-                                    <tr>
-                                        <td>X축 이송거리</td>
-                                        <td>mm</td>
-                                        <td>1,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Y축 이송거리</td>
-                                        <td>mm</td>
-                                        <td>500</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Z축 이동거리</td>
-                                        <td>mm</td>
-                                        <td>550</td>
-                                    </tr>
-                                </tr>
-                                <tr>
-                                    <td>주축</td>
-                                    <td>최고 회전속도</td>
-                                    <td>rpm</td>
-                                    <td>12,000</td>
-                                </tr>
-                                <tr>
-                                    <td>ATC</td>
-                                    <td>공구 보유 수량</td>
-                                    <td>개</td>
-                                    <td>24</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">제조회사</td>
-                                    <td colspan="2">두산공작기계</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class = "second-machining-center">
-                            <table>
-                                <th colspan="4">탭핑센터</th>
-                                <tr>
-                                    <td colspan="3">ITEM</td>
-                                    <td>SPEC.</td>
-                                </tr>
-                                <tr>
-                                    <td rowspan="4">이송량</td>
-                                    <tr>
-                                        <td>X축 이송거리</td>
-                                        <td>mm</td>
-                                        <td>700</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Y축 이송거리</td>
-                                        <td>mm</td>
-                                        <td>400</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Z축 이동거리</td>
-                                        <td>mm</td>
-                                        <td>300</td>
-                                    </tr>
-                                </tr>
-                                <tr>
-                                    <td>주축</td>
-                                    <td>최고 회전속도</td>
-                                    <td>rpm</td>
-                                    <td>12,000</td>
-                                </tr>
-                                <tr>
-                                    <td>ATC</td>
-                                    <td>공구 보유 수량</td>
-                                    <td>개</td>
-                                    <td>21</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">제조회사</td>
-                                    <td colspan="2">두산공작기계</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class = "third-machining-center">
-                            <table>
-                                <th colspan="4">CNC 선반 8”</th>
-                                <tr>
-                                    <td colspan="3">ITEM</td>
-                                    <td>SPEC.</td>
-                                </tr>
-                                <tr>
-                                    <td rowspan="4">가공능력</td>
-                                    <tr>
-                                        <td>최대가공경</td>
-                                        <td>mm</td>
-                                        <td>350</td>
-                                    </tr>
-                                    <tr>
-                                        <td>표준가공경</td>
-                                        <td>mm</td>
-                                        <td>210</td>
-                                    </tr>
-                                    <tr>
-                                        <td>최대가공길이</td>
-                                        <td>mm</td>
-                                        <td>401.5</td>
-                                    </tr>
-                                </tr>
-                                <tr>
-                                    <td>주축</td>
-                                    <td>최고 회전속도</td>
-                                    <td>rpm</td>
-                                    <td>5,000</td>
-                                </tr>
-                                <tr>
-                                    <td>ATC</td>
-                                    <td>공구부착면의 수</td>
-                                    <td>개</td>
-                                    <td>12</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">제조회사</td>
-                                    <td colspan="2">화천기계</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class = "forth-machining-center">
-                            <table>
-                                <th colspan="4">CNC 선반 6”</th>
-                                <tr>
-                                    <td colspan="3">ITEM</td>
-                                    <td>SPEC.</td>
-                                </tr>
-                                <tr>
-                                    <td rowspan="4">가공 능력</td>
-                                    <tr>
-                                        <td>최대가공경</td>
-                                        <td>mm</td>
-                                        <td>300</td>
-                                    </tr>
-                                    <tr>
-                                        <td>표준가공경</td>
-                                        <td>mm</td>
-                                        <td>186</td>
-                                    </tr>
-                                    <tr>
-                                        <td>최대가공길이</td>
-                                        <td>mm</td>
-                                        <td>300</td>
-                                    </tr>
-                                </tr>
-                                <tr>
-                                    <td>주축</td>
-                                    <td>최고 회전속도</td>
-                                    <td>rpm</td>
-                                    <td>6,000</td>
-                                </tr>
-                                <tr>
-                                    <td>ATC</td>
-                                    <td>공구부착면의 수</td>
-                                    <td>개</td>
-                                    <td>12</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">제조회사</td>
-                                    <td colspan="2">화천기계</td>
-                                </tr>
-                            </table>
-                        </div>
+                        </table>
                     </div>
-                <!-- </div> -->
-            </div>
+                </div>
+                <div class = "processing-facility">
+                    <!-- <div> -->
+                        <p class="first-machine-p" onclick="changeMachineSpec('0')">
+                            <img class = "machining-center-img" src="item/machine/MYNX650.png">
+                            <span class = "text">머시닝센터</span>
+                            <span class="left_top"></span>
+                            <span class="right_top"></span>
+                            <span class="right_bottom"></span>
+                            <span class="left_bottom"></span>
+                        </p>
+                        
+                        <p class="second-machine-p" onclick="changeMachineSpec('1')">
+                            <img class = "taping" src="item/machine/탭핑센터.png">
+                            <span  class = "text">탭핑센터</span>
+                            <span class="left_top"></span>
+                            <span class="right_top"></span>
+                            <span class="right_bottom"></span>
+                            <span class="left_bottom"></span>
+                        </p>
+                        <div class = "division-line-small-window"></div>
+                    
+                        <p class="third-machine-p" onclick="changeMachineSpec('2')">
+                            <img class = "cnc8" src="item/machine/CNC8.png"><!--사진 화질 별로.. 원래거랑 비교해서 물어보기-->
+                            <span class = "text">CNC 선반 8”</span>
+                            <span class="left_top"></span>
+                            <span class="right_top"></span>
+                            <span class="right_bottom"></span>
+                            <span class="left_bottom"></span>
+                        </p>
+                        
+                        <p class="forth-machine-p" onclick="changeMachineSpec('3')">
+                            <img class = "cnc6" src="item/machine/CNC6.png">
+                            <span class = "text">CNC 선반 6”</span>
+                            <span class="left_top"></span>
+                            <span class="right_top"></span>
+                            <span class="right_bottom"></span>
+                            <span class="left_bottom"></span>
+                        </p>
+                        <div id = "machining-center">
+                            <div class = "first-machining-center">
+                                <table>
+                                    <th colspan="4">머시닝센터 7.5호기</th>
+                                    <tr>
+                                        <td colspan="3">ITEM</td>
+                                        <td>SPEC.</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="4">이송량</td>
+                                        <tr>
+                                            <td>X축 이송거리</td>
+                                            <td>mm</td>
+                                            <td>2,160</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Y축 이송거리</td>
+                                            <td>mm</td>
+                                            <td>760</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Z축 이동거리</td>
+                                            <td>mm</td>
+                                            <td>650</td>
+                                        </tr>
+                                    </tr>
+                                    <tr>
+                                        <td>주축</td>
+                                        <td>최고 회전속도</td>
+                                        <td>rpm</td>
+                                        <td>12,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ATC</td>
+                                        <td>공구 보유 수량</td>
+                                        <td>개</td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">제조회사</td>
+                                        <td colspan="2">두산공작기계</td>
+                                    </tr>
+                                </table>
+                                <table>
+                                    <th colspan="4">머시닝센터 6.5호기</th>
+                                    <tr>
+                                        <td colspan="3">ITEM</td>
+                                        <td>SPEC.</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="4">이송량</td>
+                                        <tr>
+                                            <td>X축 이송거리</td>
+                                            <td>mm</td>
+                                            <td>1,300</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Y축 이송거리</td>
+                                            <td>mm</td>
+                                            <td>650</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Z축 이동거리</td>
+                                            <td>mm</td>
+                                            <td>625</td>
+                                        </tr>
+                                    </tr>
+                                    <tr>
+                                        <td>주축</td>
+                                        <td>최고 회전속도</td>
+                                        <td>rpm</td>
+                                        <td>12,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ATC</td>
+                                        <td>공구 보유 수량</td>
+                                        <td>개</td>
+                                        <td>24</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">제조회사</td>
+                                        <td colspan="2">두산공작기계</td>
+                                    </tr>
+                                </table>
+                                <table>
+                                    <th colspan="4">머시닝센터 5호기</th>
+                                    <tr>
+                                        <td colspan="3">ITEM</td>
+                                        <td>SPEC.</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="4">이송량</td>
+                                        <tr>
+                                            <td>X축 이송거리</td>
+                                            <td>mm</td>
+                                            <td>1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Y축 이송거리</td>
+                                            <td>mm</td>
+                                            <td>500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Z축 이동거리</td>
+                                            <td>mm</td>
+                                            <td>550</td>
+                                        </tr>
+                                    </tr>
+                                    <tr>
+                                        <td>주축</td>
+                                        <td>최고 회전속도</td>
+                                        <td>rpm</td>
+                                        <td>12,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ATC</td>
+                                        <td>공구 보유 수량</td>
+                                        <td>개</td>
+                                        <td>24</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">제조회사</td>
+                                        <td colspan="2">두산공작기계</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class = "second-machining-center">
+                                <table>
+                                    <th colspan="4">탭핑센터</th>
+                                    <tr>
+                                        <td colspan="3">ITEM</td>
+                                        <td>SPEC.</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="4">이송량</td>
+                                        <tr>
+                                            <td>X축 이송거리</td>
+                                            <td>mm</td>
+                                            <td>700</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Y축 이송거리</td>
+                                            <td>mm</td>
+                                            <td>400</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Z축 이동거리</td>
+                                            <td>mm</td>
+                                            <td>300</td>
+                                        </tr>
+                                    </tr>
+                                    <tr>
+                                        <td>주축</td>
+                                        <td>최고 회전속도</td>
+                                        <td>rpm</td>
+                                        <td>12,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ATC</td>
+                                        <td>공구 보유 수량</td>
+                                        <td>개</td>
+                                        <td>21</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">제조회사</td>
+                                        <td colspan="2">두산공작기계</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class = "third-machining-center">
+                                <table>
+                                    <th colspan="4">CNC 선반 8”</th>
+                                    <tr>
+                                        <td colspan="3">ITEM</td>
+                                        <td>SPEC.</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="4">가공능력</td>
+                                        <tr>
+                                            <td>최대가공경</td>
+                                            <td>mm</td>
+                                            <td>350</td>
+                                        </tr>
+                                        <tr>
+                                            <td>표준가공경</td>
+                                            <td>mm</td>
+                                            <td>210</td>
+                                        </tr>
+                                        <tr>
+                                            <td>최대가공길이</td>
+                                            <td>mm</td>
+                                            <td>401.5</td>
+                                        </tr>
+                                    </tr>
+                                    <tr>
+                                        <td>주축</td>
+                                        <td>최고 회전속도</td>
+                                        <td>rpm</td>
+                                        <td>5,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ATC</td>
+                                        <td>공구부착면의 수</td>
+                                        <td>개</td>
+                                        <td>12</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">제조회사</td>
+                                        <td colspan="2">화천기계</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class = "forth-machining-center">
+                                <table>
+                                    <th colspan="4">CNC 선반 6”</th>
+                                    <tr>
+                                        <td colspan="3">ITEM</td>
+                                        <td>SPEC.</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="4">가공 능력</td>
+                                        <tr>
+                                            <td>최대가공경</td>
+                                            <td>mm</td>
+                                            <td>300</td>
+                                        </tr>
+                                        <tr>
+                                            <td>표준가공경</td>
+                                            <td>mm</td>
+                                            <td>186</td>
+                                        </tr>
+                                        <tr>
+                                            <td>최대가공길이</td>
+                                            <td>mm</td>
+                                            <td>300</td>
+                                        </tr>
+                                    </tr>
+                                    <tr>
+                                        <td>주축</td>
+                                        <td>최고 회전속도</td>
+                                        <td>rpm</td>
+                                        <td>6,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ATC</td>
+                                        <td>공구부착면의 수</td>
+                                        <td>개</td>
+                                        <td>12</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">제조회사</td>
+                                        <td colspan="2">화천기계</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    <!-- </div> -->
+                </div>
 
-            <div class = "measuring-facility">
-                <div>
-                    <!--측정설비-->
-                    <p class = "threed">
-                        <img src="item/machine/3d.jpg">
-                        <span class = "text">3차원 측정기</span>
-                    </p>
-                    <p>
-                        <img src="item/machine/형상측정기.png">
-                        <span class = "text">형상측정기</span>
-                        <span class = "description description1">
-                            외부형상 정밀측정
-                        </span>
-                    </p>
-                    <p class = "non-contact">
-                        <img src="item/machine/비접촉.jpg">
-                        <span class = "text">비접촉 측정기</span>
-                        <span class = "description description2">
-                            VISION SYSTEM을 이용하여<br> 제품의 접촉없이 치수 측정
-                        </span>
-                    </p>
+                <div class = "measuring-facility">
+                    <div>
+                        <!--측정설비-->
+                        <p class = "threed">
+                            <img src="item/machine/3d.jpg">
+                            <span class = "text">3차원 측정기</span>
+                        </p>
+                        <p>
+                            <img src="item/machine/형상측정기.png">
+                            <span class = "text">형상측정기</span>
+                            <span class = "description description1">
+                                외부형상 정밀측정
+                            </span>
+                        </p>
+                        <p class = "non-contact">
+                            <img src="item/machine/비접촉.png">
+                            <span class = "text">비접촉 측정기</span>
+                            <span class = "description description2">
+                                VISION SYSTEM을 이용하여<br> 제품의 접촉없이 치수 측정
+                            </span>
+                        </p>
+                    </div>
+                    
                 </div>
-                
             </div>
+            <div id = "contact_bar">
+                <ul style="list-style: none;">
+                    <li>
+                        <div class = "office_contect">
+                            <img src="main/tel.png" alt="call">
+                            <b>CALLING</b>
+                            <p>
+                                <span>TEL</span>: 031-682-7077<br>
+                                <span>FAX</span>: 031-682-7078<br>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class = "email" >
+                            <b>EMAIL</b>
+                            <img src="main/email.png" alt="email">
+                            <p>
+                                yesise@ise-k.com
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class = "logo_location" >
+                            <img src="main/location.png" alt="location">
+                            <b>LOCATION</b>
+                            <p>
+                                우) 17796<br>
+                                경기도 평택시 청북읍<br class = "location-hidden"> 드림산단3로 13<br>
+                                <!-- <br class = "location-hidden"> 
+                                인성 이엔지(주) -->
+                            </p>
+                        </div>
+                    </li>
+                </ul>  
+            </div> 
+            <div class = "copyright">
+                <span>Copyright &copy; 인성이엔지(주) All Rights Reserved.</span>
+            </div> 
         </div>
-        <div id = "contact_bar">
-            <ul style="list-style: none;">
-                <li>
-                    <div class = "office_contect">
-                        <img src="main/tel.png" alt="call">
-                        <b>CALLING</b>
-                        <p>
-                            T E L: 031-682-7077<br>
-                            F A X: 031-682-7078<br>
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class = "email" >
-                        <b>EMAIL</b>
-                        <img src="main/email.png" alt="email">
-                        <p>
-                            yesise@ise-k.com
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class = "logo_location" >
-                        <img src="main/location.png" alt="location">
-                        <b>LOCATION</b>
-                        <p>
-                            우) 17796<br>
-                            경기도 평택시 청북읍<br class = "location-hidden"> 드림산단3로 13<br>
-                            <!-- <br class = "location-hidden"> 
-                            인성 이엔지(주) -->
-                        </p>
-                    </div>
-                </li>
-            </ul>  
-        </div> 
-        <div class = "copyright">
-            <span>Copyright ⓒ 인성이엔지(주) All Rights Reserved.</span>
-        </div> 
     </div> 
 </body>
 </html>

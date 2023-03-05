@@ -1,31 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-
-.contentsBox{
-    font-family: 'Noto Sans KR', sans-serif;
-}
+@import url('font.css');
+/* .contentsBox{
+    
+} */
 
 .main-slider img{
-    width: 1000px;
-    height: 500px;
+    /*index.html*/
+    /* width: 1000px;
+    height: 500px; */
+
+    /*index2.html*/
+    width: 100%;
+    height: 750px;
     position: relative;
     /* filter: brightness(80%); */
 }
 .main-slider {
+/*index.html
+    height: 610px; */
+/* background-color: whitesmoke; */
     width: 100%;
-    height: 610px;
-    background-color: whitesmoke;
+    height: 750px;
+    
     position: relative;
     overflow: hidden;
     transition: height .4s;
 }
 .main-slider .swiper-container {
+    /*index.html*/
     /* 819px 슬라이드 3개와 그 사이 여백 10px씩 = 2477px */
-    width: calc(1000px * 3 + 20px);
-    height: 553px;
-    position: absolute;
-    top: 40px;
+    /*index.html*/
+    /* width: calc(1000px * 3 + 20px);
     left: 50%;
+    height: 553px;
     margin-left: calc((1000px * 3 + 20px) / -2);
+
+    
+    position: absolute;
+    top: 40px; */
+
+    /*index2.html*/
+    width: 100%;
+    height: 750px;
+    
 }
 .main-slider .swiper-slide {
     position: relative;
@@ -36,10 +53,70 @@
     opacity: 1;
     position: relative;
 }
-/* .main-slider .swiper-slide .text{
+
+
+
+
+.main-slider .swiper-slide .text, .text-industry, .motto{
     display: none;
 }
+.main-slider .swiper-slide-active .text, .text-industry,.motto{
+    display: block;
+    position: absolute;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+.main-slider .swiper-slide-active .text, .text-industry{
+    width: 430px;
+    height: 130px;
+    top:50%;
+    font-family: SUIT-Bold;
+}
+.main-slider .swiper-slide-active .motto{
+    width: 600px;
+    height: 160px;
+    top:33%;
+    text-align: center;
+}
+.main-slider .swiper-slide-active .text{
+    border-bottom: solid white 6px;
+    border-top: solid white 6px;
+    color: white;
+}
+.text-industry{
+    border-bottom: solid gray 6px;
+    border-top: solid gray 6px;
+    color: gray;
+}
 
+.motto-ko{
+    font-size: 2.5em;
+    color: rgb(51, 64, 103);
+    font-family: SUIT-SemiBold;
+}
+.motto-en{
+    font-size: 1.8em;
+    color: gray;
+    font-family: SUIT-ExtraLight;
+}
+.main-slider .swiper-slide-active .motto .motto-line{
+    width: 100px;
+    display: inline-block;
+    border-top: 1.3px solid gray;
+    margin-top: 21px;
+    padding-bottom: 10px;
+}
+.main-slider .swiper-slide-active .name{
+    font-size: 3.9em;
+    width: 100%;
+    font-weight: 650;
+    text-align: center;
+    line-height: 130px;
+    /* position: absolute;
+    left: 50%; */
+}
+/*
 .main-slider .swiper-slide-active .text,.text-about, .text-machine, .text-industry{
     color: white;
     position: absolute;
@@ -123,32 +200,35 @@
 
 
 .swiper-prev img, .swiper-next img{
-    width: 70px;
-    height: 200px;
+    width: 45px;
+    height: 90px;
+    opacity: 40%;
 }
 .swiper-prev, .swiper-next{
     display: inline;
     position:absolute;
-    top:30%;
+    top:45%;
     z-index: 98;
 }
 .swiper-prev img, .swiper-next img{
     cursor: pointer;
 }
 .swiper-prev{
-    left: 0%;
+    left: 1.5%;
 }
 .swiper-next{
-    right: 0%;
+    right: 1.5%;
 }
-.swiper-prev:hover, .swiper-next:hover{
-    background-color: rgba(230, 239, 247, 0.8);
-}
+/* .swiper-prev:hover, .swiper-next:hover{
+    opacity: 100%;
+} */
 
 /* 컨텐츠 */
 #content {
-    /* min-height: 500px; */
-    padding: 80px 0;
+    /* index.html
+    padding: 80px 0; */
+    /* padding-top: 80px; */
+    padding-bottom: 80px;
    
 }
 .contentsBox{
@@ -178,6 +258,11 @@
 .message{
     position: relative;
     text-align: center;
+    /* font-family: 'GmarketSansMedium'; */
+    font-family: SUIT-Regular;
+}
+.message b{
+    font-family: SUIT-Heavy;
 }
 .message_title_div{
     margin-top: 50px;
@@ -222,6 +307,7 @@
 .customers_firm_title{
     font-size: 1.5em;
     border-bottom: 1.5px solid rgb(184, 184, 190);
+    font-family: SUIT-Regular;
 }
 .customers_firm_div{
     margin-top: 30px;
@@ -325,39 +411,99 @@
 } */
 
 @media screen and (max-width: 1000px){
-    .swiper-prev, .swiper-next{
-        top:35%;
-        height: 150px;
-    }
-    .swiper-prev img, .swiper-next img{
-        
-        height: 150px;
-        background-color: rgba(239, 239, 239, 0.6);
-
-    }
-}
-
-@media screen and (max-width: 780px){
+    /*index2.html*/
     .main-slider{
-        height: 550px;
+        /*index.html height: 550px; */
+        height: 500px;
     }
     .main-slider .swiper-slide-active img{
+         
         width: 100%;
-        height: 400px;
+        height: 500px;
         position: relative;
-        filter: brightness(80%);
+        /* filter: brightness(80%); */
     }
     .main-slider img, .swiper-slide-next{
         width: 0%;
     }
     .main-slider .swiper-container {
         /* 819px 슬라이드 3개와 그 사이 여백 10px씩 = 2477px */
+        /* index.html*/
+        /* height: 400px; */
+        /* top: 40px; */
+        height: 500px;
+    }
+
+
+    .main-slider .swiper-slide-active .text, .text-industry{
+        width: 330px;
+        height: 100px;
+        top:50%;
+    }
+    .main-slider .swiper-slide-active .motto{
+        width: 500px;
+        height: 130px;
+        top:37%;
+    }
+    .motto-ko{
+        font-size: 2.2em;
+    }
+    .motto-en{
+        font-size: 1.5em;
+    }
+    .main-slider .swiper-slide-active .motto .motto-line{
+        width: 100px;
+        border-top: 1.3px solid gray;
+    }
+    .main-slider .swiper-slide-active .name{
+        font-size: 3.5em;
+        font-weight: 650;
+        line-height: 100px;
+        /* position: absolute;
+        left: 50%; */
+    }
+
+
+    .swiper-prev, .swiper-next{
+        top:45%;
+        width: 45px;
+        height: 70px;
+        
+    }
+    .swiper-prev img, .swiper-next img{
+        width: 45px;
+        height: 70px;
+
+    }
+}
+
+@media screen and (max-width: 780px){
+    #content{
+        padding-top: 80px;
+    }
+    .main-slider{
+        /*index.html height: 550px; */
+        height: 400px;
+    }
+    .main-slider .swiper-slide-active img{
+         
         width: 100%;
-        height: 450px;
-        position: absolute;
-        top: 40px;
-        left: 50%;
-        margin-left: calc((100%) / -2);
+        height: 400px;
+        position: relative;
+        /* filter: brightness(80%); */
+    }
+    .main-slider img, .swiper-slide-next{
+        width: 0%;
+    }
+    .main-slider .swiper-container {
+        /* 819px 슬라이드 3개와 그 사이 여백 10px씩 = 2477px */
+        /* index.html*/
+        /* height: 400px; */
+        /* top: 40px; */
+        height: 400px;
+    }
+    .main-slider img{
+        height: 400px;
     }
 
     .swiper-prev, .swiper-next{
@@ -367,11 +513,9 @@
     .swiper-prev img, .swiper-next img{
         width: 40px;
         height: 70px;
-        background-color: rgba(239, 239, 239, 0.6);
-
     }
 
-    .main-slider .swiper-slide-active .text, .text-machine{
+    /* .main-slider .swiper-slide-active .text, .text-machine{
         width: 300px;
         height: 100px;
         top:17%;
@@ -406,7 +550,7 @@
         font-weight: 500;
         display: block;
         top: 7px;
-    }
+    } */
     .message_img img{
         width: 250px;
         height: 250px;
@@ -440,7 +584,120 @@
         margin: auto;
     }
 }
+@media screen and (max-width:570px) {
+    .main-slider{
+    /*index.html height: 550px; */
+    height: 300px;
+}
+.main-slider .swiper-slide-active img{
+     
+    width: 100%;
+    height: 300px;
+    position: relative;
+    /* filter: brightness(80%); */
+}
+.main-slider img, .swiper-slide-next{
+    width: 0%;
+}
+.main-slider .swiper-container {
+    /* 819px 슬라이드 3개와 그 사이 여백 10px씩 = 2477px */
+    /* index.html*/
+    /* height: 400px; */
+    /* top: 40px; */
+    height: 300px;
+}
+.main-slider img{
+    height: 300px;
+}
+
+
+    .main-slider .swiper-slide-active .text, .text-industry{
+        width: 200px;
+        height: 60px;
+        top:50%;
+    }
+    .main-slider .swiper-slide-active .text{
+        border-bottom: solid white 3px;
+        border-top: solid white 3px;
+        color: white;
+    }
+    .text-industry{
+        border-bottom: solid gray 3px;
+        border-top: solid gray 3px;
+        color: gray;
+    }
+    .main-slider .swiper-slide-active .motto{
+        width: 400px;
+        height: 100px;
+        top:37%;
+    }
+    .motto-ko{
+        font-size: 1.5em;
+    }
+    .motto-en{
+        font-size: 1em;
+    }
+    .main-slider .swiper-slide-active .motto .motto-line{
+        width: 70px;
+        border-top: 1px solid gray;
+        margin-top: 15px;
+        padding-bottom: 4px;
+    }
+    .main-slider .swiper-slide-active .name{
+        font-size: 1.6em;
+        font-weight: 500;
+        line-height: 60px;
+        /* position: absolute;
+        left: 50%; */
+    }
+
+    .swiper-prev, .swiper-next{
+        top:40%;
+        width: 30px;
+        height: 50px;
+    }
+    .swiper-prev img, .swiper-next img{
+        width: 30px;
+        height: 50px;
+    }
+
+}
 @media screen and (max-width: 450px){
+    #content {
+        /* index2.html
+        padding: 80px 0; */
+        padding-bottom: 80px;
+       
+    }
+    .main-slider{
+        /*index.html height: 550px; */
+        height: 250px;
+    }
+    .main-slider .swiper-slide-active img{
+        height: 250px;
+    }
+    .main-slider img, .swiper-slide-next{
+        width: 0%;
+    }
+    .main-slider .swiper-container {
+        width: 100%;
+        height: 250px;
+    }
+    .swiper-prev, .swiper-next{
+        top:40%;
+        width: 30px;
+        height: 50px;
+    }
+    .swiper-prev img, .swiper-next img{
+        width: 30px;
+        height: 50px;
+    }
+    /*index2.html*/
+
+
+    
+
+
     .message_img img{
         width: 180px;
         height: 180px;

@@ -41,10 +41,12 @@ new Swiper('.main-slider .swiper-container', {
     prevEl: '.main-slider .swiper-prev', // 이전 버튼 선택자
     nextEl: '.main-slider .swiper-next' // 다음 버튼 선택자
   },
-  breakpoints: {
-    780 : {
-      slidesPerView: 3
-    }
-  }
+  
+  // index.html
+  // breakpoints: {  
+  //   780 : {
+  //     slidesPerView: 3
+  //   }
+  // }
 })
 
