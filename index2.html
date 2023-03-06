@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인성이엔지(주)</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="http://localhost:8000/css/contact_footer.css">
+    <!--swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="js/main.js" defer></script> <!--태그의 defer 속성은 페이지가 모두 로드된 후에 해당 외부 스크립트가 실행됨-->
+    <script src="js/slider.js" defer></script>
+    <script src="js/sliderArrow.js" defer></script>
+</head>
+<body>
+     <nav class="navbar">
+        <div class="navbar__logo">
+            <a href="/">
+                <img src = "/main/ISElogo.png" alt = "logo"  class = img_logo/>
+                <span>인성이엔지&#40;주&#41;</span>
+            </a> 
+        </div>
+        
+        <ul class="navbar__menu">
+            <li><a href="/about">About</a></li> <!--비전, 연혁, com-->
+            <li><a href="/industry">Product</a></li>
+            <li><a href="/machine">Machine</a></li>
+            <li><a href="/contact">Contact</a></li> <!--위치, 주소 이메일, 전화번호, 펙스번호-->
+        </ul>
+
+        <a href="#" class="navbar__toogleBtn">
+            <img src = "/main/toggle.png" alt = "logo" width="26px" height="26px" class = toogle/>
+        </a>
+    </nav>
+    
+    <div id = "content">
+        <div class="main-slider">
+            <div class = "mainSliderBackground">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img id = "firm-outside" src="main/인성이엔지외부.jpeg"/>
+                            <div class = "motto">
+                                 <div class = "motto-ko">스스로 변하지 않으면 미래는 없다</div> 
+                                 <span class = "motto-line"></span> 
+                                 <div class = "motto-en">No change, No future</div> 
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="/about">
+                                <img src="main/인성이엔지내부.png" />
+                            </a>
+                            <div class = "text">
+                                <div class = "name">회 사 소 개</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="/industry">
+                                <img src="main/product.png"/>
+                            </a>
+                            <div class = "text-industry">
+                                <div class = "name">제 품 소 개</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="/machine">
+                                <img src="main/machine.png"/>
+                            </a>
+                            <div class = "text">
+                                <div class = "name">장 비&nbsp;현 황</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="swiper-pagination"></div>  
+            <div class="swiper-prev">
+                <span class="material-icons"><img src = "/main/prev.png"/></span>
+            </div>
+            <div class="swiper-next">
+                <span class="material-icons"><img src = "/main/next.png"/></span>
+            </div>
+        </div>
+
+        <div class="message">
+            
+            <div class = "message_title_div">
+                <span class = "message_title">MESSAGE</span>
+            </div>
+            <!-- <div class = "contentsBox">
+                <div class = "title">
+                    <h3>변하지 않으면 미래는 없다</h3>
+                    <p>No change, No future</p>
+                </div>
+            </div> -->
+            <div class="message_img">
+                <span class = "satisfied">고객의 만족도</span>
+                <span class = "precision">정밀부품</span>
+                <img src = "/main/message.png"/>
+                <span class = "custom">맞춤제작<br>서비스</span>
+                <p>
+                    <b>인성이엔지(주)</b>은 고객의 지원과 헌신에 중점을 둔 맞춤형, 양질의 서비스를 제공하고 있습니다.<br><br>
+                    마감일은 물론 가공 표준 및 요구 사항을 충족함으로써 각 고객은 신뢰할 수 있는 서비스를 제공 받습니다.<br>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id = "customers-firm">
+        <div class = "customers_firm_div">
+            <span class = "customers_firm_title">CUSTOMERS</span>
+        </div>
+        <ul style="list-style: none;">
+            <li>
+                <div class = "first_office">
+                    <img src="/cooperativeFirm/CKD.png" alt="CKD(주)">
+                </div>
+            </li>
+            <li>
+                <div class = "second_office">
+                    <img src="/cooperativeFirm/IHARA.png" alt="IHARA(주)">
+                </div>
+            </li>
+            <li>
+                <div class = "third_office">
+                    <img src="/cooperativeFirm/MIKI_PULLEY.png" alt="MIKI_PULLEY(주)">
+                </div>
+            </li>
+            <li>
+                <div class = "forth_office">
+                    <img src="/cooperativeFirm/BST.png" alt="MIKI_PULLEY(주)">
+                </div>
+            </li>
+        </ul>  
+    </div>   
+    <div id = "contact_bar">
+        <ul style="list-style: none;">
+            <li>
+                <div class = "office_contect">
+                    <img src="/main/tel.png" alt="call">
+                    <b>CALLING</b>
+                    <p>
+                        <span>TEL</span>: 031-682-7077<br>
+                        <span>FAX</span>: 031-682-7078<br>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class = "email">
+                    <b>EMAIL</b>
+                    <img src="/main/email.png" alt="email">
+                    <p>
+                        yesise@ise-k.com
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class = "logo_location">
+                    <img src="main/location.png" alt="email">
+                    <b>LOCATION</b>
+                    <p>
+                        우) 17796<br>
+                        경기도 평택시 청북읍<br class = "location-hidden"> 드림산단3로 13<br>
+                        <!-- <br class = "location-hidden"> 
+                        인성 이엔지(주) -->
+                    </p>
+                </div>
+            </li>
+        </ul>  
+    </div>
+    <div class = "copyright">
+        <span>Copyright &copy; 인성이엔지(주) All Rights Reserved.</span>
+    </div> 
+</body>
+</html>
+
