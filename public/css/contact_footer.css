@@ -27,7 +27,7 @@
 }
 #contact_bar .office_contect b{
     color:rgb(224, 224, 245);
-    font-size: 16px;
+    font-size: 1em;
     position: relative;
     top: 30%;
     font-family: SUIT-Bold;
@@ -133,5 +133,13 @@
 @media screen and (max-width: 600px){
     #contact_bar .logo_location p, #contact_bar .email p, #contact_bar .office_contect p{
         font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 430px){
+    #contact_bar .logo_location b, .email b, .office_contect b{
+        font-size: 0.9em;
+    }
+    #contact_bar .logo_location p, #contact_bar .email p, #contact_bar .office_contect p{
+        font-size: 0.7em;
     }
 }

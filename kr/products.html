@@ -5,53 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>인성이엔지(주)</title>
-    <link rel="stylesheet" href="http://localhost:8000/css/common.css">
-    <link rel="stylesheet" href="http://localhost:8000/css/industry.css">
-    <link rel="stylesheet" href="http://localhost:8000/css/contact_footer.css">
-    <script src="http://localhost:8000/js/main.js" defer></script>
+    <link rel="stylesheet" href="http://www.ise-k.com/public/css/common.css">
+    <link rel="stylesheet" href="../public/css/industry.css">
+    <link rel="stylesheet" href="http://www.ise-k.com/public/css/contact_footer.css">
+    <script src="http://www.ise-k.com/public/js/main.js" defer></script>
+    <script src="http://www.ise-k.com/public/js/changeLanguage.js" defer></script>
 </head>
 <body>
     <div>
         
         <nav class="navbar">
             <div class="navbar__logo">
-                <a href="/">
-                    <img src = "/main/ISElogo.png" alt = "logo"  class = img_logo/>
+                <a href="http://www.ise-k.com/kr">
+                    <img src = "http://www.ise-k.com/asset/main/ISElogo.png" alt = "logo"  class = img_logo/>
                     <span>인성이엔지(주)</span>
                 </a> 
             </div>
             
             <ul class="navbar__menu">
-                <li><a href="/about">About</a></li> <!--비전, 연혁, com-->
-                <li><a href="/industry">Product</a></li>
-                <li><a href="/machine">Machine</a></li>
-                <li><a href="/contact">Contact</a></li> <!--위치, 주소 이메일, 전화번호, 펙스번호-->
+                <li><a href="http://www.ise-k.com/kr">홈</a></li>
+                <li><a href="http://www.ise-k.com/kr/about">회사 소개</a></li>
+                <li><a href="http://www.ise-k.com/kr/products">제품</a></li>
+                <li><a href="http://www.ise-k.com/kr/machine">설비</a></li>
+                <li><a href="http://www.ise-k.com/kr/contact">회사 위치</a></li>
             </ul>
     
             <a href="#" class="navbar__toogleBtn">
-                <img src = "/main/toggle.png" alt = "logo" width="26px" height="26px" class = toogle/>
+                <img src = "http://www.ise-k.com/asset/main/toggle.png" alt = "logo" width="26px" height="26px" class = toogle/>
             </a>
+            <button class = "lang_btn" onclick="changeLanguage('ko');">
+                ENGLISH
+            </button>
         </nav>
         <div id = "contents">
             <div class = "industrylist">
-                <p>FOCUS ON</p>
+                <p>PRODUCTS</p>
                 <div class = "introIndustry">
                     <div id = "industry-semicon">
-                        <img class = "icon" src = "../../industry/semicon.png">
+                        <img class = "icon" src = "http://www.ise-k.com/asset/industry/semicon.png">
                         <div class = "text">
                             <b>반도체 장비</b>
                             <span>부품 가공</span>
                         </div>
                     </div>
                     <div id = "industry-machine">
-                        <img class = "icon"  src = "../../industry/machine-icon.png">
+                        <img class = "icon"  src = "http://www.ise-k.com/asset/industry/machine-icon.png">
                         <div class = "text">
                             <b>정밀기계</b>
                             <span>부품 가공</span>
                         </div>
                     </div>
                     <div id = "industry-medicine">
-                        <img class = "icon" src = "../../industry/medicine.png">
+                        <img class = "icon" src = "http://www.ise-k.com/asset/industry/medicine.png">
                         <div class = "text">
                             <b>제약 관련 장비 </b>
                             <span>부품 가공</span>
@@ -61,7 +66,6 @@
             </div>
             <div class = "industry-detail">
                 <div id = "industry-semicon-contents">
-                    <img class = "icon" src = "../../industry/semicon.png">
                     <div class = "text">
                         <b>반도체 장비 부품 가공</b>
                     </div>
@@ -69,50 +73,37 @@
                     <b class = "text-IGS">Integrated Gas System Block</b>
                     <div class = "related-img">
                         <li>
-                            <div class = "inner">
+                            <div class = "inner-major">
                                 <div class="overlay"></div>
-                                <img class="IGSwhole" src="../../item/product/IGS.png">
-                                <img class="first-ISG" src="../../item/product/SUS316L-B.png">
-                                <span>SUS316L-B</span>
+                                <img class="IGSwhole" src="http://www.ise-k.com/asset/item/product/IGS.png">
+                                <img class="first-ISG" src="http://www.ise-k.com/asset/item/product/SUS316L-A.png">
+                                <span class = "block-material">SUS316L-A</span>
+                                <span class = "hover-product">GAS PANEL</span>
                             </div>
                         </li>
                         <li>
-                            <div class = "inner">
+                            <div class = "inner-major">
                                 <div class = "overlay"></div>
-                                <img class="IGSwhole" src="../../item/product/IGS.png">
-                                <img class="second-ISG" src="../../item/product/SUS316L-B-2.png">
+                                <img class="IGSwhole" src="http://www.ise-k.com/asset/item/product/IGS.png">
+                                <img class="second-ISG" src="http://www.ise-k.com/asset/item/product/SUS316L-B-2.png">
                                 <!-- <b class = "innerText">IGS</b> -->
-                                <span>SUS316L-B</span>
-                            </div>
-                        </li>  
-                    </div>
-                </div>
-                <div class = "piston">
-                    <b class = "text-piston">피스톤 외</b>
-                    <div class = "related-img">
-                        <li>
-                            <div class = "inner">
-                                <div class="overlay"></div>
-                                <img class="first-piston" src="../../item/product/A6061-T6-piston.png">
-                                <b class = "innerText">Piston</b><!--한국어로..?-->
-                                <span>A6061-T6</span>
+                                <span class = "block-material">SUS316L-B</span>
+                                <span class = "hover-product">GAS PANEL</span>
                             </div>
                         </li>
                         <li>
-                            <div class = "inner">
-                                <div class = "overlay"></div>
-                                <img class="second-piston" src="../../item/product/SUS316L-union.png">
-                                <b class = "innerText">Union</b>
-                                <span>SUS316L</span>
+                            <div class = "inner-major">
+                                <div class="overlay"></div>
+                                <img class="IGSwhole" src="http://www.ise-k.com/asset/item/product/IGS.png">
+                                <img class="third-ISG" src="http://www.ise-k.com/asset/item/product/SUS316L-B-3.png">
+                                <span class = "block-material">SUS316L-B</span>
+                                <span class = "hover-product">GAS PANEL</span>
                             </div>
                         </li>  
-                        
                     </div>
                 </div>
-                
             </div>
                 <div id = "industry-machine-contents">
-                        <img class = "icon" src = "../../industry/machine-icon.png">
                         <div class = "text">
                             <b>정밀기계 부품 가공</b>
                         </div>
@@ -122,7 +113,7 @@
                             <b class = "text-value-body">value-body</b>
                             <div class = "inner">
                                 <div class="overlay"></div>
-                                <img class="value-body-img" src="../../item/product/SUS303.png">
+                                <img class="value-body-img" src="http://www.ise-k.com/asset/item/product/SUS303.png">
                                 <b class = "innerText">value-body</b>
                                 <span>SUS303</span>
                             </div>
@@ -132,8 +123,8 @@
                             <b class = "text-step-motor-flange">STEP MOTOR FLANGE </b>
                             <div class = "inner">
                                 <div class="overlay"></div>
-                                <img class="step-motor-flange-img" src="../../item/product/A6061-T6.png">
-                                <img class="motor" src="../../item/product/motor.png">
+                                <img class="step-motor-flange-img" src="http://www.ise-k.com/asset/item/product/A6061-T6.png">
+                                <img class="motor" src="http://www.ise-k.com/asset/item/product/motor.png">
                                 <span>A6061-T6</span>
                             </div>
                         </li>
@@ -144,7 +135,7 @@
                             <li>
                                 <div class = "inner">
                                     <div class="overlay"></div>
-                                    <img class="first-piston" src="../../item/product/A6061-T6-piston.png">
+                                    <img class="first-piston" src="../asset/item/product/A6061-T6-piston.png">
                                     <b class = "innerText">Piston</b><!--한국어로..?-->
                                     <span>A6061-T6</span>
                                 </div>
@@ -152,7 +143,7 @@
                             <li>
                                 <div class = "inner">
                                     <div class = "overlay"></div>
-                                    <img class="second-piston" src="../../item/product/SUS316L-union.png">
+                                    <img class="second-piston" src="http://www.ise-k.com/asset/item/product/SUS316L-union.png">
                                     <b class = "innerText">Union</b>
                                     <span>SUS 316L</span>
                                 </div>
@@ -163,7 +154,6 @@
                 </div>
                 
                 <div id = "industry-medicine-contents">
-                        <img class = "icon" src = "../../industry/medicine.png">
                         <div class = "text">
                             <b>제약 관련 장비 부품 가공</b>
                         </div>
@@ -173,25 +163,17 @@
                             <li>
                                 <div class = "inner">
                                     <div class="overlay"></div>
-                                    <img src="../../item/product/A6061- T6-SUS316L-1-medicine.png">
-                                    <b class = "innerText">Air Sampling Cone</b><!--한국어로..?-->
+                                    <img src="http://www.ise-k.com/asset/item/product/A6061- T6-SUS316L-1-medicine.png">
+                                    <b class = "innerText">Air Sampling Cone</b>
                                     <span class = "air-name-long">A6061- T6/<br class = "hidden-br">SUS316L</span>
                                 </div>
                             </li>
                             <li>
                                 <div class = "inner">
                                     <div class = "overlay"></div>
-                                    <img src="../../item/product/A6061- T6-SUS316L-2-medicine.png">
+                                    <img src="http://www.ise-k.com/asset/item/product/A6061- T6-SUS316L-2-medicine.png">
                                     <b class = "innerText">Air Sampling Cone</b>
                                     <span class = "air-name-long">A6061- T6/<br class = "hidden-br">SUS316L</span>
-                                </div>
-                            </li>  
-                            <li>
-                                <div class = "inner">
-                                    <div class = "overlay"></div>
-                                    <img src="../../item/product/sus316L-medicine.png">
-                                    <b class = "innerText">Air Sampling Cone</b>
-                                    <span>SUS316L</span>
                                 </div>
                             </li>
                         </div>
@@ -203,8 +185,8 @@
             <ul style="list-style: none;">
                 <li>
                     <div class = "office_contect">
-                        <img src="/main/tel.png" alt="call">
-                        <b>CALLING</b>
+                        <img src="http://www.ise-k.com/asset/main/tel.png" alt="call">
+                        <b>TELEPHONE</b>
                         <p>
                             <span>TEL</span>: 031-682-7077<br>
                             <span>FAX</span>: 031-682-7078<br>
@@ -214,7 +196,7 @@
                 <li>
                     <div class = "email">
                         <b>EMAIL</b>
-                        <img src="/main/email.png" alt="email">
+                        <img src="http://www.ise-k.com/asset/main/email.png" alt="email">
                         <p>
                             yesise@ise-k.com
                         </p>
@@ -222,7 +204,7 @@
                 </li>
                 <li>
                     <div class = "logo_location" >
-                        <img src="/main/location.png" alt="email">
+                        <img src="http://www.ise-k.com/asset/main/location.png" alt="email">
                         <b>LOCATION</b>
                         <p>
                             우) 17796<br>

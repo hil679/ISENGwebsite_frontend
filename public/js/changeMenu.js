@@ -1,33 +1,7 @@
-function changeMenu(value){
-    switch(value){
-        case '0': 
-            $('.machine').css("display","block");
-            $('.product').css("display","none");
-            $('.representative-product-background').css("visibility","hidden");
-            $('.representative-machine-background').css("visibility","visible");
-            break;    
-    
-        case '1':
-            $('.machine').css("display","none");
-            $('.product').css("display","block");
-            $('.representative-product-background').css("visibility","visible");
-            $('.representative-machine-background').css("visibility","hidden");
-            break;
-    }
-};
 
 function machineChangeMenu(value){
     switch(value){
-        case '0': 
-            $('.facility-status').css("display","block");
-            $('.processing-facility').css("display","none");
-            $('.measuring-facility').css("display","none");
-            $('.navbar2-facility-status').css({"border-bottom": "1px solid darkblue"});
-            $('.navbar2-processing-facility').css("border-bottom","0px");
-            $('.navbar2-measuring-facility').css("border-bottom","0px");
-            break;    
-    
-        case '1':
+        case '0':
             $('.facility-status').css("display","none");
             $('.processing-facility').css("display","block");
             $('.measuring-facility').css("display","none");
@@ -35,13 +9,21 @@ function machineChangeMenu(value){
             $('.navbar2-processing-facility').css("border-bottom","1px solid darkblue");
             $('.navbar2-measuring-facility').css("border-bottom","0px");
             break;
-        case '2':
+        case '1':
             $('.facility-status').css("display","none");
             $('.processing-facility').css("display","none");
             $('.measuring-facility').css("display","block");
             $('.navbar2-facility-status').css("border-bottom", "0px");
             $('.navbar2-processing-facility').css("border-bottom","0px");
             $('.navbar2-measuring-facility').css("border-bottom","1px solid darkblue");
+            break; 
+        case '2': 
+            $('.facility-status').css("display","block");
+            $('.processing-facility').css("display","none");
+            $('.measuring-facility').css("display","none");
+            $('.navbar2-facility-status').css({"border-bottom": "1px solid darkblue"});
+            $('.navbar2-processing-facility').css("border-bottom","0px");
+            $('.navbar2-measuring-facility').css("border-bottom","0px");
             break;    
     }
 };

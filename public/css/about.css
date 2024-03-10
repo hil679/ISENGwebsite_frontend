@@ -25,7 +25,7 @@
 	transform: translate( -50%, -50% );
     font-size: 4em;
     color: whitesmoke;
-    width: 350px;
+    width: 550px;
     padding-top: 20px;
     padding-bottom: 20px;
     border-top: 5px solid whitesmoke;
@@ -68,9 +68,11 @@
     margin-left: 165px;
 }
 #greetings .certificate{
+    position: relative;
     display: inline-block;
     margin: auto;
     vertical-align: middle;
+    top:50px
 }
 #greetings .certificate img{
     width: 400px;
@@ -78,7 +80,7 @@
     margin-right: 30px;
     margin-bottom: 30px;
     position: relative;
-    bottom: 45px;
+    bottom: 100px;
 }
 .greetings p{
     font-size: 1.2em;
@@ -90,7 +92,7 @@
     display: inline-block;
     margin: 50px 0px;
     position: relative; 
-    top: 45px;  
+    top: 70px;  
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -162,6 +164,7 @@ dd{
     position: absolute;
     top:0px;
     left: 190px;
+    width: 310px;
 }
 dt #text{
     margin-left: 10px;
@@ -302,5 +305,18 @@ dt, dd{
     dt{ 
         width: 130px;
     }
-
+}
+@media screen and (max-width: 400px){
+    #history li{
+        width: 15%;
+    }
+    dt, dd{
+        font-size: 0.9em;
+    }
+    dd{
+        left: 100px;
+    }
+    dt{ 
+        width: 8%;
+    }
 }

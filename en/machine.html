@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSUNG ENG Co., Inc.</title>
+    <link rel="stylesheet" href="http://www.ise-k.com/public/css/common.css">
+    <link rel="stylesheet" href=" http://www.ise-k.com/public/css/machine.css">
+    <link rel="stylesheet" href="http://www.ise-k.com/public/css/contact_footer.css">
+    <script src="http://www.ise-k.com/public/js/main.js" defer></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="http://www.ise-k.com/public/js/changeMenu.js"></script>
+    <script src="http://www.ise-k.com/public/js/changeLanguage.js" defer></script>
+
+
+</head>
+<body> <!--style="overflow-x: hidden"-->
+    <div>
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <a href="http://www.ise-k.com/en">
+                    <img src = "http://www.ise-k.com/asset/main/ISElogo.png" alt = "logo"  class = img_logo/>
+                    <span>INSUNG ENG Co., Inc.</span>
+                </a> 
+            </div>
+            
+            <ul class="navbar__menu">
+                <li><a href="http://www.ise-k.com/en">Home</a></li>
+                <li><a href="http://www.ise-k.com/en/about">About Us</a></li>
+                <li><a href="http://www.ise-k.com/en/products">Products</a></li>
+                <li><a href="http://www.ise-k.com/en/machine">Machines</a></li>
+                <li><a href="http://www.ise-k.com/en/contact">Contact</a></li>
+            </ul>
+    
+            <a href="#" class="navbar__toogleBtn">
+                <img src = "http://www.ise-k.com/asset/main/toggle.png" alt = "logo" width="26px" height="26px" class = toogle/>
+            </a>
+            <button class = "lang_btn" onclick="changeLanguage('en');">
+                한 국 어
+            </button>
+        </nav>
+
+        <div id = "inclusion-machine">
+            <nav class="navbar2">
+                <ul class="navbar__menu2">
+                    <li class = "navbar2-processing-facility"><a href = "javascript:void(0);" onclick="machineChangeMenu('0');">CNC Machines</a></li><!--가공설비-->
+                    <li class = "navbar2-measuring-facility"><a href = "javascript:void(0);" onclick="machineChangeMenu('1');">Measuring Equipment</a></li> <!--측정설비-->
+                    <li class = "navbar2-facility-status"><a href = "javascript:void(0);" onclick="machineChangeMenu('2');">List of equipment</a></li> <!--Facility Status, 설비현황-->
+                </ul>
+            </nav>
+        
+
+            <div id = "machine">
+                <div class = "processing-facility">
+                    <!-- <div> -->
+                        <p class="first-machine-p" onclick="changeMachineSpec('0')">
+                            <img class = "machining-center-img" src="http://www.ise-k.com/asset/item/machine/MYNX650.png">
+                            <span class = "text">Machining Center</span>
+                            <span class="left_top"></span>
+                            <span class="right_top"></span>
+                            <span class="right_bottom"></span>
+                            <span class="left_bottom"></span>
+                        </p>
+                        
+                        <p class="second-machine-p" onclick="changeMachineSpec('1')">
+                            <img class = "taping" src="http://www.ise-k.com/asset/item/machine/tapping_center.png">
+                            <span  class = "text">Tapping Center</span>
+                            <span class="left_top"></span>
+                            <span class="right_top"></span>
+                            <span class="right_bottom"></span>
+                            <span class="left_bottom"></span>
+                        </p>
+                        <div class = "division-line-small-window"></div>
+                    
+                        <p class="third-machine-p" onclick="changeMachineSpec('2')">
+                            <img class = "cnc8" src="http://www.ise-k.com/asset/item/machine/CNC8.png"><!--사진 화질 별로.. 원래거랑 비교해서 물어보기-->
+                            <span class = "text">CNC Lathe 8”</span>
+                            <span class="left_top"></span>
+                            <span class="right_top"></span>
+                            <span class="right_bottom"></span>
+                            <span class="left_bottom"></span>
+                        </p>
+                        
+                        <p class="forth-machine-p" onclick="changeMachineSpec('3')">
+                            <img class = "cnc6" src="http://www.ise-k.com/asset/item/machine/cnc6.png">
+                            <span class = "text">CNC Lathe 6”</span>
+                            <span class="left_top"></span>
+                            <span class="right_top"></span>
+                            <span class="right_bottom"></span>
+                            <span class="left_bottom"></span>
+                        </p>
+                        <div id = "machining-center">
+                            <div class = "first-machining-center">
+                                <table>
+                                    <th colspan="4">Machining Center 7.5</th>
+                                    <tr>
+                                        <td colspan="3">ITEM</td>
+                                        <td>SPEC.</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="4">TRAVELS</td>
+                                        <tr>
+                                            <td>X Axis Travel distance</td>
+                                            <td>mm</td>
+                                            <td>2,160</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Y Axis Travel distance</td>
+                                            <td>mm</td>
+                                            <td>760</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Z Axis Travel distance</td>
+                                            <td>mm</td>
+                                            <td>650</td>
+                                        </tr>
+                                    </tr>
+                                    <tr>
+                                        <td>SPINDLE</td><!--주축-->
+                                        <td>Max Spindle Speed</td><!--최고 회전속도-->
+                                        <td>rpm</td>
+                                        <td>12,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ATC</td>
+                                        <td>Number of Tools</td><!--공구 보유 수량-->
+                                        <td>ea</td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Manufacturer</td>
+                                        <td colspan="2">DN Solutions</td><!--두산공작기계-->
+                                    </tr>
+                                </table>
+                                <table>
+                                    <th colspan="4">Machining Center 6.5</th>
+                                    <tr>
+                                        <td colspan="3">ITEM</td>
+                                        <td>SPEC.</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="4">TRAVELS</td>
+                                        <tr>
+                                            <td>X Axis Travel distance</td>
+                                            <td>mm</td>
+                                            <td>1,300</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Y Axis Travel distance</td>
+                                            <td>mm</td>
+                                            <td>650</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Z Axis Travel distance</td>
+                                            <td>mm</td>
+                                            <td>625</td>
+                                        </tr>
+                                    </tr>
+                                    <tr>
+                                        <td>SPINDLE</td>
+                                        <td>Max Spindle Speed</td>
+                                        <td>rpm</td>
+                                        <td>12,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ATC</td>
+                                        <td>Number of Tools</td>
+                                        <td>ea</td>
+                                        <td>24</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Manufacturer</td>
+                                        <td colspan="2">DN Solutions</td>
+                                    </tr>
+                                </table>
+                                <table>
+                                    <th colspan="4">Machining Center 5</th>
+                                    <tr>
+                                        <td colspan="3">ITEM</td>
+                                        <td>SPEC.</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="4">TRAVELS</td>
+                                        <tr>
+                                            <td>X Axis Travel distance</td>
+                                            <td>mm</td>
+                                            <td>1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Y Axis Travel distance</td>
+                                            <td>mm</td>
+                                            <td>500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Z Axis Travel distance</td>
+                                            <td>mm</td>
+                                            <td>550</td>
+                                        </tr>
+                                    </tr>
+                                    <tr>
+                                        <td>SPINDLE</td>
+                                        <td>Max Spindle Speed</td>
+                                        <td>rpm</td>
+                                        <td>12,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ATC</td>
+                                        <td>Number of Tools</td>
+                                        <td>ea</td>
+                                        <td>24</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Manufacturer</td>
+                                        <td colspan="2">DN Solutions</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class = "second-machining-center">
+                                <table>
+                                    <th colspan="4">Tapping Center</th>
+                                    <tr>
+                                        <td colspan="3">ITEM</td>
+                                        <td>SPEC.</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="4">TRAVELS</td>
+                                        <tr>
+                                            <td>X Axis Travel distance</td>
+                                            <td>mm</td>
+                                            <td>700</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Y Axis Travel distance</td>
+                                            <td>mm</td>
+                                            <td>400</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Z Axis Travel distance</td>
+                                            <td>mm</td>
+                                            <td>300</td>
+                                        </tr>
+                                    </tr>
+                                    <tr>
+                                        <td>SPINDLE</td>
+                                        <td>Max Spindle Speed</td>
+                                        <td>rpm</td>
+                                        <td>12,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ATC</td>
+                                        <td>Number of Tools</td>
+                                        <td>ea</td>
+                                        <td>21</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Manufacturer</td>
+                                        <td colspan="2">DN Solutions</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class = "third-machining-center">
+                                <table>
+                                    <th colspan="4">CNC Lathe 8”</th>
+                                    <tr>
+                                        <td colspan="3">ITEM</td>
+                                        <td>SPEC.</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="4">CAPACITY</td>
+                                        <tr>
+                                            <td>Max Cutting Diameter</td>
+                                            <td>mm</td>
+                                            <td>350</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Standard Cutting Diameter</td>
+                                            <td>mm</td>
+                                            <td>210</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Max Cutting Length</td>
+                                            <td>mm</td>
+                                            <td>401.5</td>
+                                        </tr>
+                                    </tr>
+                                    <tr>
+                                        <td>SPINDLE</td>
+                                        <td>Max Spindle Speed</td>
+                                        <td>rpm</td>
+                                        <td>5,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ATC</td>
+                                        <td>Number of Tool Station</td>
+                                        <td>ea</td>
+                                        <td>12</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Manufacturer</td>
+                                        <td colspan="2">Hwachun</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class = "forth-machining-center">
+                                <table>
+                                    <th colspan="4">CNC Lathe 6”</th>
+                                    <tr>
+                                        <td colspan="3">ITEM</td>
+                                        <td>SPEC.</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="4">CAPACITY</td>
+                                        <tr>
+                                            <td>Max Cutting Diameter</td>
+                                            <td>mm</td>
+                                            <td>300</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Standard Cutting Diameter</td>
+                                            <td>mm</td>
+                                            <td>186</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Max Cutting Length</td>
+                                            <td>mm</td>
+                                            <td>300</td>
+                                        </tr>
+                                    </tr>
+                                    <tr>
+                                        <td>SPINDLE</td>
+                                        <td>Max Spindle Speed</td>
+                                        <td>rpm</td>
+                                        <td>6,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ATC</td>
+                                        <td>Number of Tool Station</td>
+                                        <td>ea</td>
+                                        <td>12</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Manufacturer</td>
+                                        <td colspan="2">DN Solutions</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    <!-- </div> -->
+                </div>
+
+                <div class = "measuring-facility">
+                    <div>
+                        <!--측정설비-->
+                        <p class = "threed">
+                            <img src="http://www.ise-k.com/asset/item/machine/3d.png">
+                            <span class = "text">3D Measuring Machine</span>
+                        </p>
+                        <p>
+                            <img src="http://www.ise-k.com/asset/item/machine/measuring_equipment.png">
+                            <span class = "text">Contour Measuring Instrument</span>
+                            <span class = "description description1 en">
+                                Precision measurement of external shape<!--외부형상 정밀측정-->
+                            </span>
+                        </p>
+                        <p class = "non-contact">
+                            <img src="http://www.ise-k.com/asset/item/machine/non-contact-machine.png">
+                            <span class = "text">High Accuracy<br> Image Dimension Measurement</span>
+                            <span class = "description description2 en">
+                                Measurement of dimensions<br>without contact with the product<br>using VISION SYSTEM
+                            </span>
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class = "facility-status">
+                    <div>
+                        <table>
+                            <tr>
+                                <th>Equipment</th>
+                                <th>Model</th><!--brand?-->
+                                <th>Manufacturer</th>
+                                <th colspan="2">Quantity</th>
+                            </tr>
+                            <tr>
+                                <td rowspan="9">Machining Center</td>
+                                <tr>
+                                    <td>DNM 750L</td>
+                                    <td>DN Solutions</td>
+                                    <td>1</td>
+                                    <td rowspan="8">20</td>
+                                </tr>
+                                <tr>
+                                    <td>MYNX 650</td>
+                                    <td>DN Solutions</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>MYNX 6500||</td>
+                                    <td>DN Solutions</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>VM 510</td>
+                                    <td>DN Solutions</td>
+                                    <td>1</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>DNM 500</td>
+                                    <td>DN Solutions</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>T4000L</td>
+                                    <td>DN Solutions</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>DT 400</td>
+                                    <td>DN Solutions</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Fanuc a-D21LiA</td>
+                                    <td>Fanuc</td>
+                                    <td>2</td>
+                                </tr>
+                                
+                            </tr>
+                            <tr>
+                                <td rowspan="6">CNC Lathe</td>
+                                <tr>
+                                    <td>CUTEX-160A</td>
+                                    <td>Hwachun</td>
+                                    <td>2</td>
+                                    <td rowspan="5">16</td>
+                                </tr>
+                                <tr>
+                                    <td>Lynx 220</td>
+                                    <td>DN Solutions</td>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <td>Lynx 2100</td>
+                                    <td>DN Solutions</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>HI-TECH 200A</td>
+                                    <td>Hwachun</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>PUMA GT2100M</td>
+                                    <td>DN Solutions</td>
+                                    <td>1</td>
+                                </tr>
+                            </tr>
+                            <tr>
+                                <td rowspan="4">Measuring Equipment</td>
+                                <tr>
+                                    <td>3D Measuring Machine</td>
+                                    <td>WENZEL</td>
+                                    <td>1</td>
+                                    <td rowspan="3">3</td>
+                                </tr>
+                                <tr>
+                                    <td>Contour Measuring Instrument</td>
+                                    <td>MITUTOYO</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>High Accuracy<br>Image Dimension Measurement</td>
+                                    <td>KEYENCE</td>
+                                    <td>1</td>
+                                </tr>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id = "contact_bar">
+                <ul style="list-style: none;">
+                    <li>
+                        <div class = "office_contect">
+                            <img src="http://www.ise-k.com/asset/main/tel.png" alt="call">
+                            <b>TELEPHONE</b>
+                            <p>
+                                <span>TEL</span>: 82-31-682-7077<br>
+                                <span>FAX</span>: 82-31-682-7078<br>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class = "email" >
+                            <b>EMAIL</b>
+                            <img src="http://www.ise-k.com/asset/main/email.png" alt="email">
+                            <p>
+                                yesise@ise-k.com
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class = "logo_location" >
+                            <img src="http://www.ise-k.com/asset/main/location.png" alt="location">
+                            <b>LOCATION</b>
+                            <p>
+                                13, Dreamsandan 3-Ro, <br class = "location-hidden"> Cheongbuk-yeop, Pyoungtak-Si, 
+                                Kyounggi-Do<br>
+                                Korea 17796<br>
+                                <!-- <br class = "location-hidden"> 
+                                인성 이엔지(주) -->
+                            </p>
+                        </div>
+                    </li>
+                </ul>  
+            </div> 
+            <div class = "copyright">
+                <span>Copyright &copy; INSUNG ENG Co., Inc. All Rights Reserved.</span>
+            </div> 
+        </div>
+    </div> 
+</body>
+</html>

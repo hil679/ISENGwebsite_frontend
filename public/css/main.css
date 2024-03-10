@@ -273,8 +273,9 @@
 }
 .message_img{
    width: fit-content;
+   padding-top: 50px;
+   text-align: center;
    margin: auto;
-   margin-top: 50px;
 }
 .message_img img{
     width: 300px;
@@ -284,8 +285,9 @@
     margin-top: 70px;
     font-size: 1.4em;
 }
-.message_img span{
+.message_img #satisfied, #precision, #custom{
     font-size: 1.8em;
+    width: 170px;
 }
 .satisfied{
     display: block;
@@ -305,7 +307,7 @@
     text-align: center;
 }
 .customers_firm_title{
-    font-size: 1.5em;
+    font-size: 2em;
     border-bottom: 1.5px solid rgb(184, 184, 190);
     font-family: SUIT-Regular;
 }
@@ -514,48 +516,11 @@
         width: 40px;
         height: 70px;
     }
-
-    /* .main-slider .swiper-slide-active .text, .text-machine{
-        width: 300px;
-        height: 100px;
-        top:17%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .main-slider .swiper-slide-active .text-industry{
-        left: 33%;
-    }
-    .main-slider .swiper-slide-active .text .name, .name-industry, .name-machine{
-        font-size: 2.5em;
-        position: absolute;
-        font-weight: 900;
-        display: block;
-        text-align: center;
-        color:white;
-        height: 100px;
-        line-height: 100px;
-    }
-    .main-slider .swiper-slide-active .firm-inside-name{
-        font-size: 2.5em;
-        position: absolute;
-        font-weight: 900;
-        display: block;
-        text-align: center;
-        top: 30px;
-    }
-    .main-slider .swiper-slide-active .firm-inside-else{
-        font-size: 1.5em;
-        position: absolute;
-        text-align: center;
-        font-weight: 500;
-        display: block;
-        top: 7px;
-    } */
     .message_img img{
         width: 250px;
         height: 250px;
     }
-    .message_img span{
+    .message_img #satisfied, #precision, #custom{
         font-size: 1.4em;
     }
     .first_office img{
@@ -584,8 +549,8 @@
         margin: auto;
     }
 }
-@media screen and (max-width:570px) {
-    .main-slider{
+@media screen and (max-width:600px) {
+.main-slider{
     /*index.html height: 550px; */
     height: 300px;
 }
@@ -660,7 +625,25 @@
         width: 30px;
         height: 50px;
     }
+    .message_img img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .message_img #satisfied, #precision, #custom {
+        font-size: 1.4em;
+        width: 140px;
+    }
 
+}
+@media screen and (max-width: 490px){
+    .message_img #satisfied, #precision, #custom {
+        font-size: 1.2em;
+        width: 120px;
+    }
+    .message_img p{
+        font-size: 1.2em;
+    }
 }
 @media screen and (max-width: 450px){
     #content {
@@ -692,16 +675,12 @@
         width: 30px;
         height: 50px;
     }
-    /*index2.html*/
-
-
-    
-
 
     .message_img img{
-        width: 180px;
-        height: 180px;
+        width: 150px;
+        height: 150px;
     }
+
     .message_img span{
         font-size: 1.4em;
     }
@@ -722,5 +701,21 @@
     .main-slider .swiper-slide-active .name-industry{
         font-size: 2em;
         left: 10%;
+    }
+    @media screen and (max-width: 400px){
+        .message_img img{
+            width: 120px;
+            height: 120px;
+        }
+        .message_img #satisfied, #precision, #custom {
+            font-size: 1em;
+            width: 100px;
+        }
+        .message_img span{
+            font-size: 1em;
+        }
+        .message .message_title, .customers_firm_title{
+            font-size: 1.5em;
+        }
     }
 }

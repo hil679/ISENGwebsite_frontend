@@ -27,7 +27,7 @@
     color: #8d8c8c;
     border-radius: 4px;
   }
-  .navbar2-facility-status{
+  .navbar2-processing-facility{
     border-bottom: 1px solid rgb(43, 43, 162);
   }
   
@@ -44,22 +44,23 @@
     display: inline-block;
     position: relative;
     overflow: hidden;
-    width: 20%;
-    
     margin-left: 2%;
     margin-right: 2%;
   }
   #machine .processing-facility p{
-    height: 290px;
+    height: 320px;
+    width: 20%;
   }
   #machine .measuring-facility p{
-    height: 300px;
+    height: 500px;
+    width: 23%;
   }
  
   #machine .processing-facility .text{
     font-size: 1.1em;
     position: absolute;
-    bottom: 4%;
+    bottom: 10%;
+    width: 150px;
     transform: translate(-50%,50%);
     text-align: center;
     font-family: SUIT-SemiBold;
@@ -67,7 +68,8 @@
   #machine .measuring-facility .text{
     font-size: 1.1em;
     position: absolute;
-    bottom: 20%;
+    bottom: 27%;
+    width: 100%;
     transform: translate(-50%,50%);
     text-align: center;
     font-family: SUIT-SemiBold;
@@ -76,16 +78,25 @@
   .measuring-facility .description{
     margin-top: 10px;
     position: absolute;
-    top: 87%;
+    top: 80%;
     display: block;
     left: 50%;
     width: 100%;
     transform: translate(-50%,-50%);
     font-family: SUIT-Regular;
   }
-  .measuring-facility .description.description2{
+  .measuring-facility .description.description2.en{
     position: relative;
-    margin-top: 20px;
+    padding-top: 35px;
+    margin-top: 10px;
+  }
+  .measuring-facility .description.description2.kr{
+    position: relative;
+    padding-top: 20px;
+    margin-top: 0px;
+  }
+  .measuring-facility .description.description1.kr{
+    margin-top: 0px;
   }
 
  
@@ -109,8 +120,8 @@
     padding: 15px
  }
   .measuring-facility img{
-    width: 100%;
-    height: 70%;
+    width: 90%;
+    height: 65%;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
@@ -183,18 +194,17 @@
     background:rgb(43, 43, 162);
   }
   
-  #machine .facility-status {
-    display: block;
-  }
   #machine .processing-facility {
-    display: none;
-
-    
+    display: block;
   }
   #machine .measuring-facility {
     display: none;
     margin-bottom: 70px;
   }
+  #machine .facility-status {
+    display: none;
+  }
+  
   
 
 /*table*/
@@ -208,15 +218,20 @@
  #machining-center div{
     display: none;
  }
-table, td, th {/*?????????*/
+ table{
+  margin : auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width : 85%;
+}
+table, td, th {
     border : 1px solid black;
     text-align: center;
-    border-collapse : collapse;
-    margin: 40px;
+    border-collapse : collapse;   
     font-family: SUIT-Regular;
-  };
-table{
-    margin: auto;
+}
+td, th {
+  margin: 40px;
 }
 th{
     height: 40px;
@@ -252,6 +267,9 @@ td{
     width: 25%;
     margin: 30px;
   }
+  #machine .measuring-facility .text{
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 900px){
@@ -267,14 +285,18 @@ td{
     font-size: 0.9em;
   }
   
-  .measuring-facility .description{
-    top: 89%;
-    font-size: 0.85em;
+  .measuring-facility .description.description2.en,.description.description2.kr, .description.description1{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 0.8em;
   }
-  
-  .measuring-facility .description.description2, .description.description1{
-    bottom: 0%;
-    margin-top: 10px;
+
+  .measuring-facility .description.description2.en{
+    padding-top: 0px;
+    top: 89%;
+  }
+  .measuring-facility .description.description2.kr,   .measuring-facility .description.description1.kr{
+    padding-top: 0px;
   }
 } 
 
@@ -292,7 +314,6 @@ td{
   #machine .processing-facility p{
     width: 180px;
     height: 180px;
-    margin: 10px;
   }
   #machine .measuring-facility p{
     width: 270px;
@@ -302,21 +323,37 @@ td{
   }
   #machine .measuring-facility .text{
     font-size: 1.1em;
+    padding-bottom: 10px;
   }
   
   .measuring-facility .description{ 
     font-size: 1em;
-    padding-top: 10px;
-    padding-bottom: 50px;
+    
   }
-  .measuring-facility .description.description1{
-    bottom: 0%;
+  .measuring-facility img{
+    width: 70%;
   }
+  .measuring-facility .threed img{
+    top: 35%;
+  }
+
   .measuring-facility .description.description2{
     /* position: relative;
     margin-top: 20px; */
     bottom: 0%;
     margin-top: 30px;
+  }
+  .measuring-facility .description.description1.en{
+    bottom: 0%;
+    top:84%;
+  }
+  .measuring-facility .description.description2.en{
+    padding-top: 0px;
+  }
+  .measuring-facility .description.description2.kr{
+    padding-top: 0px;
+    padding-bottom: 50px;
+    top:89%;
   }
   
 } 
@@ -341,4 +378,5 @@ td{
     height: 170px;
     margin: 10px;
   }
+  
 } 

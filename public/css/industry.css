@@ -30,10 +30,10 @@ span{
     margin: 0px;
 }
 .introIndustry .icon{
-    width: 90px;
-    height: 90px;
+    width: 60px;
+    height: 60px;
     position: relative;
-    bottom: 30px;
+    bottom: 7px;
 }
 
 .introIndustry div{
@@ -44,27 +44,27 @@ span{
 }
 .introIndustry .text{
     position: absolute;
-    left: 50%;top: 50%;
+    left: 50%;top: 46%;
     transform: translate(-50%,-50%);
     width:100%;
 }
 .introIndustry .text b{
     display: block;
     margin-bottom: 7px;
-    font-size: 1.6em;
+    font-size: 1.3em;
     font-family: SUIT-Bold;
 }
 .introIndustry .text span{
-    font-size: 1.2em;
+    font-size: 1em;
     font-family: SUIT-Regular;
 }
 .introIndustry #industry-machine{
-    width: 260px;
+    width: 200px;
     height: 200px;
     margin: 0;
 }
 .introIndustry #industry-semicon, .introIndustry #industry-medicine{
-    width: 260px;
+    width: 200px;
     height: 200px;
 }
 
@@ -184,7 +184,7 @@ span{
 }
 .motor{
     width: 60%;
-    height: 100%;
+    height: 90%;
     /* height: 230px; */
     position: absolute;
     left: 23%;
@@ -299,10 +299,19 @@ span{
 }
 .IGS .related-img {
     list-style: none;
+    width: 100%;
     height: 510px;
     text-align: center;
 }
-.first-ISG, .second-ISG{
+#industry-semicon-contents li{
+    width: 30%;
+    margin: 5px; /* 3개일 때 5px */
+    position: relative;
+    top:90px;
+    height: 300px;
+    display: inline-block;
+}
+.first-ISG, .second-ISG, .third-ISG{
     width: 90%;
     height: 90%;
     position: absolute;
@@ -331,16 +340,21 @@ li:hover .IGSwhole{
     font-size: 1.5em;
     font-family: SUIT-ExtraBold;
 }
-.IGS li:hover .first-ISG, .IGS li:hover .second-ISG{
+.IGS li:hover .first-ISG, .IGS li:hover .second-ISG, .IGS li:hover .third-ISG,
+.IGS li:hover .block-material{
     visibility: hidden;
 }
-.IGS li:hover div span{
+.IGS li div .hover-product{
+    visibility: hidden;
+}
+.IGS li:hover div .hover-product{
     position: absolute;
     left: 50%;
     bottom: 0%;
     transform: translate(-50%,-50%);
     font-size: 1.3em;
     color: aliceblue;
+    visibility: visible;
 }
 
 
@@ -373,7 +387,7 @@ li:hover .IGSwhole{
 }
 #industry-medicine-contents li{
     width: 30%;
-    margin: 5px;
+    margin: 10px; /* 3개일 때 5px */
     position: relative;
     top:90px;
     height: 300px;
@@ -412,10 +426,7 @@ li:hover .IGSwhole{
     width: 100%;
 }
 
-li .inner{ 
-    width: 100%;
-    height: 100%;
-    /* height: 250px; */
+li .inner-major, li .inner{
     position: relative;
     border-top: 1px rgb(224, 224, 224) solid;
     border-left: 1px rgb(224, 224, 224) solid;
@@ -423,7 +434,19 @@ li .inner{
     border-bottom: 1px rgb(151, 180, 240) solid;
 }
 
-.inner .innerText{
+li .inner-major{ 
+    width: 100%;
+    height: 100%;
+    /* height: 250px; */
+}
+li .inner{
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.inner .innerText, .inner-major .innerText{
     display: none;
     font-family: SUIT-ExtraBold;
 }
@@ -436,7 +459,7 @@ li .inner{
     
 }
 
-li:hover .inner{
+li:hover .inner, li:hover .inner-major{
     border-bottom: 1px rgb(224, 224, 224) solid;
 }
 li:hover .overlay{
@@ -445,7 +468,7 @@ li:hover .overlay{
     transition: all 0.5s;
     border-top: 1px solid rgb(151, 180, 240);
 }
-li:hover .inner .innerText{
+li:hover .inner .innerText, li:hover .inner-major .innerText{
     display: block;
     width: 100%;
     position: absolute;
@@ -463,24 +486,10 @@ li:hover .inner .innerText{
 }
 
 @media screen and (max-width: 1000px) {
-    .introIndustry #industry-machine, .introIndustry #industry-semicon, .introIndustry #industry-medicine{
-        width: 25%;
-        height: 35%;
-        bottom:23%;
-    }
-    .introIndustry .icon{
-        width: 35%;
-        height: 110%;
-    }
-    .introIndustry .text b{
-        font-size: 1.2em;
-        margin-top: 7%;
-    }
     .introIndustry .text span{
         font-size: 1em;
     }
 
-    
     /* .other-machine-part{
         height: 350px;
         margin-top: 20px;
@@ -511,8 +520,7 @@ li:hover .inner .innerText{
         bottom:20%;
     }
     .introIndustry .icon{
-        width: 40%;
-        height: 100%;
+        bottom: 40px;
     }
     .introIndustry .text b{
         font-size: 1.1em;
@@ -526,14 +534,10 @@ li:hover .inner .innerText{
         text-align: center;
         font-size: large;
     }
-    
-
-    
     .piston .text-piston, .other-machine-part .text-step-motor-flange, .other-machine-part .text-value-body,
     .IGS .text-IGS ,.Air-Sampling-Cone .text-Air-Sampling-Cone
     {
         font-size: 1.2em;
-        
     }
     .other-machine-part .text-step-motor-flange, .other-machine-part .text-value-body
     {
@@ -544,7 +548,7 @@ li:hover .inner .innerText{
     #industry-medicine-contents li:hover div span, .piston li:hover div span{
         font-size: 1em;
     }
-    .IGS li:hover div span, .other-machine-part li:hover span{
+    .IGS li:hover div .hover-product, .other-machine-part li:hover span{
         font-size: 1em;
         text-align: center;
         width: 100%;
@@ -571,22 +575,24 @@ li:hover .inner .innerText{
     
 }
 @media screen and (max-width: 650px) {
+    .industrylist p{
+        font-size: 4em;
+    }
     .introIndustry .icon{
-        width: 40%;
-        height: 80%;
-        bottom: 25%;
+        width: 60px;
+        height: 60px;
     }
     .introIndustry .text b{
         margin-top: 20px;
     }
     .related-img li span, .other-machine-part span{
+        width: 100%;
         font-size: 0.9em;
     }
-    
 }
 @media screen and (max-width: 550px) {
     .industrylist p{
-        font-size: 4em;
+        font-size: 3.6em;
     }
 
     .introIndustry .text b{
@@ -629,10 +635,10 @@ li:hover .inner .innerText{
         left: 50%;
         transform: translate(-50%,-50%);
         width: 100%;
-   }
-   #industry-medicine-contents li:hover div span{
+    }
+    #industry-medicine-contents li:hover div span{
         bottom: 0px;
-   }
+    }
 
     .industry-detail .icon{
         width: 30px;
