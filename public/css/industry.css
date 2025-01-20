@@ -127,24 +127,30 @@ span{
     text-align: center;
     top:10px;
 }
+
+.other-machine-part .related-img {
+    list-style: none;
+    width: 100%;
+    height: 510px;
+    text-align: center;
+}
+
 .other-machine-part div{
     display: inline-block;
     text-align: center;
 }
-.other-machine-part .value-body{
+/* .other-machine-part .value-body{
     position: absolute;
     top:50%;
     left: 30%;
     transform: translate(-50%, -50%);
-    /* left: 8.6%; */
 }
 .other-machine-part .step-motor-flange{
     position: absolute;
     top:50%;
     left: 70%;
     transform: translate(-50%, -50%);
-    /* left: 50%; */
-}
+} */
 .other-machine-part .text-value-body{
     position: absolute;
     top:-18%;
@@ -167,6 +173,17 @@ span{
     padding: 8px;
     font-family: SUIT-ExtraBold;
 }
+.piston .text-piston{
+    position: absolute;
+    top: -18%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 800;
+    font-size: 1.4em;
+    font-family: SUIT-ExtraBold;
+    padding: 8px;
+}
+
 .value-body-img{
     width:60%;
     height: 95%;
@@ -182,6 +199,15 @@ span{
     left: 21%;
     padding: 0; 
 }
+.related-img li .piston-img{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    padding: 0;  
+}
+
 .motor{
     width: 60%;
     height: 90%;
@@ -211,7 +237,7 @@ span{
 .other-machine-part li:hover .motor{
     visibility: visible;
 }
-.other-machine-part li:hover div .step-motor-flange-img, .other-machine-part li:hover .value-body-img{
+.other-machine-part li:hover div .step-motor-flange-img, .other-machine-part li:hover .value-body-img, .piston:hover div img{  
     visibility: hidden;
 }
 .other-machine-part li:hover span{
@@ -223,73 +249,14 @@ span{
     color: aliceblue;
 }
 
-/*piston*/
-.piston{
-    position: relative;
-    height: 510px;
-    width: 100%;
-}
-.piston .related-img {
-    list-style: none;
-    width: 100%;
-    height: 510px;
-    text-align: center;
-}
-
-.piston .text-piston{
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    /*left: 50%;/*중앙*/
-    transform: translate(-50%,-50%);
-    font-weight: 800;
-    font-size: 1.5em;
-    font-family: SUIT-ExtraBold;
-    /* padding: 8px; */
-    /* border: 6px rgb(164, 185, 226)  solid; */
-}
 #industry-machine-contents .related-img li, #industry-semicon-contents li{
-    margin: 10px;
     position: relative;
     top:90px;
     width: 30%;
     height: 280px;
     display: inline-block;
 }
-.second-piston{
-    width: 65%;
-    height: 100%;
-    /* height: 250px; */
-    position: absolute;
-    top: 0%;
-    left: 16.5%;
-    padding: 0; 
-    margin-right: 0px;
-}
-.related-img li .first-piston{
-    /* width: 100%;
-    height: 100%; */
-    /* top: 0%;
-    left: 0%; */
-    width: 90%;
-    height: 90%;
-    /* height: 250px; */
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    padding: 0;  
-}
-.piston li:hover div img{  
-    visibility: hidden;
-}
-.piston li:hover div span{
-    position: absolute;
-    left: 50%;
-    bottom: 20%;
-    transform: translate(-50%,-50%);
-    font-size: 1.3em;
-    color: aliceblue;
-}
+
 /*IGS*/
 .IGS {
     position: relative;
@@ -494,7 +461,7 @@ li:hover .inner .innerText, li:hover .inner-major .innerText{
         height: 350px;
         margin-top: 20px;
     } */
-    .other-machine-part, .piston, .IGS,.Air-Sampling-Cone{
+    .other-machine-part, .IGS,.Air-Sampling-Cone{
         height: 400px;
     }
     #industry-machine-contents .related-img, #industry-semicon-contents .related-img, #industry-medicine-contents .related-img{
@@ -503,7 +470,9 @@ li:hover .inner .innerText, li:hover .inner-major .innerText{
 
     .piston .text-piston, .other-machine-part .text-step-motor-flange, .other-machine-part .text-value-body,
     .IGS .text-IGS, .Air-Sampling-Cone .text-Air-Sampling-Cone{
+        width: 100%;
         font-size: 1.3em;
+        text-align: center;
     }
 
     #industry-machine-contents .related-img li , #industry-semicon-contents li , #industry-medicine-contents li {
@@ -542,7 +511,6 @@ li:hover .inner .innerText, li:hover .inner-major .innerText{
     .other-machine-part .text-step-motor-flange, .other-machine-part .text-value-body
     {
         width: 100%;
-        top:-40%;
     }
     
     #industry-medicine-contents li:hover div span, .piston li:hover div span{
@@ -559,7 +527,7 @@ li:hover .inner .innerText, li:hover .inner-major .innerText{
         height: 150px;
     }
     
-    .other-machine-part, .piston, .piston .related-img, .IGS, .IGS .related-img, .Air-Sampling-Cone, .Air-Sampling-Cone .related-img{
+    .other-machine-part, .related-img, .IGS, .IGS .related-img, .Air-Sampling-Cone, .Air-Sampling-Cone .related-img{
         height: 350px;
     }
     
@@ -602,14 +570,7 @@ li:hover .inner .innerText, li:hover .inner-major .innerText{
         font-size: 0.8em;
     }
 
-    /* .other-machine-part .value-body{
-        left: 10%;
-    }
-    .other-machine-part .step-motor-flange{
-        left: 60%;
-    } */
-    .other-machine-part .text-value-body{
-        top:-15%;
+    .other-machine-part .text-value-body, .text-piston{
         width: 100%;
     }
     .other-machine-part .text-step-motor-flange{
@@ -629,7 +590,7 @@ li:hover .inner .innerText, li:hover .inner-major .innerText{
         margin: 0 auto;
         text-align: center;
     }
-    .IGS .text-IGS, .piston .text-piston,
+    .IGS .text-IGS,
     .Air-Sampling-Cone .text-Air-Sampling-Cone{
         top:15%;
         left: 50%;
@@ -656,8 +617,6 @@ li:hover .inner .innerText, li:hover .inner-major .innerText{
         top: -2px;
         font-size: 1.2em;
     }
-}
-@media screen and (max-width: 486px) {
     .related-img li .air-name-long{
         bottom: -40%;
     }

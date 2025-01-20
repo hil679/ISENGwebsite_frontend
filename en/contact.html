@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INSUNG ENG Co., Inc.</title>
-    <link rel="stylesheet" href="../public/css/common.css">
+    <link rel="stylesheet" href="http://www.ise-k.com/public/css/common.css">
     <link rel="stylesheet" href="http://www.ise-k.com/public/css/contact.css">
     
     <script src="http://www.ise-k.com/public/js/main.js" defer></script>
@@ -31,10 +31,21 @@
             <a href="#" class="navbar__toogleBtn">
                 <img src = "http://www.ise-k.com/asset/main/toggle.png" alt = "logo" width="26px" height="26px" class = toogle/>
             </a>
-            <button class = "lang_btn" onclick="changeLanguage('en');">
-                한 국 어
-            </button>
-
+            <div class="lang_btn">
+                <ul style="list-style: none;">
+                    <li class="middle">
+                        <button class = "ko" onclick="changeLanguage('en');">
+                            한 국 어 
+                        </button>
+                    </li>
+                    <li class="middle-divider"></li>
+                    <li class="last">
+                        <button class = "en" onclick="changeLanguage('ko');">
+                            ENGLISH
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <div id="inclusion-contact">
             <div id = "contact-mainimg">

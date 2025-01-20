@@ -1,7 +1,7 @@
 const toggleBtn = document.querySelector('.navbar__toogleBtn img');
 const menu = document.querySelector('.navbar__menu');
 const navbar = document.querySelector('.navbar');
-const lang_btn = document.querySelector('.lang_btn');
+const lang_btn = document.querySelectorAll('.lang_btn');
 // const menuList = document.querySelector('.navbar__menu li');
 
 toggleBtn.addEventListener('click', () => {

@@ -32,9 +32,21 @@
             <a href="#" class="navbar__toogleBtn">
                 <img src = "http://www.ise-k.com/asset/main/toggle.png" alt = "logo" width="26px" height="26px" class = toogle/>
             </a>
-            <button class = "lang_btn" onclick="changeLanguage('ko');">
-                ENGLISH
-            </button>
+            <div class="lang_btn">
+                <ul style="list-style: none;">
+                    <li class="middle">
+                        <button class = "ko" onclick="changeLanguage('en');">
+                            한 국 어 
+                        </button>
+                    </li>
+                    <li class="middle-divider"></li>
+                    <li class="last">
+                        <button class = "en" onclick="changeLanguage('ko');">
+                            ENGLISH
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <div id="inclusion-contact">
             <div id = "contact-mainimg">

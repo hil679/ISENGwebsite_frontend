@@ -46,9 +46,9 @@
 #division-explaination span{
     size: 2em;
     font-weight: lighter;
-    position: relative;
+    position: absolute;
     top:11px;
-    right: 38%;
+    left: 7%;
     padding-bottom:5px;
     border-bottom: #8d8c8c solid 3px;
     font-family: SUIT-Regular;

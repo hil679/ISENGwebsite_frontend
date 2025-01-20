@@ -127,7 +127,7 @@ function changeLanguage(lang) {
         document.querySelector('ul.navbar__menu li:nth-child(2) a').href = productsUrl;
         document.querySelector('ul.navbar__menu li:nth-child(3) a').href = machineUrl;
         document.querySelector('ul.navbar__menu li:nth-child(4) a').href = contactUrl;
-        document.querySelector('.lang_btn').textContent = (opLang === 'en') ? '한 국 어' : 'ENGLISH';
+        // document.querySelector('.lang_btn').textContent = (opLang === 'en') ? '한 국 어' : 'ENGLISH';
 
         
 
@@ -136,35 +136,4 @@ function changeLanguage(lang) {
 
         
 }
-// i18next.on("languageChanged", () => {
-//     changeLanguage();
-//   });
-
-// function updateContent() {
-//     document.querySelector('#machineNm.name').textContent = i18next.t('content.machine');
-//     document.getElementById('headTitle').textContent = i18next.t('headTitle.title');
-//     var companyNm = document.getElementsByClassName('company-nm');
-//     for (var i = 0; i < companyNm.length; i++) {
-//         companyNm[i].textContent = i18next.t('headTitle.title');
-//     }
-
-   
-//     document.getElementById('aboutNm').textContent = i18next.t('content.aboutTitle');
-//     document.getElementById('productNm').textContent = i18next.t('content.productsTitle');
-
-//     document.getElementById('satisfied').textContent = i18next.t('content.message.satisfied');
-//     document.getElementById('precision').textContent = i18next.t('content.message.precision');
-//     document.getElementById('custom').innerHTML = i18next.t('content.message.custom');
-//     document.getElementById('message1').innerHTML = i18next.t('content.message.text1');
-//     document.getElementById('message2').innerHTML = i18next.t('content.message.text2');
-
-
-//     document.getElementById('tel').textContent = i18next.t('contactBar.tel');
-//     document.getElementById('fax').textContent = i18next.t('contactBar.fex');
-//     document.getElementById('post').textContent = i18next.t('contactBar.postcode');
-//     document.getElementById('location1').textContent = i18next.t('contactBar.address1stLine');
-//     document.getElementById('location2').innerHTML = i18next.t('contactBar.address2ndLine');
-
-// }
-
 
