@@ -1,0 +1,16 @@
+/* Show it is fixed to the top */
+body {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+}
+nav { 
+  border-bottom: 0.01rem solid #20397A;;
+}
+.navbar-nav li {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.dropdown-menu {
+  --bs-dropdown-min-width: 0rem;
+
+}
