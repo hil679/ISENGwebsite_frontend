@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="headTitle">인성이엔지(주)</title>
     <link rel="stylesheet" href="http://www.ise-k.com/public/css/main.css">
-    <link rel="stylesheet" href="http://www.ise-k.com/public/css/common.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="http://www.ise-k.com/public/css/contact_footer.css">
     <!--swiper-->
     <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
@@ -14,7 +14,7 @@
     <script src="https://cdn.jsdelivr.net/npm/i18next@19.8.4/dist/umd/i18next.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
-    <script src="http://www.ise-k.com/public/js/main.js" defer></script> <!--태그의 defer 속성은 페이지가 모두 로드된 후에 해당 외부 스크립트가 실행됨-->
+    <script src="js/main.js" defer></script> <!--태그의 defer 속성은 페이지가 모두 로드된 후에 해당 외부 스크립트가 실행됨-->
     <script src="http://www.ise-k.com/public/js/slider.js" defer></script>
     <script src="http://www.ise-k.com/public/js/sliderArrow.js" defer></script>
     <script src="http://www.ise-k.com/public/js/changeLanguage.js" defer></script>
@@ -22,41 +22,7 @@
     
 </head>
 <body>
-     <nav class="navbar">
-        <div class="navbar__logo">
-            <a href="http://www.ise-k.com/kr">
-                <img src = "http://www.ise-k.com/asset/main/ISElogo.png" alt = "logo"  class = img_logo/>
-                <span class = "company-nm">인성이엔지&#40;주&#41;</span>
-            </a> 
-        </div>
-        <ul class="navbar__menu">
-            <li><a href="http://www.ise-k.com/kr">홈</a></li>
-            <li><a href="http://www.ise-k.com/kr/about">회사 소개</a></li>
-            <li><a href="http://www.ise-k.com/kr/products">제품</a></li>
-            <li><a href="http://www.ise-k.com/kr/machine">설비</a></li>
-            <li><a href="http://www.ise-k.com/kr/contact">회사 위치</a></li>
-        </ul>
-
-        <a href="#" class="navbar__toogleBtn">
-            <img src = "http://www.ise-k.com/asset/main/toggle.png" alt = "logo" width="26px" height="26px" class = toogle/>
-        </a>
-        
-        <div class="lang_btn">
-            <ul style="list-style: none;">
-                <li class="middle">
-                    <button class = "ko" onclick="changeLanguage('en');">
-                        한 국 어 
-                    </button>
-                </li>
-                <li class="middle-divider"></li>
-                <li class="last">
-                    <button class = "en" onclick="changeLanguage('ko');">
-                        ENGLISH
-                    </button>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <div id="header"></div>
     
     <div id = "content">
         <div class="main-slider">
@@ -190,7 +156,7 @@
         </ul>  
     </div>
     <div class = "copyright">
-        <span>Copyright &copy; <span class = "company-nm">인성이엔지(주)</span> All Rights Reserved.</span>
+        <span>Copyright &copy; 2022 <span class = "company-nm">인성이엔지(주)</span> All Rights Reserved.</span>
     </div> 
 </body>
 </html>
