@@ -6,6 +6,9 @@ body {
 nav { 
   border-bottom: 0.01rem solid #20397A;;
 }
+.navbar-toggler {
+  border: 0px;
+}
 .navbar-nav li {
   margin-left: 30px;
   margin-right: 30px;

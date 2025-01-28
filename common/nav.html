@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="auto">
   <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
     <link href="css/navbars.css" rel="stylesheet"/>
     <link href="css/common.css" rel="stylesheet"/>
 
@@ -16,12 +16,15 @@
       <div class="container-fluid">
         <div class="navbar-brand navbar__logo">
          <a href="http://www.ise-k.com/kr">
-              <img src = "http://www.ise-k.com/asset/main/ISElogo.png" alt = "logo"  class = img_logo/>
-              <span class = "company-nm">인성이엔지&#40;주&#41;</span>
+            <img src = "http://www.ise-k.com/asset/main/ISElogo.png" alt = "logo"  class = "img_logo"/>
+            <span class = "company-nm">인성이엔지&#40;주&#41;</span>
           </a> 
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" onclick="mobileNavToggle();"
+        data-bs-toggle="collapse" > <!--data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" 
+        aria-expanded="false" aria-label="Toggle navigation"-->
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <img src="http://www.ise-k.com/asset/main/toggle.png" alt="logo" width="26px" height="26px" class="toogle/">
         </button>
 
         <div class="collapse navbar-collapse hover-sub justify-content-evenly" id="navbarsExample01">
@@ -37,7 +40,7 @@
                 <a class="dropdown-item" href="#">회사연혁</a>
                 <a class="dropdown-item" href="#">회사 인증 현황</a>
                 <a class="dropdown-item" href="#">주요 고객사</a>
-                <a class="dropdown-item" href="#">찾아오는 길</a>
+                <a class="dropdown-item" href="#">오시는 길</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -45,8 +48,8 @@
                 생산제품
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">반도체 장비 부품</a>
-                <a class="dropdown-item" href="#">제약 관련 장비 부품</a>
+                <a class="dropdown-item" href="#">반도체장비 부품</a>
+                <a class="dropdown-item" href="#">제약관련장비 부품</a>
                 <a class="dropdown-item" href="#">정밀기계장비 부품</a>
               </div>
             </li>
@@ -86,7 +89,7 @@
                   <a class="dropdown-item" href="#">Something else here</a>
                   <a class="dropdown-item" href="#">Separated link</a> -->
                   <button class = "ko dropdown-item" onclick="changeLanguage('en');">
-                    한 국 어 
+                    한국어 
                   </button>
                   <button class = "en dropdown-item" onclick="changeLanguage('ko');">
                     ENGLISH
@@ -98,6 +101,6 @@
         </div>
       </div>
     </nav>
-    <script src="fw/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="fw/dist/js/bootstrap.bundle.min.js"></script> -->
   </body>
 </html>
