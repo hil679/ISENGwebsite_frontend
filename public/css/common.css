@@ -3,7 +3,7 @@
 @import url('font.css');
 :root{
     --text-color: #263343;
-    --background-color: #f0f4f5;
+    --background-color: #ffffff;
     --accent-color:#d49466;
 
 }
@@ -31,13 +31,13 @@ a {
 
 /*font*/
 .navbar__logo {
-    font-family: 'Noto Sans KR', sans-serif;
+    /* font-family: 'Noto Sans KR', sans-serif; */
     /* font-family: SUIT; */
-    font-weight:700;
+    font-weight:600;
 }
-.navbar__menu li{
+/* .navbar__menu li{
     font-family: SUIT-Regular;
-}
+} */
 
 /*navbar*/
 .navbar {
